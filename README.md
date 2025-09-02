@@ -55,4 +55,8 @@ Fase 2: As Formas do Habitat
 
     Mensagem de Sustentabilidade: Proteger os animais exige proteger também o seu lar. A lição é que a conservação é uma questão de espaço e de garantir que os habitats permaneçam completos e interligados.
 
+## Relatórios:
+Feedback para os alunos vai ser apresentado na forma de tempo por fase, tempo total, pontos.
+Feedback para os professores poderá conter tempo de gameplay, tempo por fase, número de ajudas, acertos/erros por forma geométrica, nome do aluno.
+
 Vou tentar adicionar figuras amanhã, também podemos começar o product Backlog, e organizar já organizar sprints
