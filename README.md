@@ -8,7 +8,7 @@ O jogo deve tratar de temas de sustentabilidade, ter cunho educacional, com cont
     ASSARTE
 
 ## Scrum Master
-    EStéfano
+    Estéfano
 
 ## Dev Team
     Gabriel
@@ -18,15 +18,19 @@ O jogo deve tratar de temas de sustentabilidade, ter cunho educacional, com cont
     Enzo Pimentel
     Estéfano
 
-
 Ideia de jogo:
 
-Nome: Bio-Geometria
-Tema: Perda da Biodiversidade
-Conteúdo: Geometria 
+## Nome: 
+Bio-Geometria
 
-Descrição:
-    A idéia é usar a geometria para o usuário interagir de forma mais direta com o jogo, arrastando formas, girando e combinando
+### Tema:
+Perda da Biodiversidade
+
+## Conteúdo: 
+Geometria 
+
+## Descrição:
+A idéia é usar a geometria para o usuário interagir de forma mais direta com o jogo, arrastando formas, girando e combinando
 
 Fase 1: O Quebra-Cabeça da Biodiversidade
 
@@ -51,4 +55,4 @@ Fase 2: As Formas do Habitat
 
     Mensagem de Sustentabilidade: Proteger os animais exige proteger também o seu lar. A lição é que a conservação é uma questão de espaço e de garantir que os habitats permaneçam completos e interligados.
 
-Vou tentar adicionar figuras amanhã
+Vou tentar adicionar figuras amanhã, também podemos começar o product Backlog, e organizar já organizar sprints
