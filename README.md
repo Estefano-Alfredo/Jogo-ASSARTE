@@ -40,7 +40,7 @@ Fase 1: O Quebra-Cabeça da Biodiversidade
 
     Apresentação: O narrador apresenta o tema de perda da biodiversidade, falando sobre espécies que estão sendo mais afetadas pelas práticas não sustentáveis
     
-    Gameplay: 4 ou 5 cinários onde o jogador deve recompor a imagem de um animal ou planta conhecidamente afetados por práticas não sustentáveis (abelhas, tartarugas marinhas, baleias) que foi fragmentada em peças geométricas. Para isso, ele precisa não apenas encaixar as peças, mas também rotacioná-las e espelhá-las para que se alinhem perfeitamente. (decidir quantos tipos de movimentação tornam a gameplay menos intuitiva para os usuários em questão). 
+    Gameplay: 4 ou 5 cenários onde o jogador deve recompor a imagem de um animal ou planta conhecidamente afetados por práticas não sustentáveis (abelhas, tartarugas marinhas, baleias) que foi fragmentada em peças geométricas. Para isso, ele precisa não apenas encaixar as peças, mas também rotacioná-las e espelhá-las para que se alinhem perfeitamente. (decidir quantos tipos de movimentação tornam a gameplay menos intuitiva para os usuários em questão). 
     Obs: Mostrar a sombra do animal para facilitar, peça e local onde ela encaixa podem piscar para ajudar se o jogador passar muito tempo sem progredir
 
     Mensagem de Sustentabilidade: Cada espécie é uma "peça" fundamental no grande "quebra-cabeça" da natureza. A perda de uma espécie é como perder uma peça, deixando o todo incompleto.
@@ -51,12 +51,12 @@ Fase 2: As Formas do Habitat
 
     Conceito Geométrico: Formas Básicas e Área.
 
-    Gameplay: 4 ou 5 cinários onde o jogador precisa construir o habitat das espécies da primeira fase. Ele recebe uma área vazia com uma silhueta e deve preenchê-la com diferentes formas geométricas. A mecânica se concentra em usar as formas para cobrir toda a área necessária, reforçando o conceito de que o espaço é crucial para a sobrevivência das espécies. Diferente da fase 1 onde o foco é criar uma figura nova do "zero", na fase 2 existe uma imagem com buracos nela, onde será necessário encaixar uma ou mais peças em cada, para reconstruir o todo. A opção de ajuda da fase 1 funciona bem aqui também
+    Gameplay: 4 ou 5 cenários onde o jogador precisa construir o habitat das espécies da primeira fase. Ele deve resolver um jogo da memória, reforçando o conceito de que o espaço é crucial para a sobrevivência das espécies. Diferente da fase 1 onde o foco é criar uma figura nova do "zero", na fase 2 existe um plano de fundo, onde será necessário encontrar os pares, preenchendo assim a imagem do fundo. A opção de ajuda da fase 1 funciona bem aqui também. Os pares vão cobrir buracos em formas geométricos do fundo
 
     Mensagem de Sustentabilidade: Proteger os animais exige proteger também o seu lar. A lição é que a conservação é uma questão de espaço e de garantir que os habitats permaneçam completos e interligados.
 
 ## Relatórios:
-Feedback para os alunos vai ser apresentado na forma de tempo por fase, tempo total, pontos.
+Feedback para os alunos vai ser apresentado na forma de tempo por fase, tempo total, pontos (por clique).
 Feedback para os professores poderá conter tempo de gameplay, tempo por fase, número de ajudas, acertos/erros por forma geométrica, nome do aluno.
 
 Vou tentar adicionar figuras amanhã, também podemos começar o product Backlog, e organizar já organizar sprints
