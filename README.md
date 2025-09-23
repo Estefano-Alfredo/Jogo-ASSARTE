@@ -34,7 +34,7 @@ A idéia é usar a geometria para o usuário interagir de forma mais direta com 
 
 ##### - Fase 1: O Quebra-Cabeça da Biodiversidade
 
-    *Foco*: Reconhecer a beleza e a unicidade das espécies.
+    **Foco**: Reconhecer a beleza e a unicidade das espécies.
 
     **Conceito Geométrico**: Composição de Formas, Rotação e Espelhamento.
 
@@ -47,7 +47,7 @@ A idéia é usar a geometria para o usuário interagir de forma mais direta com 
 
 ##### - Fase 2: As Formas do Habitat
 
-    Foco: Construir e proteger os ambientes que sustentam a vida.
+    **Foco**: Construir e proteger os ambientes que sustentam a vida.
 
     **Conceito Geométrico**: Formas Básicas e Área.
 
