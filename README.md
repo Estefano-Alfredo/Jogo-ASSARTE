@@ -76,6 +76,23 @@ Vou tentar adicionar figuras amanhã, também podemos começar o product Backlog
 ## Product Backlog
 Listas de passos necessários para entregar o projeto completo (será revisado posteriormente spós desenvolvimento inicial do projeto)
 
+      | Direcionado para: |                                                            Item do Product Backlog                                                            | Prioridade |
+| :---------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :--------: |
+|    **USUÁRIO**    |                                                **ícones + texto + áudio** para todas as ações.                                                |     P1     |
+| **DESENVOLVEDOR** |                   **mecânica central de arrastar, girar e combinar formas** para viabilizar a interação geométrica do jogo.                   |     P1     |
+|    **USUÁRIO**    |               **arte de Fundo da Interface** e **Arte dos Botões** que utilizem uma paleta sóbria para respeitar o tom etário.                |     P1     |
+|    **USUÁRIO**    |                **tela Inicial** com **botões clicáveis** (Novo Jogo, Configurações, Relatório, Tutorial) para navegar no jogo.                |     P1     |
+|    **USUÁRIO**    | **Fase 1: O Quebra-Cabeça da Biodiversidade**, que utiliza a mecânica de geometria e tem progressão por metas simples (3–5 tarefas por nível) |     P1     |
+|    **USUÁRIO**    |                      **Popup de Nome** ao iniciar o jogo para me identificar, permitindo o rastreamento dos relatórios.                       |     P1     |
+|    **USUÁRIO**    |                          **Fase 2: As Formas do Habitat** para progredir no conteúdo de biodiversidade e geometria.                           |     P1     |
+|  **PROFESSORA**   |                           **tela de Relatório (Arte da Tela de Relatório)** para visualizar o feedback dos alunos.                            |     P1     |
+|    **USUÁRIO**    |                                  **Popup de Tutorial** para entender as mecânicas de jogo antes de começar.                                   |     P2     |
+|    **USUÁRIO**    |     **cenários plausíveis para adultos** (praça, feira, casa) ou **imagens do bairro local** para maior identificação social e cultural.      |     P2     |
+|    **USUÁRIO**    |             **tempo ilimitado/configurável** e **reforço positivo não-punitivo** para garantir autonomia e foco na aprendizagem.              |     P3     |
+|  **PROFESSORA**   |   armazenar e exiba **dados de relatório detalhados**, incluindo tempo de _gameplay_, número de ajudas e acertos/erros por forma geométrica   |     P3     |
+|    **USUÁRIO**    |             receber **feedback imediato** após a conclusão da fase, incluindo tempo por fase, tempo total e pontos (por clique).              |     P3     |
+|    **USUÁRIO**    |                       **Modo Assistido** que oferece ajuda durante as tarefas para facilitar a memorização e previsão.                        |     P3     |
+
 ##### Interace
 - arte do fundo interface
 - arte dos botões interface
