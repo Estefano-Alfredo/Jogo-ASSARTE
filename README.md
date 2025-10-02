@@ -76,7 +76,7 @@ Vou tentar adicionar figuras amanhã, também podemos começar o product Backlog
 ## Product Backlog
 Listas de passos necessários para entregar o projeto completo (será revisado posteriormente spós desenvolvimento inicial do projeto)
 
-      | Direcionado para: |                                                            Item do Product Backlog                                                            | Prioridade |
+| Direcionado para: |                                                            Item do Product Backlog                                                            | Prioridade |
 | :---------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :--------: |
 |    **USUÁRIO**    |                                                **ícones + texto + áudio** para todas as ações.                                                |     P1     |
 | **DESENVOLVEDOR** |                   **mecânica central de arrastar, girar e combinar formas** para viabilizar a interação geométrica do jogo.                   |     P1     |
