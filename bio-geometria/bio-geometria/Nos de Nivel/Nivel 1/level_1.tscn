@@ -1,0 +1,88 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbccjhwapi1dd"]
+
+[ext_resource type="Script" uid="uid://bx8shvd1bvc0g" path="res://Nos de Nivel/Nivel 1/level_1.gd" id="1_36c26"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ctcdo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w4k1h"]
+
+[node name="Nivel 1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_36c26")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 69.0
+offset_bottom = 648.0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Triangulo" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ctcdo")
+text = "Triagulo
+"
+
+[node name="Quadrado" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ctcdo")
+text = "Quadrado"
+
+[node name="Semicirculo" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ctcdo")
+text = "Semi-circulo"
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 238.0
+offset_right = 414.0
+offset_bottom = 373.0
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 3
+
+[node name="Button" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(50, 100)
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w4k1h")
+text = "Formato"
+
+[node name="Button2" type="Button" parent="GridContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w4k1h")
+text = "Formato"
+
+[node name="Button3" type="Button" parent="GridContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w4k1h")
+text = "Formato"
+
+[node name="Texto" type="Label" parent="."]
+layout_mode = 0
+offset_left = 207.0
+offset_top = 401.0
+offset_right = 877.0
+offset_bottom = 606.0
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Triangulo" to="." method="_on_triangulo_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quadrado" to="." method="_on_quadrado_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Semicirculo" to="." method="_on_semicirculo_pressed"]
+[connection signal="pressed" from="GridContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="GridContainer/Button3" to="." method="_on_button_3_pressed"]

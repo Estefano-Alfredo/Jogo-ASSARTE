@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://ncgfx5a7lroy"]
+
+[ext_resource type="Script" uid="uid://bjsmte7ysje6c" path="res://nos/configuracao.gd" id="1_hpn5f"]
+[ext_resource type="Texture2D" uid="uid://bwmc635a704eb" path="res://Assets/Ui/button_ui.png" id="2_ylnwt"]
+
+[node name="Configuracao" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hpn5f")
+
+[node name="MenuButton" type="MenuButton" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+item_count = 1
+popup/item_0/text = "teste"
+popup/item_0/icon = ExtResource("2_ylnwt")
+popup/item_0/id = 0

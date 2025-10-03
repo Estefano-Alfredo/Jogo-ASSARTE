@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://wnodsuw5wmj7"]
+
+[ext_resource type="Script" uid="uid://bfxmnen770jbj" path="res://Nos/carta.gd" id="1_yh2wv"]
+
+[node name="Carta" type="Button"]
+custom_minimum_size = Vector2(30, 30)
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_yh2wv")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

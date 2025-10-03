@@ -1,0 +1,82 @@
+[gd_scene load_steps=4 format=3 uid="uid://clgvfm3owppwd"]
+
+[ext_resource type="Script" uid="uid://cue3t6s8gik0w" path="res://Nos de Nivel/Nivel 2/nivel_2.gd" id="1_vc3to"]
+[ext_resource type="PackedScene" uid="uid://wnodsuw5wmj7" path="res://Nos/carta.tscn" id="2_vdy41"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vdy41"]
+
+[node name="Nivel 2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 3
+script = ExtResource("1_vc3to")
+
+[node name="Carta" parent="GridContainer" instance=ExtResource("2_vdy41")]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vdy41")
+
+[node name="Carta2" parent="GridContainer" instance=ExtResource("2_vdy41")]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vdy41")
+
+[node name="Carta3" parent="GridContainer" instance=ExtResource("2_vdy41")]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vdy41")
+
+[node name="Carta4" parent="GridContainer" instance=ExtResource("2_vdy41")]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vdy41")
+
+[node name="Carta5" parent="GridContainer" instance=ExtResource("2_vdy41")]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vdy41")
+
+[node name="Carta6" parent="GridContainer" instance=ExtResource("2_vdy41")]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vdy41")
+
+[node name="Carta7" parent="GridContainer" instance=ExtResource("2_vdy41")]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vdy41")
+
+[node name="Carta8" parent="GridContainer" instance=ExtResource("2_vdy41")]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vdy41")
+
+[node name="Carta9" parent="GridContainer" instance=ExtResource("2_vdy41")]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vdy41")
+
+[node name="Carta10" parent="GridContainer" instance=ExtResource("2_vdy41")]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vdy41")
+
+[node name="Carta11" parent="GridContainer" instance=ExtResource("2_vdy41")]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vdy41")
+
+[node name="Carta12" parent="GridContainer" instance=ExtResource("2_vdy41")]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vdy41")
+
+[connection signal="teste" from="GridContainer/Carta" to="GridContainer" method="_on_carta_teste"]
+[connection signal="teste" from="GridContainer/Carta2" to="GridContainer" method="_on_carta_teste"]
+[connection signal="teste" from="GridContainer/Carta3" to="GridContainer" method="_on_carta_teste"]
+[connection signal="teste" from="GridContainer/Carta4" to="GridContainer" method="_on_carta_teste"]
+[connection signal="teste" from="GridContainer/Carta5" to="GridContainer" method="_on_carta_teste"]
+[connection signal="teste" from="GridContainer/Carta6" to="GridContainer" method="_on_carta_teste"]
+[connection signal="teste" from="GridContainer/Carta7" to="GridContainer" method="_on_carta_teste"]
+[connection signal="teste" from="GridContainer/Carta8" to="GridContainer" method="_on_carta_teste"]
+[connection signal="teste" from="GridContainer/Carta9" to="GridContainer" method="_on_carta_teste"]
+[connection signal="teste" from="GridContainer/Carta10" to="GridContainer" method="_on_carta_teste"]
+[connection signal="teste" from="GridContainer/Carta11" to="GridContainer" method="_on_carta_teste"]
+[connection signal="teste" from="GridContainer/Carta12" to="GridContainer" method="_on_carta_teste"]
