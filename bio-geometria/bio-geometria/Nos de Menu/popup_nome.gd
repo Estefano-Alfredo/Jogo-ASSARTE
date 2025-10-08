@@ -1,6 +1,5 @@
 extends Control
 
-# Variável para a caixa de texto
 @onready var line_edit_nome: LineEdit = $Panel/MarginContainer/VBoxContainer/LineEdit 
 @onready var panel_popup: Panel = $Panel
 @onready var color_rect_fundo: ColorRect = $ColorRect
@@ -49,5 +48,6 @@ func _on_button_pressed(_new_text = "") -> void:
 	# remove o nó Popup da cena
 	queue_free()
 	
-	
-	
+
+func _on_voltar_pressed() -> void:
+	get_tree().change_scene_to_file("res://Nos de Menu/menu.tscn")

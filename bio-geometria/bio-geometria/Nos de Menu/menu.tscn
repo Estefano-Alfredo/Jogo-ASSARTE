@@ -17,13 +17,13 @@ default_font_size = 70
 
 [node name="Menu" type="Control"]
 layout_mode = 3
-anchor_left = 0.31
-anchor_right = 0.75600004
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -357.12
-offset_right = 281.08795
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_wqqru")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
@@ -33,17 +33,25 @@ anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -166.0
+offset_top = -38.0
 offset_right = 166.0
+offset_bottom = 38.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(-2, 1)
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 100
 
 [node name="VBoxMenu" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 50
+theme_override_constants/separation = 20
 alignment = 1
 
 [node name="Titulo" type="Label" parent="MarginContainer/VBoxMenu"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_raj00")
 theme_override_font_sizes/font_size = 128
@@ -69,8 +77,11 @@ anchor_right = 0.90700006
 anchor_bottom = 0.72800004
 offset_left = -0.072006226
 offset_right = 10.875977
+grow_horizontal = 2
+grow_vertical = 2
 theme = SubResource("Theme_ofseh")
 theme_override_colors/font_color = Color(0.9647059, 0.92941177, 0.8392157, 1)
+theme_override_font_sizes/font_size = 60
 text = "Comecar"
 
 [node name="Configurar" type="Button" parent="MarginContainer/VBoxMenu"]
@@ -93,10 +104,43 @@ anchor_right = 0.87200004
 anchor_bottom = 0.66400003
 offset_left = -0.06800842
 offset_right = 128.496
+grow_horizontal = 2
+grow_vertical = 2
 theme = SubResource("Theme_ofseh")
 theme_override_colors/font_color = Color(0.9647059, 0.92941177, 0.8392157, 1)
 theme_override_font_sizes/font_size = 45
 text = "Configurar"
+
+[node name="Relatorio" type="Button" parent="MarginContainer/VBoxMenu"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+text = "
+"
+icon = ExtResource("3_8w4re")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxMenu/Relatorio"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.19900002
+anchor_top = 0.296
+anchor_right = 0.87200004
+anchor_bottom = 0.66400003
+offset_left = 3.9219818
+offset_top = -6.4880066
+offset_right = 11.485992
+offset_bottom = 51.71199
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_ofseh")
+theme_override_colors/font_color = Color(0.9647059, 0.92941177, 0.8392157, 1)
+theme_override_fonts/font = ExtResource("2_raj00")
+theme_override_font_sizes/font_size = 45
+text = "RELATORIO
+"
 
 [node name="Button" type="Button" parent="MarginContainer/VBoxMenu"]
 custom_minimum_size = Vector2(100, 100)
@@ -116,8 +160,10 @@ offset_right = 299.0
 offset_bottom = 83.0
 theme = SubResource("Theme_ofseh")
 theme_override_colors/font_color = Color(0.9647059, 0.92941177, 0.8392157, 1)
+theme_override_font_sizes/font_size = 60
 text = "sair"
 
 [connection signal="pressed" from="MarginContainer/VBoxMenu/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxMenu/Configurar" to="." method="_on_configurar_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxMenu/Relatorio" to="." method="_on_relatorio_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxMenu/Button" to="." method="_on_button_pressed"]
