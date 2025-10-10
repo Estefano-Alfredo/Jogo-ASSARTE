@@ -1,7 +1,6 @@
 extends Control
 
 const POPUP_NOME_SCENE = preload("res://Nos de Menu/popup_nome.tscn")
-const FASE_1 = "res://Nos de Nivel/Nivel 1/level_1.tscn"	
 
 func _on_button_pressed() -> void:
 	get_tree().quit()
@@ -17,7 +16,10 @@ func _on_start_pressed() -> void:
 func _on_configurar_pressed() -> void:
 	get_tree().change_scene_to_file("res://Menu/configuracao.tscn")
 
+func _on_relatorio_pressed() -> void:
+	get_tree().change_scene_to_file("res://Nos de Menu/tela_relatorio.tscn")
+
 #chamada somente quando o popup emite o sinal
 func _iniciar_jogo(nome_recebido: String) -> void:
 	print("Nome confirmado: " + nome_recebido + ". Iniciando Fase 1...")
-	get_tree().change_scene_to_file(FASE_1)
+	get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 1/level_1.tscn")

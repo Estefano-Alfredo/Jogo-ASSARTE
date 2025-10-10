@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ncgfx5a7lroy"]
 
-[ext_resource type="Script" uid="uid://bjsmte7ysje6c" path="res://nos/configuracao.gd" id="1_hpn5f"]
+[ext_resource type="Script" uid="uid://bjsmte7ysje6c" path="res://Nos/configuracao.gd" id="1_hpn5f"]
 [ext_resource type="Texture2D" uid="uid://bwmc635a704eb" path="res://Assets/Ui/button_ui.png" id="2_ylnwt"]
 
 [node name="Configuracao" type="Control"]
