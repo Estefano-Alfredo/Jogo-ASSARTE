@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=3 uid="uid://17ogntdwrtne"]
+
+[ext_resource type="Script" uid="uid://bjlq4fneskhry" path="res://Nos de Nivel/Nivel 3/nivel_3.gd" id="1_i4ref"]
+[ext_resource type="Script" uid="uid://p7tdoqx2selk" path="res://Nos de Nivel/Nivel 3/resposta.gd" id="2_trea3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lgjfs"]
+
+[node name="Nivel 3" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i4ref")
+
+[node name="Margem de Fora" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Margem de Fora"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Pergunta" type="Label" parent="Margem de Fora/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "PERGUNTA"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margem de Fora/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="Resposta 1" type="Button" parent="Margem de Fora/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lgjfs")
+autowrap_trim_flags = 0
+script = ExtResource("2_trea3")
+
+[node name="Resposta 2" type="Button" parent="Margem de Fora/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lgjfs")
+autowrap_trim_flags = 0
+script = ExtResource("2_trea3")
+
+[connection signal="pressed" from="Margem de Fora/VBoxContainer/HBoxContainer/Resposta 1" to="Margem de Fora/VBoxContainer/HBoxContainer/Resposta 1" method="_on_pressed"]
+[connection signal="resposta_selecionada" from="Margem de Fora/VBoxContainer/HBoxContainer/Resposta 1" to="." method="_on_resposta_1_resposta_selecionada"]
+[connection signal="pressed" from="Margem de Fora/VBoxContainer/HBoxContainer/Resposta 2" to="Margem de Fora/VBoxContainer/HBoxContainer/Resposta 2" method="_on_pressed"]
+[connection signal="resposta_selecionada" from="Margem de Fora/VBoxContainer/HBoxContainer/Resposta 2" to="." method="_on_resposta_1_resposta_selecionada"]
