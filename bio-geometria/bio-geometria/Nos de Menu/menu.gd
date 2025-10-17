@@ -1,6 +1,7 @@
 extends Control
 
 const POPUP_NOME_SCENE = preload("res://Nos de Menu/popup_nome.tscn")
+@onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
 
 func _on_button_pressed() -> void:
 	get_tree().quit()
@@ -12,14 +13,14 @@ func _on_start_pressed() -> void:
 	popup_nome.nome_confirmado.connect(_iniciar_jogo)
 	add_child(popup_nome)
 	popup_nome.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-
-func _on_configurar_pressed() -> void:
-	get_tree().change_scene_to_file("res://Menu/configuracao.tscn")
+	audio_player.play()
 
 func _on_relatorio_pressed() -> void:
 	get_tree().change_scene_to_file("res://Nos de Menu/tela_relatorio.tscn")
+	audio_player.play()
 
 #chamada somente quando o popup emite o sinal
 func _iniciar_jogo(nome_recebido: String) -> void:
 	print("Nome confirmado: " + nome_recebido + ". Iniciando Fase 1...")
 	get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 1/level_1.tscn")
+	audio_player.play()

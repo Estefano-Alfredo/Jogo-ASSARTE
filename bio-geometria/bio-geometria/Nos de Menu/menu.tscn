@@ -1,15 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://cfkqi3dcum5cm"]
+[gd_scene load_steps=9 format=3 uid="uid://cfkqi3dcum5cm"]
 
 [ext_resource type="Script" uid="uid://eaxv88hxjdo7" path="res://Nos de Menu/menu.gd" id="1_wqqru"]
 [ext_resource type="FontFile" uid="uid://dek64knlgemme" path="res://Assets/Fontes/ARCADECLASSIC.TTF" id="2_raj00"]
-[ext_resource type="Texture2D" uid="uid://bwmc635a704eb" path="res://Assets/Ui/button_ui.png" id="3_8w4re"]
+[ext_resource type="Texture2D" uid="uid://bcqosdk3axq1g" path="res://Assets/Ui/button_2_ui.png" id="3_kr88g"]
+[ext_resource type="AudioStream" uid="uid://bh662ho7ii57d" path="res://Assets/Sounds/Modern11.mp3" id="4_wn2ll"]
+[ext_resource type="PackedScene" uid="uid://b3r7gpjiepoym" path="res://Nos/botao_som.tscn" id="5_st6f1"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nff13"]
 font_size = 120
 
-[sub_resource type="Theme" id="Theme_ofseh"]
-default_font = ExtResource("2_raj00")
-default_font_size = 64
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kr88g"]
 
 [sub_resource type="Theme" id="Theme_w6voe"]
 default_font = ExtResource("2_raj00")
@@ -25,145 +25,88 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_wqqru")
+metadata/_edit_use_anchors_ = true
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 13
-anchor_left = 0.5
-anchor_right = 0.5
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -166.0
-offset_top = -38.0
-offset_right = 166.0
-offset_bottom = 38.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(-2, 1)
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
-theme_override_constants/margin_bottom = 100
 
 [node name="VBoxMenu" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
 theme_override_constants/separation = 20
 alignment = 1
 
 [node name="Titulo" type="Label" parent="MarginContainer/VBoxMenu"]
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 10
+size_flags_vertical = 8
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/shadow_outline_size = 0
 theme_override_fonts/font = ExtResource("2_raj00")
 theme_override_font_sizes/font_size = 128
-text = "Menu"
+text = "canudo mar"
 label_settings = SubResource("LabelSettings_nff13")
 horizontal_alignment = 1
 
 [node name="Start" type="Button" parent="MarginContainer/VBoxMenu"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(450, 100)
 layout_mode = 2
+size_flags_horizontal = 4
 size_flags_vertical = 3
-icon = ExtResource("3_8w4re")
-flat = true
-icon_alignment = 1
-expand_icon = true
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxMenu/Start"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.19600001
-anchor_top = 0.208
-anchor_right = 0.90700006
-anchor_bottom = 0.72800004
-offset_left = -0.072006226
-offset_right = 10.875977
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_ofseh")
-theme_override_colors/font_color = Color(0.9647059, 0.92941177, 0.8392157, 1)
-theme_override_font_sizes/font_size = 60
+theme_override_fonts/font = ExtResource("2_raj00")
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kr88g")
 text = "Comecar"
-
-[node name="Configurar" type="Button" parent="MarginContainer/VBoxMenu"]
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 2
-size_flags_vertical = 3
-text = "
-"
-icon = ExtResource("3_8w4re")
+icon = ExtResource("3_kr88g")
 flat = true
 icon_alignment = 1
 expand_icon = true
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxMenu/Configurar"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.19900002
-anchor_top = 0.296
-anchor_right = 0.87200004
-anchor_bottom = 0.66400003
-offset_left = -0.06800842
-offset_right = 128.496
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_ofseh")
-theme_override_colors/font_color = Color(0.9647059, 0.92941177, 0.8392157, 1)
-theme_override_font_sizes/font_size = 45
-text = "Configurar"
 
 [node name="Relatorio" type="Button" parent="MarginContainer/VBoxMenu"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(450, 100)
 layout_mode = 2
+size_flags_horizontal = 4
 size_flags_vertical = 3
-text = "
-"
-icon = ExtResource("3_8w4re")
+theme_override_fonts/font = ExtResource("2_raj00")
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kr88g")
+text = "Re latorio"
+icon = ExtResource("3_kr88g")
 flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxMenu/Relatorio"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.19900002
-anchor_top = 0.296
-anchor_right = 0.87200004
-anchor_bottom = 0.66400003
-offset_left = 3.9219818
-offset_top = -6.4880066
-offset_right = 11.485992
-offset_bottom = 51.71199
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_ofseh")
-theme_override_colors/font_color = Color(0.9647059, 0.92941177, 0.8392157, 1)
-theme_override_fonts/font = ExtResource("2_raj00")
-theme_override_font_sizes/font_size = 45
-text = "RELATORIO
-"
-
-[node name="Button" type="Button" parent="MarginContainer/VBoxMenu"]
-custom_minimum_size = Vector2(100, 100)
+[node name="Sair" type="Button" parent="MarginContainer/VBoxMenu"]
+custom_minimum_size = Vector2(450, 100)
 layout_mode = 2
+size_flags_horizontal = 4
 size_flags_vertical = 3
 theme = SubResource("Theme_w6voe")
-icon = ExtResource("3_8w4re")
+theme_override_fonts/font = ExtResource("2_raj00")
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kr88g")
+text = "Sair"
+icon = ExtResource("3_kr88g")
 flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxMenu/Button"]
-layout_mode = 0
-offset_left = 88.0
-offset_top = 18.0
-offset_right = 299.0
-offset_bottom = 83.0
-theme = SubResource("Theme_ofseh")
-theme_override_colors/font_color = Color(0.9647059, 0.92941177, 0.8392157, 1)
-theme_override_font_sizes/font_size = 60
-text = "sair"
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_wn2ll")
+
+[node name="Sons" parent="." instance=ExtResource("5_st6f1")]
+layout_mode = 1
 
 [connection signal="pressed" from="MarginContainer/VBoxMenu/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxMenu/Configurar" to="." method="_on_configurar_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxMenu/Relatorio" to="." method="_on_relatorio_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxMenu/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxMenu/Sair" to="." method="_on_button_pressed"]
