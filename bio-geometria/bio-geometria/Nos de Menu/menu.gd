@@ -14,7 +14,6 @@ func _on_start_pressed() -> void:
 	popup_nome.nome_confirmado.connect(_iniciar_jogo)
 	add_child(popup_nome)
 	popup_nome.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	
 
 func _on_relatorio_pressed() -> void:
 	audio_player.play()
