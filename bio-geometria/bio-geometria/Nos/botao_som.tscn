@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3r7gpjiepoym"]
+[gd_scene load_steps=5 format=3 uid="uid://b3r7gpjiepoym"]
 
 [ext_resource type="Script" uid="uid://cgfgslxofxilq" path="res://control.gd" id="1_0o64d"]
 [ext_resource type="Texture2D" uid="uid://bswucvxg7mfcu" path="res://Assets/Ui/som.png" id="2_0ivm0"]
+[ext_resource type="AudioStream" uid="uid://bh662ho7ii57d" path="res://Assets/Sounds/Modern11.mp3" id="3_jlrq6"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0o64d"]
 
@@ -30,6 +31,20 @@ offset_left = -151.0
 offset_top = 12.0
 offset_right = -40.0
 offset_bottom = 28.0
+max_value = 10.0
+value = 1.0
+
+[node name="teste" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -188.0
+offset_top = 6.0
+offset_right = -167.0
+offset_bottom = 29.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_jlrq6")
 
 [connection signal="toggled" from="Botao" to="." method="_on_button_toggled"]
 [connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="pressed" from="teste" to="." method="_on_button_pressed"]
