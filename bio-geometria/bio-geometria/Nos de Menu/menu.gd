@@ -4,12 +4,20 @@ const POPUP_NOME_SCENE = preload("res://Nos de Menu/popup_nome.tscn")
 @onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
 
 func _on_button_pressed() -> void:
+	audio_player.play()
+	anim.play("fade_in")
+	await anim.animation_finished
 	get_tree().quit()
+
+@onready var anim = $Transicao/AnimationPlayer
 
 func _on_start_pressed() -> void:
 	audio_player.play()
+	
 	# Cria a instância da cena Popup
+	
 	var popup_nome = POPUP_NOME_SCENE.instantiate()
+	
 	# Conecta o sinal e vai para iniciar_jogo
 	popup_nome.nome_confirmado.connect(_iniciar_jogo)
 	add_child(popup_nome)
@@ -22,5 +30,8 @@ func _on_relatorio_pressed() -> void:
 #chamada somente quando o popup emite o sinal
 func _iniciar_jogo(nome_recebido: String) -> void:
 	print("Nome confirmado: " + nome_recebido + ". Iniciando Fase 1...")
-	get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 1/level_1.tscn")
 	audio_player.play()
+	anim.play("fade_in")
+	await anim.animation_finished
+	get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 1/level_1.tscn")
+	

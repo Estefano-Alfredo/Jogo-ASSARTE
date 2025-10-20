@@ -1,3 +1,8 @@
-res://control.gd
 res://Nos de Nivel/Nivel 1/level_1.tscn
+res://Nos de Nivel/Nivel 1/level_1.gd
+res://Nos/vetificao_botao.gd
+res://Nos de Menu/menu.tscn
+res://Nos/transicao.tscn
+res://Nos/botao_som.tscn
+res://transicao.gd
 res://Nos de Menu/menu.gd

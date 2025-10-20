@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://cfkqi3dcum5cm"]
+[gd_scene load_steps=10 format=3 uid="uid://cfkqi3dcum5cm"]
 
 [ext_resource type="Script" uid="uid://eaxv88hxjdo7" path="res://Nos de Menu/menu.gd" id="1_wqqru"]
 [ext_resource type="FontFile" uid="uid://dek64knlgemme" path="res://Assets/Fontes/ARCADECLASSIC.TTF" id="2_raj00"]
 [ext_resource type="Texture2D" uid="uid://bcqosdk3axq1g" path="res://Assets/Ui/button_2_ui.png" id="3_kr88g"]
 [ext_resource type="AudioStream" uid="uid://bh662ho7ii57d" path="res://Assets/Sounds/Modern11.mp3" id="4_wn2ll"]
 [ext_resource type="PackedScene" uid="uid://b3r7gpjiepoym" path="res://Nos/botao_som.tscn" id="5_st6f1"]
+[ext_resource type="PackedScene" uid="uid://ceb1yq77ygyfb" path="res://Nos/transicao.tscn" id="6_162ll"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nff13"]
 font_size = 120
@@ -63,6 +64,7 @@ custom_minimum_size = Vector2(450, 100)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
+mouse_default_cursor_shape = 2
 theme_override_fonts/font = ExtResource("2_raj00")
 theme_override_font_sizes/font_size = 75
 theme_override_styles/focus = SubResource("StyleBoxEmpty_kr88g")
@@ -77,6 +79,7 @@ custom_minimum_size = Vector2(450, 100)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
+mouse_default_cursor_shape = 2
 theme_override_fonts/font = ExtResource("2_raj00")
 theme_override_font_sizes/font_size = 75
 theme_override_styles/focus = SubResource("StyleBoxEmpty_kr88g")
@@ -91,6 +94,7 @@ custom_minimum_size = Vector2(450, 100)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
+mouse_default_cursor_shape = 2
 theme = SubResource("Theme_w6voe")
 theme_override_fonts/font = ExtResource("2_raj00")
 theme_override_font_sizes/font_size = 75
@@ -105,6 +109,9 @@ expand_icon = true
 stream = ExtResource("4_wn2ll")
 
 [node name="Sons" parent="." instance=ExtResource("5_st6f1")]
+layout_mode = 1
+
+[node name="Transicao" parent="." instance=ExtResource("6_162ll")]
 layout_mode = 1
 
 [connection signal="pressed" from="MarginContainer/VBoxMenu/Start" to="." method="_on_start_pressed"]
