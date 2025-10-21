@@ -1,3 +1,5 @@
+Timer
+Label
 AudioStreamPlayer      - Matches the "sound" keyword.
 Button
 HSlider

@@ -2,6 +2,7 @@ extends Control
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func _ready() -> void:
+	$".".visible = true
 	$".".mouse_behavior_recursive = Control.MOUSE_BEHAVIOR_ENABLED
 	animation_player.play("fade_out")
 	await animation_player.animation_finished
