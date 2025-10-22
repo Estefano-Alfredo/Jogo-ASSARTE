@@ -1,5 +1,6 @@
 extends Control
 
+@onready var contador: Control = $Contador
 
 var selecao := ""
 var selecao2 := ""
@@ -18,6 +19,7 @@ const TRIANGULO = preload("uid://bqmqw7x1tuo6h")
 @onready var esc_triangulo: Button = $MarginContainer/VBoxContainer/Triangulo
 @onready var esc_quadrado: Button = $MarginContainer/VBoxContainer/Quadrado
 @onready var esc_semicirculo: Button = $MarginContainer/VBoxContainer/Semicirculo
+@onready var anim := $Transicao/AnimationPlayer
 
 func _on_triangulo_pressed() -> void:
 	if esc_triangulo.x == false:
@@ -68,8 +70,9 @@ func resposta_selecionada(botao, forma, botao2) -> void:
 		selecao = ""
 		selecao2 = ""
 		if progresso >= 3:
-			$Transicao/AnimationPlayer.play("fade_in")
-			await $Transicao/AnimationPlayer.animation_finished
+			contador.ligado = false
+			anim.play("fade_in")
+			await anim.animation_finished
 			get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 2/nivel_2.tscn")
 	else:
 		print("Resposta Incorreta")

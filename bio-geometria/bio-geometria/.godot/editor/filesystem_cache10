@@ -1,9 +1,9 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1761153136
+::res://::1761156358
 button.gd::GDScript::7462859096229369426::1760704201::0::1::::<>Button<><>0<>0<><>::
 contador.gd::GDScript::2116309918110444760::1761052472::0::1::::<>Node<><>0<>0<><>::
 control.gd::GDScript::5204693378162626606::1760717025::0::1::::<>Control<><>0<>0<><>::
-Global.gd::GDScript::3456245115709027498::1761051660::0::1::::<>Node<><>0<>0<><>::
+Global.gd::GDScript::3456245115709027498::1761156358::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::6796890715418820322::1760704201::1760704395::1::::<><><>0<>0<>4759a04bd27d5f0ff8ce23ba039d344c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 nova_carta.gd::GDScript::3856225681662243652::1761055641::0::1::::<>Control<><>0<>0<><>::
 shape_button.gd::GDScript::6813923424433124271::1760704201::0::1::::<>Button<><>0<>0<><>::
@@ -25,17 +25,17 @@ button_ui_2.png::CompressedTexture2D::334324405862622129::1760704201::1760704395
 button_ui_tile.png::CompressedTexture2D::7929723086453313341::1760704201::1760704395::1::::<><><>0<>0<>530daa7b840bb5cde71c0e024e9c54a5<>res://.godot/imported/button_ui_tile.png-fbc42f238be1d71be612a88d24763991.ctex::
 sem_som.png::CompressedTexture2D::933544009667089907::1760704378::1760704378::1::::<><><>0<>0<>261cd5352616b8ce98bc4cd40929382d<>res://.godot/imported/sem_som.png-ea5d0d923c8bee7f6d2a3c15bbb78933.ctex::
 som.png::CompressedTexture2D::3696455230046845516::1760704378::1760704378::1::::<><><>0<>0<>43c5b07141e87e6b7d61cd481fa8ce89<>res://.godot/imported/som.png-c4f97f209b06fe05c1fa1af9f36021e1.ctex::
-::res://Nos/::1761058739
+::res://Nos/::1761155174
 animal.tscn::PackedScene::1571291269354808798::1760704201::0::1::::<><><>0<>0<><>::
 botao_som.tscn::PackedScene::4388757188031907436::1760982960::0::1::::<><><>0<>0<><>::uid://cgfgslxofxilq::::res://control.gd<>uid://bswucvxg7mfcu::::res://Assets/Ui/som.png<>uid://bh662ho7ii57d::::res://Assets/Sounds/Modern11.mp3
 button.gd::GDScript::4011600628180358729::1760704201::0::1::::<>Button<><>0<>0<><>::
 button.tscn::PackedScene::1571847843476873938::1760704201::0::1::::<><><>0<>0<><>::uid://delcg1au32wr7::::res://button.gd
-carta.gd::GDScript::2785597641134146391::1761058021::0::1::::<>Control<><>0<>0<><>::
+carta.gd::GDScript::2785597641134146391::1761155174::0::1::::<>Control<><>0<>0<><>::
 carta.tscn::PackedScene::1571847843476873938::1761054986::0::1::::<><><>0<>0<><>::uid://bfxmnen770jbj::::res://Nos/carta.gd
 configuracao.gd::GDScript::3056041870647864600::1760704201::0::1::::<>Control<><>0<>0<><>::
 configuracao.tscn::PackedScene::916958208153064848::1760704201::0::1::::<><><>0<>0<><>::uid://bjsmte7ysje6c::::res://Nos/configuracao.gd<>uid://bwmc635a704eb::::res://Assets/Ui/button_ui.png
-contador.tscn::PackedScene::212033065495708109::1761053880::0::1::::<><><>0<>0<><>::uid://5ffkyk3lyjf1::::res://contador.gd<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
-nova_carta.tscn::PackedScene::9097977534999849797::1761058739::0::1::::<><><>0<>0<><>::uid://bfxmnen770jbj::::res://Nos/carta.gd<>uid://c33p2dnbv3brm::::res://icon.svg<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
+contador.tscn::PackedScene::212033065495708109::1761156761::0::1::::<><><>0<>0<><>::uid://5ffkyk3lyjf1::::res://contador.gd<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
+nova_carta.tscn::PackedScene::9097977534999849797::1761154515::0::1::::<><><>0<>0<><>::uid://bfxmnen770jbj::::res://Nos/carta.gd<>uid://c33p2dnbv3brm::::res://icon.svg<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
 tile_map_layer.tscn::PackedScene::319372176833160703::1760704201::0::1::::<><><>0<>0<><>::uid://dk8hm7crsfulp::::res://Assets/Ui/button_ui_tile.png
 transicao.tscn::PackedScene::5057283511851649979::1761051913::0::1::::<><><>0<>0<><>::uid://c35od6kq1l0vd::::res://transicao.gd
 vetificao_botao.gd::GDScript::909244614620923762::1760980514::0::1::::<>Node<><>0<>0<><>::
@@ -48,12 +48,12 @@ popup_nome.tscn::PackedScene::6013196016032752575::1761054757::0::1::::<><><>0<>
 tela_relatorio.gd::GDScript::5843544665981186117::1760704201::0::1::::<>Control<><>0<>0<><>::
 tela_relatorio.tscn::PackedScene::4048433083087922307::1760704201::0::1::::<><><>0<>0<><>::uid://cpiwld5ldfwm4::::res://Nos de Menu/tela_relatorio.gd<>uid://dek64knlgemme::::res://Assets/Fontes/ARCADECLASSIC.TTF
 ::res://Nos de Nivel/::1760704201
-::res://Nos de Nivel/Nivel 1/::1761054895
-level_1.gd::GDScript::4069995068487201304::1761054895::0::1::::<>Control<><>0<>0<><>::
+::res://Nos de Nivel/Nivel 1/::1761156598
+level_1.gd::GDScript::4069995068487201304::1761156598::0::1::::<>Control<><>0<>0<><>::
 level_1.tscn::PackedScene::4847296874332568833::1761054757::0::1::::<><><>0<>0<><>::uid://bx8shvd1bvc0g::::res://Nos de Nivel/Nivel 1/level_1.gd<>uid://bqmqw7x1tuo6h::::res://Assets/Shapes/triangulo.png<>uid://m7peju0s80re::::res://Nos/vetificao_botao.gd<>uid://153sobfftdgc::::res://Assets/Shapes/quadrado.png<>uid://hnak7rafjwog::::res://Assets/Shapes/semicirculo.png<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://dayfhtq76hld::::res://Nos/contador.tscn
-::res://Nos de Nivel/Nivel 2/::1761058878
-nivel_2.gd::GDScript::6186611414582790736::1761058872::0::1::::<>Control<><>0<>0<><>::
-nivel_2.tscn::PackedScene::5558589573947365571::1761058878::0::1::::<><><>0<>0<><>::uid://cue3t6s8gik0w::::res://Nos de Nivel/Nivel 2/nivel_2.gd<>uid://d2vemjbylj3tx::::res://Nos/nova_carta.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn
+::res://Nos de Nivel/Nivel 2/::1761156598
+nivel_2.gd::GDScript::6186611414582790736::1761156598::0::1::::<>Control<><>0<>0<><>::
+nivel_2.tscn::PackedScene::5558589573947365571::1761156358::0::1::::<><><>0<>0<><>::uid://cue3t6s8gik0w::::res://Nos de Nivel/Nivel 2/nivel_2.gd<>uid://d2vemjbylj3tx::::res://Nos/nova_carta.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn
 ::res://Nos de Nivel/Nivel 3/::1760704201
 Nivel 3.tscn::PackedScene::1891831487702146706::1760704201::0::1::::<><><>0<>0<><>::uid://bjlq4fneskhry::::res://Nos de Nivel/Nivel 3/nivel_3.gd<>uid://p7tdoqx2selk::::res://Nos de Nivel/Nivel 3/resposta.gd
 nivel_3.gd::GDScript::3041851974542961062::1760704201::0::1::::<>Control<><>0<>0<><>::

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dayfhtq76hld"]
 
-[ext_resource type="Script" uid="uid://5ffkyk3lyjf1" path="res://contador.gd" id="1_ew00x"]
+[ext_resource type="Script" uid="uid://5ffkyk3lyjf1" path="res://Nos/contador.gd" id="1_ew00x"]
 [ext_resource type="FontFile" uid="uid://cumtjsj4a0asq" path="res://Assets/Fontes/Minecraft.ttf" id="2_yrnm2"]
 
 [node name="Contador" type="Control"]

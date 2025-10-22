@@ -13,8 +13,8 @@ signal teste
 	#pass
 
 func esconder_carta():
+	anim.play_backwards("flip")
 	amostra = false
-	label.text = ""
 
 
 func _on_button_pressed() -> void:
