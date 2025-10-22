@@ -1,5 +1,7 @@
-Timer
 Label
-AudioStreamPlayer      - Matches the "sound" keyword.
+Sprite2D
+AnimationPlayer
 Button
+Timer
+AudioStreamPlayer      - Matches the "sound" keyword.
 HSlider

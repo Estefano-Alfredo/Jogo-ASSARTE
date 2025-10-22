@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://cfkqi3dcum5cm"]
+[gd_scene load_steps=11 format=3 uid="uid://cfkqi3dcum5cm"]
 
 [ext_resource type="Script" uid="uid://eaxv88hxjdo7" path="res://Nos de Menu/menu.gd" id="1_wqqru"]
+[ext_resource type="FontFile" uid="uid://cumtjsj4a0asq" path="res://Assets/Fontes/Minecraft.ttf" id="2_7qhtd"]
 [ext_resource type="FontFile" uid="uid://dek64knlgemme" path="res://Assets/Fontes/ARCADECLASSIC.TTF" id="2_raj00"]
 [ext_resource type="Texture2D" uid="uid://bcqosdk3axq1g" path="res://Assets/Ui/button_2_ui.png" id="3_kr88g"]
 [ext_resource type="AudioStream" uid="uid://bh662ho7ii57d" path="res://Assets/Sounds/Modern11.mp3" id="4_wn2ll"]
@@ -46,6 +47,7 @@ theme_override_constants/separation = 20
 alignment = 1
 
 [node name="Titulo" type="Label" parent="MarginContainer/VBoxMenu"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
@@ -53,7 +55,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 0
 theme_override_constants/shadow_outline_size = 0
-theme_override_fonts/font = ExtResource("2_raj00")
+theme_override_fonts/font = ExtResource("2_7qhtd")
 theme_override_font_sizes/font_size = 128
 text = "canudo mar"
 label_settings = SubResource("LabelSettings_nff13")
@@ -65,10 +67,11 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
 mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("2_raj00")
+theme_override_fonts/font = ExtResource("2_7qhtd")
 theme_override_font_sizes/font_size = 75
 theme_override_styles/focus = SubResource("StyleBoxEmpty_kr88g")
-text = "Comecar"
+text = "Comecar
+"
 icon = ExtResource("3_kr88g")
 flat = true
 icon_alignment = 1
@@ -80,10 +83,10 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
 mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("2_raj00")
+theme_override_fonts/font = ExtResource("2_7qhtd")
 theme_override_font_sizes/font_size = 75
 theme_override_styles/focus = SubResource("StyleBoxEmpty_kr88g")
-text = "Re latorio"
+text = "Relatorio"
 icon = ExtResource("3_kr88g")
 flat = true
 icon_alignment = 1
@@ -96,7 +99,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 3
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_w6voe")
-theme_override_fonts/font = ExtResource("2_raj00")
+theme_override_fonts/font = ExtResource("2_7qhtd")
 theme_override_font_sizes/font_size = 75
 theme_override_styles/focus = SubResource("StyleBoxEmpty_kr88g")
 text = "Sair"

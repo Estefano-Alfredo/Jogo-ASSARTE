@@ -1,5 +1,6 @@
 extends Control
 
+
 var selecao := ""
 var selecao2 := ""
 var progresso := 0
@@ -67,6 +68,8 @@ func resposta_selecionada(botao, forma, botao2) -> void:
 		selecao = ""
 		selecao2 = ""
 		if progresso >= 3:
-			$Texto.text = "Voce venceu!\nPressione algo para ir para a proxima fase."
+			$Transicao/AnimationPlayer.play("fade_in")
+			await $Transicao/AnimationPlayer.animation_finished
+			get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 2/nivel_2.tscn")
 	else:
 		print("Resposta Incorreta")

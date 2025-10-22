@@ -69,13 +69,14 @@ theme_override_constants/v_separation = 0
 columns = 3
 
 [node name="Button" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(50, 100)
+custom_minimum_size = Vector2(50, 105)
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_w4k1h")
 text = "Formato"
 flat = true
 
 [node name="Button2" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(105, 110)
 layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_w4k1h")
@@ -98,10 +99,11 @@ offset_bottom = 606.0
 
 [node name="Contador" parent="." instance=ExtResource("7_if47u")]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 12.0
-offset_right = 13.0
-offset_bottom = 12.0
+offset_left = 17.0
+offset_top = 19.0
+offset_right = 17.0
+offset_bottom = 19.0
+tempo = 200
 
 [node name="Transicao" parent="." instance=ExtResource("6_f57t2")]
 layout_mode = 1
