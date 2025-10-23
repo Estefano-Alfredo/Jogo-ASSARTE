@@ -1,6 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://cbccjhwapi1dd"]
+[gd_scene load_steps=10 format=3 uid="uid://cbccjhwapi1dd"]
 
 [ext_resource type="Script" uid="uid://bx8shvd1bvc0g" path="res://Nos de Nivel/Nivel 1/level_1.gd" id="1_36c26"]
+[ext_resource type="Texture2D" uid="uid://bqmqw7x1tuo6h" path="res://Assets/Shapes/triangulo.png" id="2_0u1pp"]
+[ext_resource type="Script" uid="uid://m7peju0s80re" path="res://Nos/vetificao_botao.gd" id="3_f57t2"]
+[ext_resource type="Texture2D" uid="uid://153sobfftdgc" path="res://Assets/Shapes/quadrado.png" id="3_x78qx"]
+[ext_resource type="Texture2D" uid="uid://hnak7rafjwog" path="res://Assets/Shapes/semicirculo.png" id="4_f57t2"]
+[ext_resource type="PackedScene" uid="uid://ceb1yq77ygyfb" path="res://Nos/transicao.tscn" id="6_f57t2"]
+[ext_resource type="PackedScene" uid="uid://dayfhtq76hld" path="res://Nos/contador.tscn" id="7_if47u"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ctcdo"]
 
@@ -20,29 +26,37 @@ layout_mode = 0
 offset_right = 69.0
 offset_bottom = 648.0
 grow_vertical = 2
+theme_override_constants/margin_left = 50
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+theme_override_constants/separation = 25
 alignment = 1
 
 [node name="Triangulo" type="Button" parent="MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ctcdo")
-text = "Triagulo
+text = "
 "
+icon = ExtResource("2_0u1pp")
+icon_alignment = 1
+script = ExtResource("3_f57t2")
 
 [node name="Quadrado" type="Button" parent="MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ctcdo")
-text = "Quadrado"
+icon = ExtResource("3_x78qx")
+script = ExtResource("3_f57t2")
 
 [node name="Semicirculo" type="Button" parent="MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ctcdo")
-text = "Semi-circulo"
+icon = ExtResource("4_f57t2")
+icon_alignment = 1
+script = ExtResource("3_f57t2")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 0
@@ -55,23 +69,26 @@ theme_override_constants/v_separation = 0
 columns = 3
 
 [node name="Button" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(50, 100)
+custom_minimum_size = Vector2(50, 105)
 layout_mode = 2
-theme_override_constants/h_separation = 0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_w4k1h")
 text = "Formato"
+flat = true
 
 [node name="Button2" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(105, 110)
 layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_w4k1h")
 text = "Formato"
+flat = true
 
 [node name="Button3" type="Button" parent="GridContainer"]
 layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_w4k1h")
 text = "Formato"
+flat = true
 
 [node name="Texto" type="Label" parent="."]
 layout_mode = 0
@@ -80,9 +97,21 @@ offset_top = 401.0
 offset_right = 877.0
 offset_bottom = 606.0
 
+[node name="Contador" parent="." instance=ExtResource("7_if47u")]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 19.0
+offset_right = 17.0
+offset_bottom = 19.0
+tempo = 200
+
+[node name="Transicao" parent="." instance=ExtResource("6_f57t2")]
+layout_mode = 1
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Triangulo" to="." method="_on_triangulo_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quadrado" to="." method="_on_quadrado_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Semicirculo" to="." method="_on_semicirculo_pressed"]
 [connection signal="pressed" from="GridContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="GridContainer/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="GridContainer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="GridContainer/Button3" to="GridContainer/Button3" method="_on_pressed"]

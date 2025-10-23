@@ -1,7 +1,10 @@
 extends Control
 
+@onready var contador: Control = $Contador
+
 var selecao := ""
-var selecao2 := "0"
+var selecao2 := ""
+var progresso := 0
 #
 # 0 - Nada
 # 1 - Triangulo
@@ -13,26 +16,28 @@ const SEMICIRCULO = preload("uid://hnak7rafjwog")
 const QUADRADO = preload("uid://153sobfftdgc")
 const TRIANGULO = preload("uid://bqmqw7x1tuo6h")
 
+@onready var esc_triangulo: Button = $MarginContainer/VBoxContainer/Triangulo
+@onready var esc_quadrado: Button = $MarginContainer/VBoxContainer/Quadrado
+@onready var esc_semicirculo: Button = $MarginContainer/VBoxContainer/Semicirculo
+@onready var anim := $Transicao/AnimationPlayer
+
 func _on_triangulo_pressed() -> void:
-	selecao = "Triangulo"
-	Input.set_custom_mouse_cursor(TRIANGULO, Input.CURSOR_ARROW, Vector2(25,50))
-	botao_pressionado()
+	if esc_triangulo.x == false:
+		botao_pressionado("Triangulo", TRIANGULO, 25, 50)
 
 
 func _on_quadrado_pressed() -> void:
-	selecao = "Quadrado"
-	Input.set_custom_mouse_cursor(QUADRADO, Input.CURSOR_ARROW, Vector2(64,64))
-	botao_pressionado()
+	if esc_quadrado.x == false:
+		botao_pressionado("Quadrado", QUADRADO, 50, 50)
 
 
 func _on_semicirculo_pressed() -> void:
-	selecao = "Semicírculo"
-	Input.set_custom_mouse_cursor(SEMICIRCULO, Input.CURSOR_ARROW, Vector2(25,50))
-	botao_pressionado()
+	if esc_semicirculo.x == false:
+		botao_pressionado("Semicírculo", SEMICIRCULO, 25, 50)
 
-func botao_pressionado() -> void:
-	pass
-	#print("Voce selecionou um "+selecao)
+func botao_pressionado(formato, formato2, x , y) -> void:
+	selecao = formato
+	Input.set_custom_mouse_cursor(formato2, Input.CURSOR_ARROW, Vector2(x,y))
 
 
 # Resposta
@@ -43,33 +48,31 @@ func botao_pressionado() -> void:
 
 func _on_button_pressed() -> void:
 	selecao2 = "Semicírculo"
-	var res = resposta_selecionada()
-	if res == true:
-		button.text = ""
-		button.icon = SEMICIRCULO
-	
+	resposta_selecionada(button ,SEMICIRCULO, esc_semicirculo)
+
 func _on_button_2_pressed() -> void:
 	selecao2 = "Quadrado"
-	var res = resposta_selecionada()
-	if res == true:
-		button_2.text = ""
-		button_2.icon = QUADRADO
-
-func resposta_selecionada() -> bool:
-	#print("Voce selecionou um " + selecao2)
-	
-	if selecao == selecao2:
-		print("Resposta Correta")
-		Input.set_custom_mouse_cursor(null)
-		return true
-	else:
-		print("Resposta Incorreta")
-		return false
-
+	resposta_selecionada(button_2, QUADRADO, esc_quadrado)
 
 func _on_button_3_pressed() -> void:
 	selecao2 = "Triangulo"
-	var res = resposta_selecionada()
-	if res == true:
-		button_3.text = ""
-		button_3.icon = TRIANGULO
+	resposta_selecionada(button_3, TRIANGULO, esc_triangulo)
+
+func resposta_selecionada(botao, forma, botao2) -> void:
+	#print("Voce selecionou um " + selecao2)
+	if selecao == selecao2:
+		progresso += 1
+		botao.text = ""
+		botao.icon = forma
+		print("Resposta Correta")
+		Input.set_custom_mouse_cursor(null)
+		botao2.x = true
+		selecao = ""
+		selecao2 = ""
+		if progresso >= 3:
+			contador.ligado = false
+			anim.play("fade_in")
+			await anim.animation_finished
+			get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 2/nivel_2.tscn")
+	else:
+		print("Resposta Incorreta")
