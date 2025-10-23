@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1761182892
+::res://::1761185800
 button.gd::GDScript::7462859096229369426::1759615495::0::1::::<>Button<><>0<>0<><>::
 control.gd::GDScript::5204693378162626606::1761178027::0::1::::<>Control<><>0<>0<><>::
 Global.gd::GDScript::3456245115709027498::1761178027::0::1::::<>Node<><>0<>0<><>::
@@ -8,9 +8,9 @@ nova_carta.gd::GDScript::3856225681662243652::1761178027::0::1::::<>Control<><>0
 shape_button.gd::GDScript::6813923424433124271::1759615495::0::1::::<>Button<><>0<>0<><>::
 transicao.gd::GDScript::6800917361587419433::1761178027::0::1::::<>Control<><>0<>0<><>::
 ::res://Assets/::1761176230
-::res://Assets/Fontes/::1761178227
-ARCADECLASSIC.TTF::FontFile::7462595763794970860::1759615495::1761178227::1::::<><><>0<>0<>b72a12f75c588f784671e270d340dda2<>res://.godot/imported/ARCADECLASSIC.TTF-c4db48145c0907374d712bf746a5a4cc.fontdata::
-Minecraft.ttf::FontFile::6202561428845426844::1761178026::1761178227::1::::<><><>0<>0<>d89e0d821a18c3d6822dd528dc25c677<>res://.godot/imported/Minecraft.ttf-5294ee7b12f9bb71123168c0663c7347.fontdata::
+::res://Assets/Fontes/::1761185258
+ARCADECLASSIC.TTF::FontFile::7462595763794970860::1759615495::1761185258::1::::<><><>0<>0<>b72a12f75c588f784671e270d340dda2<>res://.godot/imported/ARCADECLASSIC.TTF-c4db48145c0907374d712bf746a5a4cc.fontdata::
+Minecraft.ttf::FontFile::6202561428845426844::1761178026::1761185258::1::::<><><>0<>0<>d89e0d821a18c3d6822dd528dc25c677<>res://.godot/imported/Minecraft.ttf-5294ee7b12f9bb71123168c0663c7347.fontdata::
 ::res://Assets/FundoPopup/::1759875456
 ::res://Assets/Shapes/::1759617040
 quadrado.png::CompressedTexture2D::1888574224404700066::1759615495::1759617040::1::::<><><>0<>0<>1d84244d6ec06b3cd76d7774b1ee18c2<>res://.godot/imported/quadrado.png-0425fa70988c9b3bda4177256752cc3f.ctex::
@@ -40,13 +40,13 @@ nova_carta.tscn::PackedScene::9097977534999849797::1761178027::0::1::::<><><>0<>
 tile_map_layer.tscn::PackedScene::319372176833160703::1759615495::0::1::::<><><>0<>0<><>::uid://dk8hm7crsfulp::::res://Assets/Ui/button_ui_tile.png
 transicao.tscn::PackedScene::5057283511851649979::1761178027::0::1::::<><><>0<>0<><>::uid://c35od6kq1l0vd::::res://transicao.gd
 vetificao_botao.gd::GDScript::909244614620923762::1761178027::0::1::::<>Node<><>0<>0<><>::
-::res://Nos de Menu/::1761182892
-menu.gd::GDScript::282191151656002912::1761182825::0::1::::<>Control<><>0<>0<><>::
+::res://Nos de Menu/::1761185290
+menu.gd::GDScript::282191151656002912::1761183851::0::1::::<>Control<><>0<>0<><>::
 menu.tscn::PackedScene::5145416596758785640::1761182550::0::1::::<><><>0<>0<><>::uid://eaxv88hxjdo7::::res://Nos de Menu/menu.gd<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf<>uid://dek64knlgemme::::res://Assets/Fontes/ARCADECLASSIC.TTF<>uid://bcqosdk3axq1g::::res://Assets/Ui/button_2_ui.png<>uid://bh662ho7ii57d::::res://Assets/Sounds/Modern11.mp3<>uid://b3r7gpjiepoym::::res://Nos/botao_som.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn
 popup_nome.gd::GDScript::1407377405002077985::1760836403::0::1::::<>Control<><>0<>0<><>::
 popup_nome.tscn::PackedScene::6013196016032752575::1761178027::0::1::::<><><>0<>0<><>::uid://ub0khcvqovjl::::res://Nos de Menu/popup_nome.gd<>uid://dek64knlgemme::::res://Assets/Fontes/ARCADECLASSIC.TTF
-popup_sobre.gd::GDScript::8010687751814178901::1761181875::0::1::::<>Control<><>0<>0<><>::
-sobre.tscn::PackedScene::7450813065260793870::1761182825::0::1::::<><><>0<>0<><>::uid://dmeo4etpkrymv::::res://Nos de Menu/popup_sobre.gd
+popup_sobre.gd::GDScript::8010687751814178901::1761184149::0::1::::<>Control<><>0<>0<><>::
+popup_sobre.tscn::PackedScene::7450813065260793870::1761185290::0::1::::<><><>0<>0<><>::uid://dmeo4etpkrymv::::res://Nos de Menu/popup_sobre.gd<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
 tela_relatorio.gd::GDScript::5843544665981186117::1760836403::0::1::::<>Control<><>0<>0<><>::
 tela_relatorio.tscn::PackedScene::4048433083087922307::1760836403::0::1::::<><><>0<>0<><>::uid://cpiwld5ldfwm4::::res://Nos de Menu/tela_relatorio.gd<>uid://dek64knlgemme::::res://Assets/Fontes/ARCADECLASSIC.TTF
 ::res://Nos de Nivel/::1760836403
