@@ -1,7 +1,12 @@
+Button
+RichTextLabel
+VBoxContainer
+MarginContainer
+Panel
+Control
 Label
 Sprite2D
 AnimationPlayer
-Button
 Timer
 AudioStreamPlayer      - Matches the "sound" keyword.
 HSlider

@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://defh2j2xhav2u"]
+
+[ext_resource type="Script" uid="uid://dmeo4etpkrymv" path="res://Nos de Menu/popup_sobre.gd" id="1_vebf8"]
+[ext_resource type="FontFile" uid="uid://cumtjsj4a0asq" path="res://Assets/Fontes/Minecraft.ttf" id="2_ejhm5"]
+
+[node name="popup_sobre" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vebf8")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer"]
+clip_contents = false
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("2_ejhm5")
+bbcode_enabled = true
+text = "[center][font_size=60][b]BIO-GEOMETRIA[/b][/font_size][/center]
+
+[center][font_size=40]Um Projeto ASSARTE[/font_size][/center]
+
+[center]-----[/center]
+
+[font_size=30][b]TEMA CENTRAL: [/b] Perda da Biodiversidade[/font_size]
+
+[font_size=30][b]CONTEÚDO: [/b] Conceitos de Geometria (Composição de Formas, Rotação e Espelhamento)[/font_size]
+
+[center]-----[/center]
+
+[font_size=25][b]DESENVOLVIMENTO (Dev Team): [/b]
+Gabriel, João P., Samuel, Kassio, Enzo Pimentel, Estéfano.[/font_size]"
+fit_content = true
+scroll_following = true
+scroll_following_visible_characters = true
+
+[node name="FECHAR" type="Button" parent="Panel"]
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0.9452513, 0, 0.44399074, 1)
+theme_override_fonts/font = ExtResource("2_ejhm5")
+text = "X"
+
+[connection signal="pressed" from="Panel/FECHAR" to="." method="_on_fechar_pressed"]

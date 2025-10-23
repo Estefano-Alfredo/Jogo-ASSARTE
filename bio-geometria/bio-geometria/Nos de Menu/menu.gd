@@ -1,6 +1,8 @@
 extends Control
 
 const POPUP_NOME_SCENE = preload("res://Nos de Menu/popup_nome.tscn")
+const POPUP_SOBRE_SCENE = preload("res://Nos de Menu/popup_sobre.tscn")
+
 @onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
 
 func _on_button_pressed() -> void:
@@ -34,4 +36,10 @@ func _iniciar_jogo(nome_recebido: String) -> void:
 	anim.play("fade_in")
 	await anim.animation_finished
 	get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 1/level_1.tscn")
+	
+func _on_sobre_pressed() -> void:
+	audio_player.play()
+	var popup_sobre = POPUP_SOBRE_SCENE.instantiate()
+	add_child(popup_sobre)
+	popup_sobre.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	
