@@ -1,5 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1761185800
+::res://::1761304178
+botao_pausa.gd::GDScript::7732990149810165389::1761188636::0::1::::<>Control<><>0<>0<><>::
+botao_pausa.tscn::PackedScene::1893849596866144096::1761188491::0::1::::<><><>0<>0<><>::uid://dif6hn73kjgpp::::res://botao_pausa.gd
 button.gd::GDScript::7462859096229369426::1759615495::0::1::::<>Button<><>0<>0<><>::
 control.gd::GDScript::5204693378162626606::1761178027::0::1::::<>Control<><>0<>0<><>::
 Global.gd::GDScript::3456245115709027498::1761178027::0::1::::<>Node<><>0<>0<><>::
@@ -50,12 +52,12 @@ popup_sobre.tscn::PackedScene::7450813065260793870::1761185290::0::1::::<><><>0<
 tela_relatorio.gd::GDScript::5843544665981186117::1760836403::0::1::::<>Control<><>0<>0<><>::
 tela_relatorio.tscn::PackedScene::4048433083087922307::1760836403::0::1::::<><><>0<>0<><>::uid://cpiwld5ldfwm4::::res://Nos de Menu/tela_relatorio.gd<>uid://dek64knlgemme::::res://Assets/Fontes/ARCADECLASSIC.TTF
 ::res://Nos de Nivel/::1760836403
-::res://Nos de Nivel/Nivel 1/::1761178027
-level_1.gd::GDScript::4069995068487201304::1761178027::0::1::::<>Control<><>0<>0<><>::
-level_1.tscn::PackedScene::4847296874332568833::1761178027::0::1::::<><><>0<>0<><>::uid://bx8shvd1bvc0g::::res://Nos de Nivel/Nivel 1/level_1.gd<>uid://bqmqw7x1tuo6h::::res://Assets/Shapes/triangulo.png<>uid://m7peju0s80re::::res://Nos/vetificao_botao.gd<>uid://153sobfftdgc::::res://Assets/Shapes/quadrado.png<>uid://hnak7rafjwog::::res://Assets/Shapes/semicirculo.png<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://dayfhtq76hld::::res://Nos/contador.tscn
-::res://Nos de Nivel/Nivel 2/::1761178027
-nivel_2.gd::GDScript::6186611414582790736::1761178027::0::1::::<>Control<><>0<>0<><>::
-nivel_2.tscn::PackedScene::5558589573947365571::1761178027::0::1::::<><><>0<>0<><>::uid://cue3t6s8gik0w::::res://Nos de Nivel/Nivel 2/nivel_2.gd<>uid://d2vemjbylj3tx::::res://Nos/nova_carta.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://dayfhtq76hld::::res://Nos/contador.tscn
+::res://Nos de Nivel/Nivel 1/::1761187953
+level_1.gd::GDScript::4069995068487201304::1761187953::0::1::::<>Control<><>0<>0<><>::
+level_1.tscn::PackedScene::4847296874332568833::1761187952::0::1::::<><><>0<>0<><>::uid://bx8shvd1bvc0g::::res://Nos de Nivel/Nivel 1/level_1.gd<>uid://bqmqw7x1tuo6h::::res://Assets/Shapes/triangulo.png<>uid://m7peju0s80re::::res://Nos/vetificao_botao.gd<>uid://153sobfftdgc::::res://Assets/Shapes/quadrado.png<>uid://hnak7rafjwog::::res://Assets/Shapes/semicirculo.png<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://dayfhtq76hld::::res://Nos/contador.tscn<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
+::res://Nos de Nivel/Nivel 2/::1761187960
+nivel_2.gd::GDScript::6186611414582790736::1761187953::0::1::::<>Control<><>0<>0<><>::
+nivel_2.tscn::PackedScene::5558589573947365571::1761187960::0::1::::<><><>0<>0<><>::uid://cue3t6s8gik0w::::res://Nos de Nivel/Nivel 2/nivel_2.gd<>uid://d2vemjbylj3tx::::res://Nos/nova_carta.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://dayfhtq76hld::::res://Nos/contador.tscn<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
 ::res://Nos de Nivel/Nivel 3/::1760836403
 Nivel 3.tscn::PackedScene::1891831487702146706::1760836403::0::1::::<><><>0<>0<><>::uid://bjlq4fneskhry::::res://Nos de Nivel/Nivel 3/nivel_3.gd<>uid://p7tdoqx2selk::::res://Nos de Nivel/Nivel 3/resposta.gd
 nivel_3.gd::GDScript::3041851974542961062::1760836403::0::1::::<>Control<><>0<>0<><>::
