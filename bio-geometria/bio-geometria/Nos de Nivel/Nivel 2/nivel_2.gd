@@ -32,8 +32,9 @@ func _ready() -> void:
 func _on_carta_teste() -> void:
 	
 	var all_descendants = find_children("*", "Control", false, false)
-	await get_tree().create_timer(1.0).timeout
+	
 	if Global.selecionado_1 != Global.selecionado_2:
+		await get_tree().create_timer(1.0).timeout
 		Global.erros_nivel_2 += 1
 		for node in all_descendants:
 			if node.correto == false:
@@ -45,6 +46,7 @@ func _on_carta_teste() -> void:
 			if node.amostra:
 				node.correto = true
 		if acertos == count:
+			await get_tree().create_timer(1.0).timeout
 			anim.play("fade_in")
 			await anim.animation_finished
 			get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 3/Nivel 3.tscn")
