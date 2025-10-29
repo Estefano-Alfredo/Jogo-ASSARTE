@@ -1,10 +1,11 @@
 Button
-RichTextLabel
-VBoxContainer
-MarginContainer
-Panel
-Control
 Label
+VBoxContainer
+Panel
+ColorRect
+RichTextLabel
+MarginContainer
+Control
 Sprite2D
 AnimationPlayer
 Timer

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://clgvfm3owppwd"]
+[gd_scene load_steps=6 format=3 uid="uid://clgvfm3owppwd"]
 
 [ext_resource type="Script" uid="uid://cue3t6s8gik0w" path="res://Nos de Nivel/Nivel 2/nivel_2.gd" id="1_vc3to"]
 [ext_resource type="PackedScene" uid="uid://d2vemjbylj3tx" path="res://Nos/nova_carta.tscn" id="2_i26w3"]
 [ext_resource type="PackedScene" uid="uid://ceb1yq77ygyfb" path="res://Nos/transicao.tscn" id="3_i26w3"]
 [ext_resource type="PackedScene" uid="uid://dayfhtq76hld" path="res://Nos/contador.tscn" id="4_t2hph"]
+[ext_resource type="FontFile" uid="uid://cumtjsj4a0asq" path="res://Assets/Fontes/Minecraft.ttf" id="5_5n37o"]
 
 [node name="Nivel 2" type="Control"]
 layout_mode = 3
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_vc3to")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 1
@@ -31,10 +33,10 @@ theme_override_constants/v_separation = 10
 columns = 4
 script = ExtResource("1_vc3to")
 
-[node name="Nova carta" parent="GridContainer" instance=ExtResource("2_i26w3")]
+[node name="Nova carta" parent="GridContainer" groups=["Cards"] instance=ExtResource("2_i26w3")]
 layout_mode = 2
 
-[node name="Nova carta2" parent="GridContainer" instance=ExtResource("2_i26w3")]
+[node name="Nova carta2" parent="GridContainer" groups=["Cards"] instance=ExtResource("2_i26w3")]
 layout_mode = 2
 
 [node name="Nova carta3" parent="GridContainer" instance=ExtResource("2_i26w3")]
@@ -75,18 +77,5 @@ offset_right = 19.0
 offset_bottom = 14.0
 tempo = 180
 
-[node name="Transicao" parent="." instance=ExtResource("3_i26w3")]
-layout_mode = 1
-
 [connection signal="teste" from="GridContainer/Nova carta" to="GridContainer" method="_on_carta_teste"]
 [connection signal="teste" from="GridContainer/Nova carta2" to="GridContainer" method="_on_carta_teste"]
-[connection signal="teste" from="GridContainer/Nova carta3" to="GridContainer" method="_on_carta_teste"]
-[connection signal="teste" from="GridContainer/Nova carta4" to="GridContainer" method="_on_carta_teste"]
-[connection signal="teste" from="GridContainer/Nova carta5" to="GridContainer" method="_on_carta_teste"]
-[connection signal="teste" from="GridContainer/Nova carta6" to="GridContainer" method="_on_carta_teste"]
-[connection signal="teste" from="GridContainer/Nova carta7" to="GridContainer" method="_on_carta_teste"]
-[connection signal="teste" from="GridContainer/Nova carta8" to="GridContainer" method="_on_carta_teste"]
-[connection signal="teste" from="GridContainer/Nova carta9" to="GridContainer" method="_on_carta_teste"]
-[connection signal="teste" from="GridContainer/Nova carta10" to="GridContainer" method="_on_carta_teste"]
-[connection signal="teste" from="GridContainer/Nova carta11" to="GridContainer" method="_on_carta_teste"]
-[connection signal="teste" from="GridContainer/Nova carta12" to="GridContainer" method="_on_carta_teste"]

@@ -15,6 +15,8 @@ const ICON = preload("uid://c33p2dnbv3brm")
 const SEMICIRCULO = preload("uid://hnak7rafjwog")
 const QUADRADO = preload("uid://153sobfftdgc")
 const TRIANGULO = preload("uid://bqmqw7x1tuo6h")
+const POPUP_PAUSA_SCENE = preload("res://botao_pausa.tscn")
+const MENU_PATH = "res://Nos de Menu/menu.tscn"
 
 @onready var esc_triangulo: Button = $MarginContainer/VBoxContainer/Triangulo
 @onready var esc_quadrado: Button = $MarginContainer/VBoxContainer/Quadrado
@@ -76,3 +78,17 @@ func resposta_selecionada(botao, forma, botao2) -> void:
 			get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 2/nivel_2.tscn")
 	else:
 		print("Resposta Incorreta")
+
+func _on_sair_pressed() -> void:
+	var popup_pausa = POPUP_PAUSA_SCENE.instantiate()
+	
+	# conecta o sinal de saida do popup à função de transição do nível
+	popup_pausa.sair_pressionado.connect(_voltar_para_o_menu) 
+	# adiciona o popup à árvore para que ele apareça e pause o jogo
+	add_child(popup_pausa)
+	
+func _voltar_para_o_menu() -> void:
+	# Usa a animação para o fade out
+	anim.play("fade_in")
+	await anim.animation_finished
+	get_tree().change_scene_to_file(MENU_PATH)
