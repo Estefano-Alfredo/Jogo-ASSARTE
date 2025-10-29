@@ -30,7 +30,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 10
 theme_override_constants/v_separation = 10
-columns = 3
+columns = 4
 script = ExtResource("1_vc3to")
 
 [node name="Nova carta" parent="GridContainer" groups=["Cards"] instance=ExtResource("2_i26w3")]
@@ -39,8 +39,35 @@ layout_mode = 2
 [node name="Nova carta2" parent="GridContainer" groups=["Cards"] instance=ExtResource("2_i26w3")]
 layout_mode = 2
 
-[node name="Transicao" parent="." instance=ExtResource("3_i26w3")]
-layout_mode = 1
+[node name="Nova carta3" parent="GridContainer" instance=ExtResource("2_i26w3")]
+layout_mode = 2
+
+[node name="Nova carta4" parent="GridContainer" instance=ExtResource("2_i26w3")]
+layout_mode = 2
+
+[node name="Nova carta5" parent="GridContainer" instance=ExtResource("2_i26w3")]
+layout_mode = 2
+
+[node name="Nova carta6" parent="GridContainer" instance=ExtResource("2_i26w3")]
+layout_mode = 2
+
+[node name="Nova carta7" parent="GridContainer" instance=ExtResource("2_i26w3")]
+layout_mode = 2
+
+[node name="Nova carta8" parent="GridContainer" instance=ExtResource("2_i26w3")]
+layout_mode = 2
+
+[node name="Nova carta9" parent="GridContainer" instance=ExtResource("2_i26w3")]
+layout_mode = 2
+
+[node name="Nova carta10" parent="GridContainer" instance=ExtResource("2_i26w3")]
+layout_mode = 2
+
+[node name="Nova carta11" parent="GridContainer" instance=ExtResource("2_i26w3")]
+layout_mode = 2
+
+[node name="Nova carta12" parent="GridContainer" instance=ExtResource("2_i26w3")]
+layout_mode = 2
 
 [node name="Contador" parent="." instance=ExtResource("4_t2hph")]
 layout_mode = 0
@@ -50,23 +77,5 @@ offset_right = 19.0
 offset_bottom = 14.0
 tempo = 180
 
-[node name="sair" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -114.0
-offset_top = 5.0
-offset_right = -58.0
-offset_bottom = 36.0
-grow_horizontal = 0
-scale = Vector2(2, 2)
-pivot_offset = Vector2(1, 1)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("5_5n37o")
-theme_override_font_sizes/font_size = 13
-text = "MENU"
-
 [connection signal="teste" from="GridContainer/Nova carta" to="GridContainer" method="_on_carta_teste"]
 [connection signal="teste" from="GridContainer/Nova carta2" to="GridContainer" method="_on_carta_teste"]
-[connection signal="pressed" from="sair" to="." method="_on_sair_pressed"]

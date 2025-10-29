@@ -31,9 +31,9 @@ func _ready() -> void:
 func _on_carta_teste() -> void:
 	var card_nodes = get_tree().get_nodes_in_group("Cards")
 	
-	await get_tree().create_timer(1.0).timeout
 	if Global.selecionado_1 != Global.selecionado_2:
-		#Global.erros_nivel_2 += 1
+		await get_tree().create_timer(1.0).timeout
+		Global.erros_nivel_2 += 1
 		for node in card_nodes:
 			if node.correto == false:
 				if node.amostra:
@@ -44,6 +44,7 @@ func _on_carta_teste() -> void:
 			if node.amostra:
 				node.correto = true
 		if acertos == (count/2):
+			await get_tree().create_timer(1.0).timeout
 			anim.play("fade_in")
 			await anim.animation_finished
 			get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 3/Nivel 3.tscn")
