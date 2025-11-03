@@ -1,6 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://18noqwaka4rk"]
 
-[ext_resource type="Script" uid="uid://dif6hn73kjgpp" path="res://Nos de Menu/botao_pausa.gd" id="1_qvf6g"]
+[ext_resource type="Script" uid="uid://dif6hn73kjgpp" path="res://Nos de Menu/Botao Pausa/botao_pausa.gd" id="1_qvf6g"]
+
 
 [node name="Control" type="Control"]
 process_mode = 2

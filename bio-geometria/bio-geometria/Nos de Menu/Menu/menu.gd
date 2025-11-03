@@ -1,7 +1,7 @@
 extends Control
 
-const POPUP_NOME_SCENE = preload("res://Nos de Menu/popup_nome.tscn")
-const POPUP_SOBRE_SCENE = preload("res://Nos de Menu/popup_sobre.tscn")
+const POPUP_NOME_SCENE = preload("res://Nos de Menu/Popup Nome/popup_nome.tscn")
+const POPUP_SOBRE_SCENE = preload("res://Nos de Menu/Sobre/popup_sobre.tscn")
 
 @onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
 
@@ -27,7 +27,7 @@ func _on_start_pressed() -> void:
 
 func _on_relatorio_pressed() -> void:
 	audio_player.play()
-	get_tree().change_scene_to_file("res://Nos de Menu/tela_relatorio.tscn")
+	get_tree().change_scene_to_file("res://Nos de Menu/Relatorio/tela_relatorio.tscn")
 
 #chamada somente quando o popup emite o sinal
 func _iniciar_jogo(nome_recebido: String) -> void:

@@ -1,10 +1,11 @@
+HBoxContainer
+MarginContainer
+VBoxContainer
 Button
 Label
-VBoxContainer
 Panel
 ColorRect
 RichTextLabel
-MarginContainer
 Control
 Sprite2D
 AnimationPlayer

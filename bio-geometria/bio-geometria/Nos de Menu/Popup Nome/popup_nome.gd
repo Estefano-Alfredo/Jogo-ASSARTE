@@ -7,6 +7,8 @@ extends Control
 # sinal que será emitido quando o nome for confirmado
 signal nome_confirmado(nome: String)
 
+var config = ConfigFile.new() #Cria objeto de arquivo
+
 func _ready():
 	# layout
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)	# faz a raiz preencher a tela inteira
@@ -37,7 +39,18 @@ func _on_button_pressed(_new_text = "") -> void:
 	if nome.is_empty():
 		print("Por favor, digite um nome.")
 		return
+	var salvo : bool = false
+	var contagem : int = 0
+
+	for player in config.get_sections(): # Roda cada seção no arquivo
+		contagem += 1
+		var player_name = config.get_value(player, "player_name")
+		if player_name == nome:
+			salvo = true
+	if not salvo:
+		config.set_value("Player" + str(contagem), "player_name", nome)
 	
+	config.save("user://pontuacao.cfg")
 	# salva o nome na variável global
 	Global.nome_do_jogador = nome 
 	print("Nome do jogador salvo: " + Global.nome_do_jogador)
@@ -50,4 +63,4 @@ func _on_button_pressed(_new_text = "") -> void:
 	
 
 func _on_voltar_pressed() -> void:
-	get_tree().change_scene_to_file("res://Nos de Menu/menu.tscn")
+	get_tree().change_scene_to_file("res://Nos de Menu/Menu/menu.tscn")
