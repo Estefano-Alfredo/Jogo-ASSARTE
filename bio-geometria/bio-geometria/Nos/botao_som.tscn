@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b3r7gpjiepoym"]
 
-[ext_resource type="Script" uid="uid://cgfgslxofxilq" path="res://control.gd" id="1_0o64d"]
+[ext_resource type="Script" uid="uid://cgfgslxofxilq" path="res://Nos Esteticos/Audio/control.gd" id="1_0o64d"]
 [ext_resource type="Texture2D" uid="uid://bswucvxg7mfcu" path="res://Assets/Ui/som.png" id="2_0ivm0"]
 [ext_resource type="AudioStream" uid="uid://bh662ho7ii57d" path="res://Assets/Sounds/Modern11.mp3" id="3_jlrq6"]
 

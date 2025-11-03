@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ceb1yq77ygyfb"]
 
-[ext_resource type="Script" uid="uid://c35od6kq1l0vd" path="res://transicao.gd" id="1_0a7ca"]
+[ext_resource type="Script" uid="uid://c35od6kq1l0vd" path="res://Nos Esteticos/transicao.gd" id="1_0a7ca"]
 
 [sub_resource type="Animation" id="Animation_7kxxb"]
 length = 0.001
