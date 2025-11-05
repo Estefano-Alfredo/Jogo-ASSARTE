@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bm0k17lnxsvu"]
+
+[ext_resource type="FontFile" uid="uid://cumtjsj4a0asq" path="res://Assets/Fontes/Minecraft.ttf" id="1_l78sh"]
+
+[node name="Rotulo" type="Label"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_l78sh")
+theme_override_font_sizes/font_size = 30
+text = "texto"
+horizontal_alignment = 1
+uppercase = true

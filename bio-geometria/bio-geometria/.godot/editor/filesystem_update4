@@ -1,6 +1,12 @@
-res://Nos de Menu/menu.tscn
-res://Nos de Menu/Menu/menu.gd
-res://Nos de Menu/Popup Nome/popup_nome.gd
-res://Nos de Menu/Relatorio/tela_relatorio.gd
+res://Nos de Menu/Menu/menu.tscn
 res://Nos de Menu/Relatorio/tela_relatorio.tscn
+res://Nos de Menu/Relatorio/tela_relatorio.gd
+res://Nos de Nivel/Nivel 1/level_1.gd
+res://Nos de Menu/Popup Nome/popup_nome.gd
+res://Nos de Menu/Menu/menu.gd
+res://Nos de Nivel/Nivel 2/nivel_2.gd
+res://Nos de Menu/Relatorio/rotulo.tscn
 res://Nos de Menu/Popup Nome/popup_nome.tscn
+res://Nos de Nivel/Nivel 1/level_1.tscn
+res://Nos/transicao.tscn
+res://Nos Esteticos/transicao.gd

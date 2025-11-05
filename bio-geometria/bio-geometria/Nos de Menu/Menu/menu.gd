@@ -4,6 +4,7 @@ const POPUP_NOME_SCENE = preload("res://Nos de Menu/Popup Nome/popup_nome.tscn")
 const POPUP_SOBRE_SCENE = preload("res://Nos de Menu/Sobre/popup_sobre.tscn")
 
 @onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
+@onready var anim = $Transicao/AnimationPlayer
 
 func _on_button_pressed() -> void:
 	audio_player.play()
@@ -11,7 +12,7 @@ func _on_button_pressed() -> void:
 	await anim.animation_finished
 	get_tree().quit()
 
-@onready var anim = $Transicao/AnimationPlayer
+
 
 func _on_start_pressed() -> void:
 	audio_player.play()
@@ -27,6 +28,8 @@ func _on_start_pressed() -> void:
 
 func _on_relatorio_pressed() -> void:
 	audio_player.play()
+	anim.play("fade_in")
+	await anim.animation_finished
 	get_tree().change_scene_to_file("res://Nos de Menu/Relatorio/tela_relatorio.tscn")
 
 #chamada somente quando o popup emite o sinal

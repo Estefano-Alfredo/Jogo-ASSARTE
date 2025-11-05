@@ -106,9 +106,6 @@ offset_right = 17.0
 offset_bottom = 19.0
 tempo = 200
 
-[node name="Transicao" parent="." instance=ExtResource("6_f57t2")]
-layout_mode = 1
-
 [node name="SAIR" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 1
@@ -123,6 +120,9 @@ scale = Vector2(2, 2)
 theme_override_fonts/font = ExtResource("8_a4k6k")
 theme_override_font_sizes/font_size = 13
 text = "MENU"
+
+[node name="Transicao" parent="." instance=ExtResource("6_f57t2")]
+layout_mode = 1
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Triangulo" to="." method="_on_triangulo_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quadrado" to="." method="_on_quadrado_pressed"]

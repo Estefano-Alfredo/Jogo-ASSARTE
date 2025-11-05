@@ -11,12 +11,12 @@ var progresso := 0
 # 2 - Quadrado
 #
 const ICON = preload("uid://c33p2dnbv3brm")
-
 const SEMICIRCULO = preload("uid://hnak7rafjwog")
 const QUADRADO = preload("uid://153sobfftdgc")
 const TRIANGULO = preload("uid://bqmqw7x1tuo6h")
-const POPUP_PAUSA_SCENE = preload("res://botao_pausa.tscn")
-const MENU_PATH = "res://Nos de Menu/menu.tscn"
+
+const POPUP_PAUSA_SCENE = preload("res://Nos de Menu/Botao Pausa/botao_pausa.tscn")
+const MENU_PATH = "res://Nos de Menu/Menu/menu.tscn"
 
 @onready var esc_triangulo: Button = $MarginContainer/VBoxContainer/Triangulo
 @onready var esc_quadrado: Button = $MarginContainer/VBoxContainer/Quadrado

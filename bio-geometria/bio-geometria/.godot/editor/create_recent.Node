@@ -1,8 +1,8 @@
+Label
+VBoxContainer
 HBoxContainer
 MarginContainer
-VBoxContainer
 Button
-Label
 Panel
 ColorRect
 RichTextLabel

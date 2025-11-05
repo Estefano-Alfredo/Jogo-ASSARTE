@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bxxddphh1aket"]
+[gd_scene load_steps=5 format=3 uid="uid://bxxddphh1aket"]
 
 [ext_resource type="Script" uid="uid://cpiwld5ldfwm4" path="res://Nos de Menu/Relatorio/tela_relatorio.gd" id="1_13fo7"]
 [ext_resource type="FontFile" uid="uid://cumtjsj4a0asq" path="res://Assets/Fontes/Minecraft.ttf" id="2_2agkn"]
 [ext_resource type="FontFile" uid="uid://dek64knlgemme" path="res://Assets/Fontes/ARCADECLASSIC.TTF" id="2_peab0"]
+[ext_resource type="PackedScene" uid="uid://ceb1yq77ygyfb" path="res://Nos/transicao.tscn" id="4_r16f7"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -47,7 +48,7 @@ size_flags_vertical = 8
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_2agkn")
 theme_override_font_sizes/font_size = 40
-text = "Aluno:"
+text = "Nome:"
 
 [node name="label2" type="Label" parent="MarginContainer2/VBoxContainer/ColorRect/HBoxContainer"]
 layout_mode = 2
@@ -59,51 +60,6 @@ theme_override_font_sizes/font_size = 40
 text = "Tempo:"
 
 [node name="label3" type="Label" parent="MarginContainer2/VBoxContainer/ColorRect/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 8
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_2agkn")
-theme_override_font_sizes/font_size = 40
-text = "Tempo:"
-
-[node name="label4" type="Label" parent="MarginContainer2/VBoxContainer/ColorRect/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 8
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_2agkn")
-theme_override_font_sizes/font_size = 40
-text = "Tempo:"
-
-[node name="label5" type="Label" parent="MarginContainer2/VBoxContainer/ColorRect/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 8
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_2agkn")
-theme_override_font_sizes/font_size = 40
-text = "Tempo:"
-
-[node name="label6" type="Label" parent="MarginContainer2/VBoxContainer/ColorRect/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 8
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_2agkn")
-theme_override_font_sizes/font_size = 40
-text = "Tempo:"
-
-[node name="label7" type="Label" parent="MarginContainer2/VBoxContainer/ColorRect/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 8
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_2agkn")
-theme_override_font_sizes/font_size = 40
-text = "Tempo:"
-
-[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer/ColorRect/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 8
@@ -130,33 +86,18 @@ theme_override_constants/margin_bottom = 20
 layout_mode = 2
 alignment = 1
 
-[node name="NomeDoJogador" type="Label" parent="MarginContainer2/VBoxContainer/MarginContainer/MarginContainer/HBoxContainer"]
+[node name="VBox" type="VBoxContainer" parent="MarginContainer2/VBoxContainer/MarginContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_2agkn")
-theme_override_font_sizes/font_size = 30
-text = "NOME"
-vertical_alignment = 2
+size_flags_horizontal = 3
+alignment = 1
 
-[node name="tempo" type="Label" parent="MarginContainer2/VBoxContainer/MarginContainer/MarginContainer/HBoxContainer"]
+[node name="VBox2" type="VBoxContainer" parent="MarginContainer2/VBoxContainer/MarginContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_2agkn")
-theme_override_font_sizes/font_size = 30
-text = "00:00"
+size_flags_horizontal = 3
 
-[node name="pontos" type="Label" parent="MarginContainer2/VBoxContainer/MarginContainer/MarginContainer/HBoxContainer"]
+[node name="VBox3" type="VBoxContainer" parent="MarginContainer2/VBoxContainer/MarginContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_2agkn")
-theme_override_font_sizes/font_size = 30
-text = "3000"
+size_flags_horizontal = 3
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -179,5 +120,8 @@ alignment = 0
 
 [node name="Button2" type="Button" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
+
+[node name="Transicao" parent="." instance=ExtResource("4_r16f7")]
+layout_mode = 1
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Button" to="." method="_on_voltar_pressed"]

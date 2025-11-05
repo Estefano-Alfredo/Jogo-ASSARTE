@@ -2,7 +2,8 @@ extends Control
 var count := 1
 var cartas: Array = []
 var acertos : int = 0
-#const Carta = preload("uid://bfxmnen770jbj")
+const Carta = preload("uid://d2vemjbylj3tx")
+#@export var numero_de_pares := 1
 
 @onready var anim := $"../Transicao/AnimationPlayer"
 
@@ -16,17 +17,20 @@ func _ready() -> void:
 		count = count + 1
 	@warning_ignore("integer_division")
 	count = count / 2
+	
 	for i in count:
-		print("i:" + str(i))
+		#print("i:" + str(i))
+		#Carta.instantiate()
 		cartas.append(i+1)
 		cartas.append(i+1)
 	Global.selecionado_1 = 0
 	Global.selecionado_2 = 0
 	cartas.shuffle()
 	var i := 0
+	#var all_descendants = find_children("*", "Control", false, false)
 	for node in all_descendants:
 		node.valor_da_carta = cartas[i]
-		i = i + 1
+		i += 1
 
 
 func _on_carta_teste() -> void:
