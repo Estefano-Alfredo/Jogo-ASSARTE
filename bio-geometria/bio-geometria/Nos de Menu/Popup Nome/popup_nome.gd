@@ -35,17 +35,16 @@ func _ready():
 func _on_button_pressed(_new_text = "") -> void:
 	# pega o texto e remove espaços extras
 	var nome = line_edit_nome.text.strip_edges()
+	nome.to_upper()
 	
 	if nome.is_empty():
 		print("Por favor, digite um nome.")
 		return
+	
 	var salvo : bool = false
 	var contagem : int = 0
-	
 	config.load("user://pontuacao.cfg")
-	
 	for player in config.get_sections(): # Roda cada seção no arquivo
-		contagem += 1
 		var player_name = config.get_value(player, "player_name")
 		if player_name == nome:
 			salvo = true
@@ -53,8 +52,9 @@ func _on_button_pressed(_new_text = "") -> void:
 		config.set_value("player" + str(contagem), "player_name", nome)
 		config.set_value("player" + str(contagem), "player_time", "00:00")
 		config.set_value("player" + str(contagem), "player_ponto", "0")
-	
 	config.save("user://pontuacao.cfg")
+	
+	
 	# salva o nome na variável global
 	Global.nome_do_jogador = nome 
 	print("Nome do jogador salvo: " + Global.nome_do_jogador)

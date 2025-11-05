@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://clgvfm3owppwd"]
+[gd_scene load_steps=6 format=3 uid="uid://clgvfm3owppwd"]
 
 [ext_resource type="Script" uid="uid://cue3t6s8gik0w" path="res://Nos de Nivel/Nivel 2/nivel_2.gd" id="1_vc3to"]
 [ext_resource type="PackedScene" uid="uid://d2vemjbylj3tx" path="res://Nos/nova_carta.tscn" id="2_i26w3"]
 [ext_resource type="PackedScene" uid="uid://ceb1yq77ygyfb" path="res://Nos/transicao.tscn" id="3_i26w3"]
+[ext_resource type="PackedScene" uid="uid://ci562ckpf8n1v" path="res://Nos/sair.tscn" id="4_5n37o"]
 [ext_resource type="PackedScene" uid="uid://dayfhtq76hld" path="res://Nos/contador.tscn" id="4_t2hph"]
 
 [node name="Nivel 2" type="Control"]
@@ -74,6 +75,9 @@ offset_top = 14.0
 offset_right = 19.0
 offset_bottom = 14.0
 tempo = 180
+
+[node name="Sair" parent="." instance=ExtResource("4_5n37o")]
+layout_mode = 1
 
 [node name="Transicao" parent="." instance=ExtResource("3_i26w3")]
 layout_mode = 1

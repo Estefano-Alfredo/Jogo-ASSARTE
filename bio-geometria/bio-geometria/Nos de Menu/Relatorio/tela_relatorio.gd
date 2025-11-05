@@ -1,6 +1,6 @@
 extends Control
 
-var ameixa = ConfigFile.new()
+var config = ConfigFile.new()
 
 @onready var anim := $Transicao/AnimationPlayer
 @onready var v_box: VBoxContainer = $MarginContainer2/VBoxContainer/MarginContainer/MarginContainer/HBoxContainer/VBox
@@ -17,16 +17,16 @@ func _on_voltar_pressed() -> void:
 
 func _ready() -> void:
 	
-	var err := ameixa.load("user://pontuacao.cfg")
+	var err := config.load("user://pontuacao.cfg")
 	
 	if err != OK:
 		return
 	
-	for player in ameixa.get_sections():
+	for player in config.get_sections():
 		# Fetch the data for each section.
-		var nome = ameixa.get_value(player, "player_name")
-		var tempo = ameixa.get_value(player, "player_time")
-		var ponto = ameixa.get_value(player, "player_ponto")
+		var nome = config.get_value(player, "player_name")
+		var tempo = config.get_value(player, "player_time")
+		var ponto = config.get_value(player, "player_ponto")
 		
 		var novo_fio := ROTULO.instantiate()
 		v_box.add_child(novo_fio)
@@ -41,5 +41,13 @@ func _ready() -> void:
 		novo_fio_3.text = ponto
 	
 	
-	var texto : String = ameixa.encode_to_text()
+	var texto : String = config.encode_to_text()
 	print(texto)
+
+
+func _on_button_2_button_up() -> void:
+	config.clear()
+	config.save("user://pontuacao.cfg")
+	anim.play("fade_in")
+	await anim.animation_finished
+	get_tree().reload_current_scene()

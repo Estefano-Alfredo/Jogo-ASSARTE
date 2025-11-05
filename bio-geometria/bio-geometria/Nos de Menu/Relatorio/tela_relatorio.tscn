@@ -120,8 +120,11 @@ alignment = 0
 
 [node name="Button2" type="Button" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_2agkn")
+text = "DELETA TUDO"
 
 [node name="Transicao" parent="." instance=ExtResource("4_r16f7")]
 layout_mode = 1
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Button" to="." method="_on_voltar_pressed"]
+[connection signal="button_up" from="MarginContainer/HBoxContainer/Button2" to="." method="_on_button_2_button_up"]

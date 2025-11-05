@@ -51,6 +51,7 @@ func _on_carta_teste() -> void:
 			if node.amostra:
 				node.correto = true
 		if acertos == count:
+			Global.salvar_tempo()
 			await get_tree().create_timer(1.0).timeout
 			anim.play("fade_in")
 			await anim.animation_finished

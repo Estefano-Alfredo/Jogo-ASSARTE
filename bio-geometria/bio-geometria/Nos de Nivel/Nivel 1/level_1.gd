@@ -2,6 +2,7 @@ extends Control
 
 @onready var contador: Control = $Contador
 
+var config = ConfigFile.new()
 var selecao := ""
 var selecao2 := ""
 var progresso := 0
@@ -73,6 +74,9 @@ func resposta_selecionada(botao, forma, botao2) -> void:
 		selecao2 = ""
 		if progresso >= 3:
 			contador.ligado = false
+			
+			Global.salvar_tempo()
+			
 			anim.play("fade_in")
 			await anim.animation_finished
 			get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 2/nivel_2.tscn")
