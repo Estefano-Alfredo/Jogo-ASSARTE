@@ -74,8 +74,8 @@ func resposta_selecionada(botao, forma, botao2) -> void:
 		selecao2 = ""
 		if progresso >= 3:
 			contador.ligado = false
-			
-			Global.salvar_tempo()
+			Global.segundos_nivel_1 = contador.tempo
+			Global.salvar_tempo("s_nivel_1", contador.tempo)
 			
 			anim.play("fade_in")
 			await anim.animation_finished

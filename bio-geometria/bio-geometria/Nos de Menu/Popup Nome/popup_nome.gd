@@ -42,12 +42,14 @@ func _on_button_pressed(_new_text = "") -> void:
 		return
 	
 	var salvo : bool = false
-	var contagem : int = 0
+	var contagem := 0
 	config.load("user://pontuacao.cfg")
 	for player in config.get_sections(): # Roda cada seção no arquivo
+		contagem += 1
 		var player_name = config.get_value(player, "player_name")
 		if player_name == nome:
 			salvo = true
+			return
 	if not salvo:
 		config.set_value("player" + str(contagem), "player_name", nome)
 		config.set_value("player" + str(contagem), "player_time", "00:00")

@@ -35,10 +35,12 @@ func _ready() -> void:
 		var novo_fio_2 := ROTULO.instantiate()
 		v_box_2.add_child(novo_fio_2)
 		novo_fio_2.text = tempo
+		novo_fio_2.get_child(0).visible = false
 		
 		var novo_fio_3 := ROTULO.instantiate()
 		v_box_3.add_child(novo_fio_3)
 		novo_fio_3.text = ponto
+		novo_fio_3.get_child(0).visible = false
 	
 	
 	var texto : String = config.encode_to_text()

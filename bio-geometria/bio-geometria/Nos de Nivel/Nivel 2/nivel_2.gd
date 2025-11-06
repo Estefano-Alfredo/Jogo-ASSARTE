@@ -6,6 +6,7 @@ const Carta = preload("uid://d2vemjbylj3tx")
 #@export var numero_de_pares := 1
 
 @onready var anim := $"../Transicao/AnimationPlayer"
+@onready var contador: Control = $"../Contador"
 
 func _init() -> void:
 	pass
@@ -51,7 +52,8 @@ func _on_carta_teste() -> void:
 			if node.amostra:
 				node.correto = true
 		if acertos == count:
-			Global.salvar_tempo()
+			Global.segundos_nivel_2 = contador.tempo
+			Global.salvar_tempo("s_nivel_2", contador.tempo)
 			await get_tree().create_timer(1.0).timeout
 			anim.play("fade_in")
 			await anim.animation_finished
