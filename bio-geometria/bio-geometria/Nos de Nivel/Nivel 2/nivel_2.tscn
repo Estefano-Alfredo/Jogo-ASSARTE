@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://clgvfm3owppwd"]
+[gd_scene load_steps=6 format=3 uid="uid://clgvfm3owppwd"]
 
+[ext_resource type="Texture2D" uid="uid://c4aqvptjeey6y" path="res://Nos de Nivel/Nivel 2/fase2 (2).png" id="1_5n37o"]
 [ext_resource type="Script" uid="uid://cue3t6s8gik0w" path="res://Nos de Nivel/Nivel 2/nivel_2.gd" id="1_vc3to"]
 [ext_resource type="PackedScene" uid="uid://d2vemjbylj3tx" path="res://Nos/nova_carta.tscn" id="2_i26w3"]
 [ext_resource type="PackedScene" uid="uid://ceb1yq77ygyfb" path="res://Nos/transicao.tscn" id="3_i26w3"]
@@ -12,6 +13,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 650.0
+texture = ExtResource("1_5n37o")
+expand_mode = 1
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 1
@@ -69,10 +77,10 @@ layout_mode = 2
 
 [node name="Contador" parent="." instance=ExtResource("4_t2hph")]
 layout_mode = 0
-offset_left = 19.0
-offset_top = 14.0
-offset_right = 19.0
-offset_bottom = 14.0
+offset_left = 417.0
+offset_top = 10.0
+offset_right = 417.0
+offset_bottom = 10.0
 tempo = 180
 
 [node name="Transicao" parent="." instance=ExtResource("3_i26w3")]

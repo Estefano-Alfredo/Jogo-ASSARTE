@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://cfkqi3dcum5cm"]
+[gd_scene load_steps=12 format=3 uid="uid://cfkqi3dcum5cm"]
 
 [ext_resource type="Script" uid="uid://eaxv88hxjdo7" path="res://Nos de Menu/menu.gd" id="1_wqqru"]
 [ext_resource type="FontFile" uid="uid://cumtjsj4a0asq" path="res://Assets/Fontes/Minecraft.ttf" id="2_7qhtd"]
 [ext_resource type="FontFile" uid="uid://dek64knlgemme" path="res://Assets/Fontes/ARCADECLASSIC.TTF" id="2_raj00"]
+[ext_resource type="Texture2D" uid="uid://cgslnutthryuj" path="res://Nos/WallpaperJOGO.png" id="2_vb22t"]
 [ext_resource type="Texture2D" uid="uid://bcqosdk3axq1g" path="res://Assets/Ui/button_2_ui.png" id="3_kr88g"]
 [ext_resource type="AudioStream" uid="uid://bh662ho7ii57d" path="res://Assets/Sounds/Modern11.mp3" id="4_wn2ll"]
 [ext_resource type="PackedScene" uid="uid://b3r7gpjiepoym" path="res://Nos/botao_som.tscn" id="5_st6f1"]
@@ -29,11 +30,23 @@ size_flags_vertical = 3
 script = ExtResource("1_wqqru")
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
+texture = ExtResource("2_vb22t")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.026
+anchor_bottom = 1.0660001
+offset_left = 2.0
+offset_right = -29.952026
+offset_bottom = -37.768066
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(-2, 1)

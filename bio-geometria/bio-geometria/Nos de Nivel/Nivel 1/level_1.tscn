@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://cbccjhwapi1dd"]
+[gd_scene load_steps=12 format=3 uid="uid://cbccjhwapi1dd"]
 
 [ext_resource type="Script" uid="uid://bx8shvd1bvc0g" path="res://Nos de Nivel/Nivel 1/level_1.gd" id="1_36c26"]
 [ext_resource type="Texture2D" uid="uid://bqmqw7x1tuo6h" path="res://Assets/Shapes/triangulo.png" id="2_0u1pp"]
+[ext_resource type="Texture2D" uid="uid://btdlx3q3laelc" path="res://Nos de Nivel/Nivel 1/fas1.png" id="2_v7wtx"]
 [ext_resource type="Script" uid="uid://m7peju0s80re" path="res://Nos/vetificao_botao.gd" id="3_f57t2"]
 [ext_resource type="Texture2D" uid="uid://153sobfftdgc" path="res://Assets/Shapes/quadrado.png" id="3_x78qx"]
 [ext_resource type="Texture2D" uid="uid://hnak7rafjwog" path="res://Assets/Shapes/semicirculo.png" id="4_f57t2"]
@@ -21,6 +22,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_36c26")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 649.0
+texture = ExtResource("2_v7wtx")
+expand_mode = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
