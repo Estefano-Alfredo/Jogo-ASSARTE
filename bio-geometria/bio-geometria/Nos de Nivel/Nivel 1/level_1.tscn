@@ -49,7 +49,6 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_ctcdo")
 text = "
 "
 icon = ExtResource("2_0u1pp")
-icon_alignment = 1
 script = ExtResource("3_f57t2")
 
 [node name="Quadrado" type="Button" parent="MarginContainer/VBoxContainer"]
@@ -112,6 +111,7 @@ offset_left = 17.0
 offset_top = 19.0
 offset_right = 17.0
 offset_bottom = 19.0
+scale = Vector2(0.78101015, 1.1274073)
 tempo = 200
 
 [node name="Transicao" parent="." instance=ExtResource("6_f57t2")]

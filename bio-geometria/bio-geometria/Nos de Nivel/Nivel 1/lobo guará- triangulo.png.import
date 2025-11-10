@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2b4xclh2quyp"
-path="res://.godot/imported/lobo guará- triangulo.png-a5d1da15357492d7415d60efee892cda.ctex"
+path="res://.godot/imported/lobo guará- triangulo.png-1ff27fd68fdf81469800a4b75a93005e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Nos de Nivel/Nivel 3/lobo guará- triangulo.png"
-dest_files=["res://.godot/imported/lobo guará- triangulo.png-a5d1da15357492d7415d60efee892cda.ctex"]
+source_file="res://Nos de Nivel/Nivel 1/lobo guará- triangulo.png"
+dest_files=["res://.godot/imported/lobo guará- triangulo.png-1ff27fd68fdf81469800a4b75a93005e.ctex"]
 
 [params]
 

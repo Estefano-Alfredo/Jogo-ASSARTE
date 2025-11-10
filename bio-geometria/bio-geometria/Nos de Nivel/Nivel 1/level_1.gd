@@ -15,7 +15,7 @@ const ICON = preload("uid://c33p2dnbv3brm")
 const SEMICIRCULO = preload("uid://hnak7rafjwog")
 const QUADRADO = preload("uid://153sobfftdgc")
 const TRIANGULO = preload("uid://bqmqw7x1tuo6h")
-const POPUP_PAUSA_SCENE = preload("res://botao_pausa.tscn")
+const POPUP_PAUSA_SCENE = preload("res://Nos de Menu/botao_pausa.tscn")
 const MENU_PATH = "res://Nos de Menu/menu.tscn"
 
 @onready var esc_triangulo: Button = $MarginContainer/VBoxContainer/Triangulo

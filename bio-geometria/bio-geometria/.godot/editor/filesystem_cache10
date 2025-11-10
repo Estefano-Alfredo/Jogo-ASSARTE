@@ -1,65 +1,64 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1762625781
-Global.gd::GDScript::3456245115709027498::1762518047::0::1::::<>Node<><>0<>0<><>::
+::res://::1762734807
+Global.gd::GDScript::3456245115709027498::1762628185::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::6796890715418820322::1762518047::1762518134::1::::<><><>0<>0<>4759a04bd27d5f0ff8ce23ba039d344c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Assets/::1762518047
-::res://Assets/Fontes/::1762518134
-ARCADECLASSIC.TTF::FontFile::7462595763794970860::1762518047::1762518134::1::::<><><>0<>0<>b72a12f75c588f784671e270d340dda2<>res://.godot/imported/ARCADECLASSIC.TTF-c4db48145c0907374d712bf746a5a4cc.fontdata::
-Minecraft.ttf::FontFile::6202561428845426844::1762518047::1762518134::1::::<><><>0<>0<>d89e0d821a18c3d6822dd528dc25c677<>res://.godot/imported/Minecraft.ttf-5294ee7b12f9bb71123168c0663c7347.fontdata::
+::res://Assets/::1762628185
+::res://Assets/Fontes/::1762628185
+ARCADECLASSIC.TTF::FontFile::7462595763794970860::1762518047::1762628185::1::::<><><>0<>0<>b72a12f75c588f784671e270d340dda2<>res://.godot/imported/ARCADECLASSIC.TTF-c4db48145c0907374d712bf746a5a4cc.fontdata::
+Minecraft.ttf::FontFile::6202561428845426844::1762628185::1762628185::1::::<><><>0<>0<>d89e0d821a18c3d6822dd528dc25c677<>res://.godot/imported/Minecraft.ttf-5294ee7b12f9bb71123168c0663c7347.fontdata::
 ::res://Assets/Shapes/::1762518134
 quadrado.png::CompressedTexture2D::1888574224404700066::1762518047::1762518134::1::::<><><>0<>0<>1d84244d6ec06b3cd76d7774b1ee18c2<>res://.godot/imported/quadrado.png-0425fa70988c9b3bda4177256752cc3f.ctex::
 semicirculo.png::CompressedTexture2D::518178381223993746::1762518047::1762518134::1::::<><><>0<>0<>f2ecdd91adf857b90d4f61f3bdb45400<>res://.godot/imported/semicirculo.png-b94688678530d6d499abd969e7d7c354.ctex::
 triangulo.png::CompressedTexture2D::3535227191785728557::1762518047::1762518134::1::::<><><>0<>0<>8882d8ce9aa7cf698662daf82ea0eacd<>res://.godot/imported/triangulo.png-1bbac169b44e8ea08ff4459a04074fc7.ctex::
-::res://Assets/Sounds/::1762518047
-Modern11.mp3::AudioStreamMP3::2943669133502060667::1762518047::1762518047::1::::<><><>0<>0<>ebd24932ffc749a3f297c028bd8f989e<>res://.godot/imported/Modern11.mp3-6929014e0d2e140854c22a91ca091f6e.mp3str::
-::res://Assets/Ui/::1762518134
-button_2_ui.png::CompressedTexture2D::2560710771514350706::1762518047::1762518047::1::::<><><>0<>0<>622a9e31d7118acbfc6ea46fd9a7cf3b<>res://.godot/imported/button_2_ui.png-2b9ec06c6236f93f949a05bcf4a2cff6.ctex::
+::res://Assets/Sounds/::1762628205
+Modern11.mp3::AudioStreamMP3::2943669133502060667::1762628185::1762628205::1::::<><><>0<>0<>8a623c7f7770c41a704ef8be4c820da1<>res://.godot/imported/Modern11.mp3-6929014e0d2e140854c22a91ca091f6e.mp3str::
+::res://Assets/Ui/::1762628205
+button_2_ui.png::CompressedTexture2D::2560710771514350706::1762628185::1762628205::1::::<><><>0<>0<>8135379a47ad74baaa3bba5b02dacc7f<>res://.godot/imported/button_2_ui.png-2b9ec06c6236f93f949a05bcf4a2cff6.ctex::
 button_ui.png::CompressedTexture2D::3955526087416831045::1762518047::1762518134::1::::<><><>0<>0<>8bbac183f6743d28c0d29bb78a88a830<>res://.godot/imported/button_ui.png-3f20cec20cf2464242746cb382e31af1.ctex::
 button_ui_2.png::CompressedTexture2D::334324405862622129::1762518047::1762518134::1::::<><><>0<>0<>01a2bedb7f06dbd9a0b01634f527d253<>res://.godot/imported/button_ui_2.png-063cc1e264a2b2221187568b47055777.ctex::
 button_ui_tile.png::CompressedTexture2D::7929723086453313341::1762518047::1762518134::1::::<><><>0<>0<>530daa7b840bb5cde71c0e024e9c54a5<>res://.godot/imported/button_ui_tile.png-fbc42f238be1d71be612a88d24763991.ctex::
-sem_som.png::CompressedTexture2D::933544009667089907::1762518047::1762518047::1::::<><><>0<>0<>261cd5352616b8ce98bc4cd40929382d<>res://.godot/imported/sem_som.png-ea5d0d923c8bee7f6d2a3c15bbb78933.ctex::
-som.png::CompressedTexture2D::3696455230046845516::1762518047::1762518047::1::::<><><>0<>0<>43c5b07141e87e6b7d61cd481fa8ce89<>res://.godot/imported/som.png-c4f97f209b06fe05c1fa1af9f36021e1.ctex::
-::res://Nos/::1762518507
+sem_som.png::CompressedTexture2D::933544009667089907::1762628185::1762628205::1::::<><><>0<>0<>5bdfad854ac53ff3090c969e7f427f5b<>res://.godot/imported/sem_som.png-ea5d0d923c8bee7f6d2a3c15bbb78933.ctex::
+som.png::CompressedTexture2D::3696455230046845516::1762628185::1762628205::1::::<><><>0<>0<>4ba56aaef14a3cc8517d11403367ff44<>res://.godot/imported/som.png-c4f97f209b06fe05c1fa1af9f36021e1.ctex::
+::res://Nos/::1762628185
 animal.tscn::PackedScene::1571291269354808798::1762518047::0::1::::<><><>0<>0<><>::
-botao_som.tscn::PackedScene::4388757188031907436::1762518047::0::1::::<><><>0<>0<><>::uid://cgfgslxofxilq::::res://Nos Esteticos/Audio/control.gd<>uid://bswucvxg7mfcu::::res://Assets/Ui/som.png<>uid://bh662ho7ii57d::::res://Assets/Sounds/Modern11.mp3
-carta.gd::GDScript::2785597641134146391::1762518047::0::1::::<>Control<><>0<>0<><>::
-carta.tscn::PackedScene::1571847843476873938::1762518047::0::1::::<><><>0<>0<><>::uid://bfxmnen770jbj::::res://Nos/carta.gd
+botao_som.tscn::PackedScene::4388757188031907436::1762628185::0::1::::<><><>0<>0<><>::uid://cgfgslxofxilq::::res://Nos Esteticos/Audio/control.gd<>uid://bswucvxg7mfcu::::res://Assets/Ui/som.png<>uid://bh662ho7ii57d::::res://Assets/Sounds/Modern11.mp3
+carta.gd::GDScript::2785597641134146391::1762628185::0::1::::<>Control<><>0<>0<><>::
+carta.tscn::PackedScene::1571847843476873938::1762628185::0::1::::<><><>0<>0<><>::uid://bfxmnen770jbj::::res://Nos/carta.gd
 configuracao.gd::GDScript::3056041870647864600::1762518047::0::1::::<>Control<><>0<>0<><>::
 configuracao.tscn::PackedScene::916958208153064848::1762518047::0::1::::<><><>0<>0<><>::uid://bjsmte7ysje6c::::res://Nos/configuracao.gd<>uid://bwmc635a704eb::::res://Assets/Ui/button_ui.png
-contador.gd::GDScript::2116309918110444760::1762518047::0::1::::<>Node<><>0<>0<><>::
-contador.tscn::PackedScene::212033065495708109::1762518047::0::1::::<><><>0<>0<><>::uid://5ffkyk3lyjf1::::res://Nos/contador.gd<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
-nova_carta.tscn::PackedScene::9097977534999849797::1762518047::0::1::::<><><>0<>0<><>::uid://bfxmnen770jbj::::res://Nos/carta.gd<>uid://c33p2dnbv3brm::::res://icon.svg<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
+contador.gd::GDScript::2116309918110444760::1762628185::0::1::::<>Node<><>0<>0<><>::
+contador.tscn::PackedScene::212033065495708109::1762628185::0::1::::<><><>0<>0<><>::uid://5ffkyk3lyjf1::::res://Nos/contador.gd<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
+nova_carta.tscn::PackedScene::9097977534999849797::1762628185::0::1::::<><><>0<>0<><>::uid://bfxmnen770jbj::::res://Nos/carta.gd<>uid://c33p2dnbv3brm::::res://icon.svg<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
 tile_map_layer.tscn::PackedScene::319372176833160703::1762518047::0::1::::<><><>0<>0<><>::uid://dk8hm7crsfulp::::res://Assets/Ui/button_ui_tile.png
-transicao.tscn::PackedScene::5057283511851649979::1762518047::0::1::::<><><>0<>0<><>::uid://c35od6kq1l0vd::::res://Nos Esteticos/transicao.gd
-vetificao_botao.gd::GDScript::909244614620923762::1762518047::0::1::::<>Node<><>0<>0<><>::
-WallpaperJOGO.png::CompressedTexture2D::5231825411720277929::1762518506::1762518507::1::::<><><>0<>0<>378a5444409280d94baf6cd617811403<>res://.godot/imported/WallpaperJOGO.png-402d1e9748e7d71137abbeba83035575.ctex::
-::res://Nos de Menu/::1762519371
-botao_pausa.gd::GDScript::7732990149810165389::1762518047::0::1::::<>Control<><>0<>0<><>::
-botao_pausa.tscn::PackedScene::1893849596866144096::1762518047::0::1::::<><><>0<>0<><>::uid://dif6hn73kjgpp::::res://Nos de Menu/botao_pausa.gd
-menu.gd::GDScript::282191151656002912::1762518047::0::1::::<>Control<><>0<>0<><>::
-menu.tscn::PackedScene::5145416596758785640::1762519371::0::1::::<><><>0<>0<><>::uid://eaxv88hxjdo7::::res://Nos de Menu/menu.gd<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf<>uid://dek64knlgemme::::res://Assets/Fontes/ARCADECLASSIC.TTF<>uid://cgslnutthryuj::::res://Nos/WallpaperJOGO.png<>uid://bcqosdk3axq1g::::res://Assets/Ui/button_2_ui.png<>uid://bh662ho7ii57d::::res://Assets/Sounds/Modern11.mp3<>uid://b3r7gpjiepoym::::res://Nos/botao_som.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn
+transicao.tscn::PackedScene::5057283511851649979::1762628185::0::1::::<><><>0<>0<><>::uid://c35od6kq1l0vd::::res://Nos Esteticos/transicao.gd
+vetificao_botao.gd::GDScript::909244614620923762::1762628185::0::1::::<>Node<><>0<>0<><>::
+WallpaperJOGO.png::CompressedTexture2D::5231825411720277929::1762628185::1762628185::1::::<><><>0<>0<>378a5444409280d94baf6cd617811403<>res://.godot/imported/WallpaperJOGO.png-402d1e9748e7d71137abbeba83035575.ctex::
+::res://Nos de Menu/::1762628185
+botao_pausa.gd::GDScript::7732990149810165389::1762628185::0::1::::<>Control<><>0<>0<><>::
+botao_pausa.tscn::PackedScene::1893849596866144096::1762628185::0::1::::<><><>0<>0<><>::uid://dif6hn73kjgpp::::res://Nos de Menu/botao_pausa.gd
+menu.gd::GDScript::282191151656002912::1762628185::0::1::::<>Control<><>0<>0<><>::
+menu.tscn::PackedScene::5145416596758785640::1762628185::0::1::::<><><>0<>0<><>::uid://eaxv88hxjdo7::::res://Nos de Menu/menu.gd<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf<>uid://dek64knlgemme::::res://Assets/Fontes/ARCADECLASSIC.TTF<>uid://cgslnutthryuj::::res://Nos/WallpaperJOGO.png<>uid://bcqosdk3axq1g::::res://Assets/Ui/button_2_ui.png<>uid://bh662ho7ii57d::::res://Assets/Sounds/Modern11.mp3<>uid://b3r7gpjiepoym::::res://Nos/botao_som.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn
 popup_nome.gd::GDScript::1407377405002077985::1762518047::0::1::::<>Control<><>0<>0<><>::
-popup_nome.tscn::PackedScene::6013196016032752575::1762518047::0::1::::<><><>0<>0<><>::uid://ub0khcvqovjl::::res://Nos de Menu/popup_nome.gd<>uid://dek64knlgemme::::res://Assets/Fontes/ARCADECLASSIC.TTF
-popup_sobre.gd::GDScript::8010687751814178901::1762518047::0::1::::<>Control<><>0<>0<><>::
-popup_sobre.tscn::PackedScene::7450813065260793870::1762518047::0::1::::<><><>0<>0<><>::uid://dmeo4etpkrymv::::res://Nos de Menu/popup_sobre.gd<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
+popup_nome.tscn::PackedScene::6013196016032752575::1762628185::0::1::::<><><>0<>0<><>::uid://ub0khcvqovjl::::res://Nos de Menu/popup_nome.gd<>uid://dek64knlgemme::::res://Assets/Fontes/ARCADECLASSIC.TTF
+popup_sobre.gd::GDScript::8010687751814178901::1762628185::0::1::::<>Control<><>0<>0<><>::
+popup_sobre.tscn::PackedScene::7450813065260793870::1762628185::0::1::::<><><>0<>0<><>::uid://dmeo4etpkrymv::::res://Nos de Menu/popup_sobre.gd<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
 tela_relatorio.gd::GDScript::5843544665981186117::1762518047::0::1::::<>Control<><>0<>0<><>::
 tela_relatorio.tscn::PackedScene::4048433083087922307::1762518047::0::1::::<><><>0<>0<><>::uid://cpiwld5ldfwm4::::res://Nos de Menu/tela_relatorio.gd<>uid://dek64knlgemme::::res://Assets/Fontes/ARCADECLASSIC.TTF
-::res://Nos de Nivel/::1762518047
-::res://Nos de Nivel/Nivel 1/::1762625826
-fas1.png::CompressedTexture2D::3726912302915710648::1762519440::1762519441::1::::<><><>0<>0<>99882b9bfcb80a8b9a1a00f50a87055e<>res://.godot/imported/fas1.png-9be9872ad183592e1e14b47b11e510be.ctex::
-level_1.gd::GDScript::4069995068487201304::1762518047::0::1::::<>Control<><>0<>0<><>::
-level_1.tscn::PackedScene::4847296874332568833::1762519841::0::1::::<><><>0<>0<><>::uid://bx8shvd1bvc0g::::res://Nos de Nivel/Nivel 1/level_1.gd<>uid://bqmqw7x1tuo6h::::res://Assets/Shapes/triangulo.png<>uid://btdlx3q3laelc::::res://Nos de Nivel/Nivel 1/fas1.png<>uid://m7peju0s80re::::res://Nos/vetificao_botao.gd<>uid://153sobfftdgc::::res://Assets/Shapes/quadrado.png<>uid://hnak7rafjwog::::res://Assets/Shapes/semicirculo.png<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://dayfhtq76hld::::res://Nos/contador.tscn<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
-lobo guará- triangulo.png::CompressedTexture2D::2803965834093057729::1762625826::1762625826::1::::<><><>0<>0<>779f146a46949c025689a33311e9bea3<>res://.godot/imported/lobo guará- triangulo.png-1ff27fd68fdf81469800a4b75a93005e.ctex::
-::res://Nos de Nivel/Nivel 2/::1762519836
-fase2 (2).png::CompressedTexture2D::6809327624061393750::1762519789::1762519790::1::::<><><>0<>0<>d137f60b4b8f333a0a714c567c9cd060<>res://.godot/imported/fase2 (2).png-3b57cc5d8a0f88591981ed6f71cb8b8d.ctex::
-nivel_2.gd::GDScript::6186611414582790736::1762518047::0::1::::<>Control<><>0<>0<><>::
-nivel_2.tscn::PackedScene::5558589573947365571::1762519836::0::1::::<><><>0<>0<><>::uid://c4aqvptjeey6y::::res://Nos de Nivel/Nivel 2/fase2 (2).png<>uid://cue3t6s8gik0w::::res://Nos de Nivel/Nivel 2/nivel_2.gd<>uid://d2vemjbylj3tx::::res://Nos/nova_carta.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://dayfhtq76hld::::res://Nos/contador.tscn
-::res://Nos de Nivel/Nivel 3/::1762625819
-lobo guará- triangulo.png::CompressedTexture2D::6671806511811507039::1762625819::1762625799::1::::<><><>0<>0<>154c5151a4ff6b543a47b3cfad3be02b<>res://.godot/imported/lobo guará- triangulo.png-a5d1da15357492d7415d60efee892cda.ctex::
-Nivel 3.tscn::PackedScene::1891831487702146706::1762518047::0::1::::<><><>0<>0<><>::uid://bjlq4fneskhry::::res://Nos de Nivel/Nivel 3/nivel_3.gd<>uid://p7tdoqx2selk::::res://Nos de Nivel/Nivel 3/resposta.gd
-nivel_3.gd::GDScript::3041851974542961062::1762518047::0::1::::<>Control<><>0<>0<><>::
-resposta.gd::GDScript::1120052484070257072::1762518047::0::1::::<>Button<><>0<>0<><>::
-::res://Nos Esteticos/::1762518047
-transicao.gd::GDScript::6800917361587419433::1762518047::0::1::::<>Control<><>0<>0<><>::
-::res://Nos Esteticos/Audio/::1762518047
-control.gd::GDScript::5204693378162626606::1762518047::0::1::::<>Control<><>0<>0<><>::
+::res://Nos de Nivel/::1762628185
+::res://Nos de Nivel/Nivel 1/::1762734807
+fas1.png::CompressedTexture2D::3726912302915710648::1762628185::1762628185::1::::<><><>0<>0<>99882b9bfcb80a8b9a1a00f50a87055e<>res://.godot/imported/fas1.png-9be9872ad183592e1e14b47b11e510be.ctex::
+level_1.gd::GDScript::4069995068487201304::1762628185::0::1::::<>Control<><>0<>0<><>::
+level_1.tscn::PackedScene::4847296874332568833::1762628185::0::1::::<><><>0<>0<><>::uid://bx8shvd1bvc0g::::res://Nos de Nivel/Nivel 1/level_1.gd<>uid://bqmqw7x1tuo6h::::res://Assets/Shapes/triangulo.png<>uid://btdlx3q3laelc::::res://Nos de Nivel/Nivel 1/fas1.png<>uid://m7peju0s80re::::res://Nos/vetificao_botao.gd<>uid://153sobfftdgc::::res://Assets/Shapes/quadrado.png<>uid://hnak7rafjwog::::res://Assets/Shapes/semicirculo.png<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://dayfhtq76hld::::res://Nos/contador.tscn<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf
+lobo guará- triangulo.png::CompressedTexture2D::6671806511811507039::1762628185::1762734807::1::::<><><>0<>0<>32d4bbb30b5106a36adf0b4581273fef<>res://.godot/imported/lobo guará- triangulo.png-1ff27fd68fdf81469800a4b75a93005e.ctex::
+::res://Nos de Nivel/Nivel 2/::1762628185
+fase2 (2).png::CompressedTexture2D::6809327624061393750::1762628185::1762628185::1::::<><><>0<>0<>d137f60b4b8f333a0a714c567c9cd060<>res://.godot/imported/fase2 (2).png-3b57cc5d8a0f88591981ed6f71cb8b8d.ctex::
+nivel_2.gd::GDScript::6186611414582790736::1762628185::0::1::::<>Control<><>0<>0<><>::
+nivel_2.tscn::PackedScene::5558589573947365571::1762628185::0::1::::<><><>0<>0<><>::uid://c4aqvptjeey6y::::res://Nos de Nivel/Nivel 2/fase2 (2).png<>uid://cue3t6s8gik0w::::res://Nos de Nivel/Nivel 2/nivel_2.gd<>uid://d2vemjbylj3tx::::res://Nos/nova_carta.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://dayfhtq76hld::::res://Nos/contador.tscn
+::res://Nos de Nivel/Nivel 3/::1762734807
+Nivel 3.tscn::PackedScene::1891831487702146706::1762628185::0::1::::<><><>0<>0<><>::uid://bjlq4fneskhry::::res://Nos de Nivel/Nivel 3/nivel_3.gd<>uid://p7tdoqx2selk::::res://Nos de Nivel/Nivel 3/resposta.gd
+nivel_3.gd::GDScript::3041851974542961062::1762628185::0::1::::<>Control<><>0<>0<><>::
+resposta.gd::GDScript::1120052484070257072::1762628185::0::1::::<>Button<><>0<>0<><>::
+::res://Nos Esteticos/::1762628185
+transicao.gd::GDScript::6800917361587419433::1762628185::0::1::::<>Control<><>0<>0<><>::
+::res://Nos Esteticos/Audio/::1762628185
+control.gd::GDScript::5204693378162626606::1762628185::0::1::::<>Control<><>0<>0<><>::
