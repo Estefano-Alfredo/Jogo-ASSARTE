@@ -63,7 +63,7 @@ func _criar_label_coluna(texto, min_width, is_header):
 	label.text = texto
 	label.set_custom_minimum_size(Vector2(min_width, 0)) # Define largura mínima
 	label.set("theme_override_fonts/font", fonte_arcade)
-	label.set("theme_override_font_sizes/font_size", 16)
+	label.set("theme_override_font_sizes/font_size", 30)
 	
 	if is_header:
 		label.set("theme_override_colors/font_color", Color(1, 1, 0)) # Amarelo para cabeçalho

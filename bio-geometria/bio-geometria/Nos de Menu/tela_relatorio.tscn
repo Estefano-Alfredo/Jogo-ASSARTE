@@ -5,19 +5,28 @@
 
 [node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_left = 386.0
-offset_top = 214.0
-offset_right = 1053.0
-offset_bottom = 254.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 376.0
+offset_top = 220.0
+offset_right = -99.0
+offset_bottom = -400.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_13fo7")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
-offset_left = -386.0
-offset_top = 21.0
-offset_right = 766.0
-offset_bottom = 43.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -382.0
+offset_top = -216.0
+offset_right = 97.0
+offset_bottom = 398.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0.0001198937, 0.32967466, 0.48441768, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
@@ -46,23 +55,11 @@ size_flags_vertical = 3
 [node name="ListaDeRelatorios" type="VBoxContainer" parent="MarginContainer/VBoxRelatorio/ScrollContainer"]
 layout_mode = 2
 
-[node name="ColorRect2" type="ColorRect" parent="."]
-show_behind_parent = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.268
-anchor_right = 0.268
-offset_left = -564.756
-offset_top = 43.0
-offset_right = 587.244
-offset_bottom = 80.0
-color = Color(0.14483738, 0.33746442, 0.37749568, 1)
-
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
 offset_left = -380.0
 offset_top = -207.0
-offset_right = -337.0
+offset_right = -336.0
 offset_bottom = -164.0
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("2_peab0")
