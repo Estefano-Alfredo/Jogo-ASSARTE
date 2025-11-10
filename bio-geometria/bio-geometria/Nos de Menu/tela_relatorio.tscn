@@ -39,64 +39,12 @@ theme_override_constants/margin_bottom = 50
 [node name="VBoxRelatorio" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="HBoxMetricas" type="HBoxContainer" parent="MarginContainer/VBoxRelatorio"]
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxRelatorio"]
 layout_mode = 2
-size_flags_vertical = 6
-size_flags_stretch_ratio = 20.0
+size_flags_vertical = 3
 
-[node name="VBoxNome" type="VBoxContainer" parent="MarginContainer/VBoxRelatorio/HBoxMetricas"]
+[node name="ListaDeRelatorios" type="VBoxContainer" parent="MarginContainer/VBoxRelatorio/ScrollContainer"]
 layout_mode = 2
-size_flags_horizontal = 2
-
-[node name="label" type="Label" parent="MarginContainer/VBoxRelatorio/HBoxMetricas/VBoxNome"]
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_peab0")
-theme_override_font_sizes/font_size = 13
-text = "Aluno:"
-
-[node name="NomeDoJogador" type="Label" parent="MarginContainer/VBoxRelatorio/HBoxMetricas/VBoxNome"]
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_peab0")
-theme_override_font_sizes/font_size = 13
-text = "NOME ALUNO"
-
-[node name="VBoxTempo" type="VBoxContainer" parent="MarginContainer/VBoxRelatorio/HBoxMetricas"]
-layout_mode = 2
-size_flags_horizontal = 2
-
-[node name="label" type="Label" parent="MarginContainer/VBoxRelatorio/HBoxMetricas/VBoxTempo"]
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_peab0")
-theme_override_font_sizes/font_size = 13
-text = "Tempo:"
-
-[node name="tempo" type="Label" parent="MarginContainer/VBoxRelatorio/HBoxMetricas/VBoxTempo"]
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_peab0")
-theme_override_font_sizes/font_size = 13
-text = "00:00"
-
-[node name="VBoxPontos" type="VBoxContainer" parent="MarginContainer/VBoxRelatorio/HBoxMetricas"]
-layout_mode = 2
-size_flags_horizontal = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxRelatorio/HBoxMetricas/VBoxPontos"]
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_peab0")
-theme_override_font_sizes/font_size = 13
-text = "Pontos:"
-
-[node name="pontos" type="Label" parent="MarginContainer/VBoxRelatorio/HBoxMetricas/VBoxPontos"]
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_peab0")
-theme_override_font_sizes/font_size = 13
-text = "3000"
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 show_behind_parent = true

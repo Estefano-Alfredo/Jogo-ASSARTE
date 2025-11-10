@@ -72,12 +72,24 @@ func resposta_selecionada(botao, forma, botao2) -> void:
 		selecao = ""
 		selecao2 = ""
 		if progresso >= 3:
+			# --- INÍCIO DA MODIFICAÇÃO de relatorio ---
+			# Para o contador e salva o tempo restante
 			contador.ligado = false
+			Global.tempo_restante_nivel_1_atual = contador.tempo
+			print("Fase 1 completa. Erros: ", Global.erros_nivel_1_atual, " Tempo Restante: ", Global.tempo_restante_nivel_1_atual)
+			# --- FIM DA MODIFICAÇÃO ---
+			
 			anim.play("fade_in")
 			await anim.animation_finished
 			get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 2/nivel_2.tscn")
 	else:
 		print("Resposta Incorreta")
+		# --- INÍCIO DA MODIFICAÇÃO de relatorio ---
+		# Registra o erro na variável global
+		Global.erros_nivel_1_atual += 1
+		print("Erros Nível 1: ", Global.erros_nivel_1_atual)
+		# --- FIM DA MODIFICAÇÃO ---
+
 
 func _on_sair_pressed() -> void:
 	var popup_pausa = POPUP_PAUSA_SCENE.instantiate()

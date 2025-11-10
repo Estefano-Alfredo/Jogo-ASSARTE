@@ -1,14 +1,14 @@
-TextureRect
-Control
-Panel
+VBoxContainer
+ScrollContainer
 Button
 Label
-VBoxContainer
+CenterContainer
+Control
+TextureRect
+Panel
 ColorRect
 RichTextLabel
 MarginContainer
 Sprite2D
 AnimationPlayer
 Timer
-AudioStreamPlayer      - Matches the "sound" keyword.
-HSlider

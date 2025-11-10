@@ -37,6 +37,11 @@ func _on_button_pressed(_new_text = "") -> void:
 	if nome.is_empty():
 		print("Por favor, digite um nome.")
 		return
+		
+		# --- INÍCIO DA MODIFICAÇÃO de relatorio---
+	# Limpa os dados da sessão anterior antes de salvar o novo nome
+	Global.resetar_dados_sessao_atual()
+	# --- FIM DA MODIFICAÇÃO ---
 	
 	# salva o nome na variável global
 	Global.nome_do_jogador = nome 

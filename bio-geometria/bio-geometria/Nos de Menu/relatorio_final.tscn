@@ -1,0 +1,66 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwtythjlb7f1x"]
+
+[ext_resource type="Script" uid="uid://c827304y00u8d" path="res://Nos de Menu/relatorio_final.gd" id="1_of0du"]
+
+[node name="RelatorioFinal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_top = 1.0
+offset_right = -8.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_of0du")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="LabelNomeJogador" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Desempenho de ->"
+horizontal_alignment = 1
+
+[node name="LabelFase1" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "FASE 1 "
+horizontal_alignment = 1
+
+[node name="EstrelasFase1" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="LabelFase2" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "FASE 2"
+horizontal_alignment = 1
+
+[node name="EstrelasFase2" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="LabelGeral" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "GERAL"
+horizontal_alignment = 1
+
+[node name="EstrelasGeral" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="VoltaraoMenu" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Voltar ao Menu"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/VoltaraoMenu" to="." method="_on_voltarao_menu_pressed"]
