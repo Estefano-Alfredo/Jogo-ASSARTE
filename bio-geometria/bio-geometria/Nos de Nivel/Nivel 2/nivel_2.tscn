@@ -39,7 +39,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 10
 theme_override_constants/v_separation = 10
-columns = 4
+columns = 5
 script = ExtResource("1_vc3to")
 
 [node name="Nova carta" parent="GridContainer" instance=ExtResource("2_i26w3")]
@@ -72,18 +72,8 @@ layout_mode = 2
 [node name="Nova carta10" parent="GridContainer" instance=ExtResource("2_i26w3")]
 layout_mode = 2
 
-[node name="Nova carta11" parent="GridContainer" instance=ExtResource("2_i26w3")]
-layout_mode = 2
-
-[node name="Nova carta12" parent="GridContainer" instance=ExtResource("2_i26w3")]
-layout_mode = 2
-
 [node name="Contador" parent="." instance=ExtResource("4_t2hph")]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-grow_horizontal = 2
 tempo = 180
 
 [node name="Transicao" parent="." instance=ExtResource("3_i26w3")]
@@ -99,5 +89,3 @@ layout_mode = 1
 [connection signal="teste" from="GridContainer/Nova carta8" to="GridContainer" method="_on_carta_teste"]
 [connection signal="teste" from="GridContainer/Nova carta9" to="GridContainer" method="_on_carta_teste"]
 [connection signal="teste" from="GridContainer/Nova carta10" to="GridContainer" method="_on_carta_teste"]
-[connection signal="teste" from="GridContainer/Nova carta11" to="GridContainer" method="_on_carta_teste"]
-[connection signal="teste" from="GridContainer/Nova carta12" to="GridContainer" method="_on_carta_teste"]

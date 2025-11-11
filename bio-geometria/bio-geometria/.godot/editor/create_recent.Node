@@ -1,10 +1,10 @@
+TextureRect
 VBoxContainer
 ScrollContainer
 Button
 Label
 CenterContainer
 Control
-TextureRect
 Panel
 ColorRect
 RichTextLabel

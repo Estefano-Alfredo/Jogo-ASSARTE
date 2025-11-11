@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjfxp3bln7a8f"
-path="res://.godot/imported/habitat abelha  - fase 2.png-f157a4bd437859ec3274ff54bb4deb8b.ctex"
+uid="uid://brgfb4pt7qhln"
+path="res://.godot/imported/habitat tartaruga - fase 2.png-74339a7791aea58f28bbab91c9cb2535.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Artes para Fase 2/habitat abelha  - fase 2.png"
-dest_files=["res://.godot/imported/habitat abelha  - fase 2.png-f157a4bd437859ec3274ff54bb4deb8b.ctex"]
+source_file="res://Assets/Artes para Fase 2/Fundo/habitat tartaruga - fase 2.png"
+dest_files=["res://.godot/imported/habitat tartaruga - fase 2.png-74339a7791aea58f28bbab91c9cb2535.ctex"]
 
 [params]
 

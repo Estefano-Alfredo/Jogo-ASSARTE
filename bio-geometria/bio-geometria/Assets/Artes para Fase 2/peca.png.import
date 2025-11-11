@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d17lvrv7wxxrh"
-path="res://.godot/imported/Tartaruga Fase 2 - Circulo.png-48a1660afca1350c88e6984670350020.ctex"
+uid="uid://dqh7klmwhtsb1"
+path="res://.godot/imported/peca.png-25236b25a32913eb34a018d8d960c764.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Artes para Fase 2/Tartaruga Fase 2 - Circulo.png"
-dest_files=["res://.godot/imported/Tartaruga Fase 2 - Circulo.png-48a1660afca1350c88e6984670350020.ctex"]
+source_file="res://Assets/Artes para Fase 2/peca.png"
+dest_files=["res://.godot/imported/peca.png-25236b25a32913eb34a018d8d960c764.ctex"]
 
 [params]
 

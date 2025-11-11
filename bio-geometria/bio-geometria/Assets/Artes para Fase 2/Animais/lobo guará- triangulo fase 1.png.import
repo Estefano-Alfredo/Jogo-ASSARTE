@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du2qxw3r8dyx1"
-path="res://.godot/imported/Arara Azul - Semicirculo fase 2.png-5bf1463c49fd7f7a2e843ad35a277920.ctex"
+uid="uid://duoljuw5ie3sc"
+path="res://.godot/imported/lobo guará- triangulo fase 1.png-003d30990e6c0dfd12fca888ef870781.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Artes para Fase 2/Arara Azul - Semicirculo fase 2.png"
-dest_files=["res://.godot/imported/Arara Azul - Semicirculo fase 2.png-5bf1463c49fd7f7a2e843ad35a277920.ctex"]
+source_file="res://Assets/Artes para Fase 2/Animais/lobo guará- triangulo fase 1.png"
+dest_files=["res://.godot/imported/lobo guará- triangulo fase 1.png-003d30990e6c0dfd12fca888ef870781.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcjgxf86qujjv"
-path="res://.godot/imported/panda- trapezio fase 2.png-1c8d446dd5502008a736f5665e0079e1.ctex"
+uid="uid://dexx0o32hojtc"
+path="res://.godot/imported/habitat panda - fase 2.png-425593ff4cb2c9b6a8318e8f2de77562.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Artes para Fase 2/panda- trapezio fase 2.png"
-dest_files=["res://.godot/imported/panda- trapezio fase 2.png-1c8d446dd5502008a736f5665e0079e1.ctex"]
+source_file="res://Assets/Artes para Fase 2/Fundo/habitat panda - fase 2.png"
+dest_files=["res://.godot/imported/habitat panda - fase 2.png-425593ff4cb2c9b6a8318e8f2de77562.ctex"]
 
 [params]
 

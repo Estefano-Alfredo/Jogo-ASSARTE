@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgslnutthryuj"
-path="res://.godot/imported/WallpaperJOGO.png-402d1e9748e7d71137abbeba83035575.ctex"
+uid="uid://bjfxp3bln7a8f"
+path="res://.godot/imported/habitat abelha  - fase 2.png-89ae27b1829c51bffd07d8f499692d6f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Nos/WallpaperJOGO.png"
-dest_files=["res://.godot/imported/WallpaperJOGO.png-402d1e9748e7d71137abbeba83035575.ctex"]
+source_file="res://Assets/Artes para Fase 2/Fundo/habitat abelha  - fase 2.png"
+dest_files=["res://.godot/imported/habitat abelha  - fase 2.png-89ae27b1829c51bffd07d8f499692d6f.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckoy664ink3f6"
-path="res://.godot/imported/habitat lobo guará - fase2.png-e1d16914c6492229748ad9faeb714fcb.ctex"
+uid="uid://drf6db6kusmd"
+path="res://.godot/imported/peca_memoria.jpg-0845c4af4ce8e53be135c98f1ffd070c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Artes para Fase 2/habitat lobo guará - fase2.png"
-dest_files=["res://.godot/imported/habitat lobo guará - fase2.png-e1d16914c6492229748ad9faeb714fcb.ctex"]
+source_file="res://Assets/Artes para Fase 2/peca_memoria.jpg"
+dest_files=["res://.godot/imported/peca_memoria.jpg-0845c4af4ce8e53be135c98f1ffd070c.ctex"]
 
 [params]
 

@@ -121,11 +121,7 @@ offset_right = 877.0
 offset_bottom = 606.0
 
 [node name="Contador" parent="." instance=ExtResource("7_if47u")]
-layout_mode = 0
-offset_left = 437.0
-offset_top = 10.0
-offset_right = 437.0
-offset_bottom = 10.0
+layout_mode = 1
 scale = Vector2(0.78101015, 1.1274073)
 tempo = 200
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bndydx31nme8e"
-path="res://.godot/imported/habitat arara azul - fase 2.png-99a3f02561f2293a69835074e0d4e7dc.ctex"
+uid="uid://cysxxnij258ql"
+path="res://.godot/imported/Abelha Fase 2- Quadrado.png-3b1282552d536573077a41c379c5066a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Artes para Fase 2/habitat arara azul - fase 2.png"
-dest_files=["res://.godot/imported/habitat arara azul - fase 2.png-99a3f02561f2293a69835074e0d4e7dc.ctex"]
+source_file="res://Assets/Artes para Fase 2/Animais/Abelha Fase 2- Quadrado.png"
+dest_files=["res://.godot/imported/Abelha Fase 2- Quadrado.png-3b1282552d536573077a41c379c5066a.ctex"]
 
 [params]
 
