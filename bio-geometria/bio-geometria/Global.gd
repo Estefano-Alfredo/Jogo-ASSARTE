@@ -78,7 +78,7 @@ func calcular_desempenho_fase_2(tempo_restante, erros):
 	var penalidade_tempo = floor(tempo_gasto / 40.0) * 11.0
 	
 	# --- MUDANÇA AQUI: Erros não contam mais na Fase 2 ---
-	var penalidade_erros = 0.0 
+	var penalidade_erros = 0.0
 	
 	var percentual = 100.0 - penalidade_tempo - penalidade_erros
 	percentual = max(0.0, percentual)
@@ -94,7 +94,7 @@ func calcular_desempenho_fase_3(tempo_restante, erros):
 	var penalidade_tempo = floor(tempo_gasto / 60.0) * 10.0
 	
 	# --- MUDANÇA AQUI: Penalidade reduzida para -2% ---
-	var penalidade_erros = float(erros) * 2.0 
+	var penalidade_erros = float(erros) * 2.0
 	
 	var percentual = 100.0 - penalidade_tempo - penalidade_erros
 	percentual = max(0.0, percentual)
@@ -128,12 +128,10 @@ func processar_e_salvar_relatorio_final():
 	var relatorio_final = {
 		"nome": nome_do_jogador,
 		"data": Time.get_date_string_from_system() + " " + Time.get_time_string_from_system(),
-		
 		"fase1_percentual": relatorio_f1.percentual,
 		"fase1_estrelas": relatorio_f1.estrelas,
 		"fase1_erros": erros_nivel_1_atual,
 		"fase1_tempo_restante": tempo_restante_nivel_1_atual,
-		
 		"fase2_percentual": relatorio_f2.percentual,
 		"fase2_estrelas": relatorio_f2.estrelas,
 		"fase2_erros": erros_nivel_2_atual,
@@ -261,6 +259,8 @@ func _criar_arquivo_de_regras():
 	file.store_string("--- FASE 2 (Jogo da Memória) ---\n")
 	file.store_string("- Tempo Máximo: 180 segundos (3min 00s)\n")
 	file.store_string("- Penalidade de Tempo: -11% de aproveitamento a cada 40 segundos gastos.\n")
+	# --- CORREÇÃO IMPORTANTE ---
+	file.store_string("- Penalidade de Erro: Nenhuma. A pontuação é baseada apenas no tempo.\n\n")
 	
 	# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
 	file.store_string("--- FASE 3 (Conectar Habitats) ---\n")

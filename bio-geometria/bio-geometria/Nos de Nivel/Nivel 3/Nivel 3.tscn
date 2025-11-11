@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://ceb1yq77ygyfb" path="res://Nos/transicao.tscn" id="9_g5442"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5ayr"]
-size = Vector2(320, 219.5)
+size = Vector2(307, 219.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uebfw"]
 size = Vector2(280.5, 288.5)
@@ -43,14 +43,18 @@ scale = Vector2(0.36858973, 0.35817307)
 texture = ExtResource("2_trea3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animais/tartaruga"]
-position = Vector2(0, -37)
+position = Vector2(-6.5, -37)
 shape = SubResource("RectangleShape2D_u5ayr")
 
 [node name="Label" type="Label" parent="Animais/tartaruga"]
-offset_left = 169.0
-offset_top = -144.0
-offset_right = 443.0
-offset_bottom = 72.0
+offset_left = 150.0
+offset_top = -111.0
+offset_right = 634.0
+offset_bottom = 105.0
+theme_override_font_sizes/font_size = 25
+text = "Tartaruga 🐢:
+\"Eu amo nadar! Minha casa é o oceano.\"
+\"Eu vivo na água salgada, no mar.\""
 
 [node name="panda" type="Area2D" parent="Animais" groups=["animais"]]
 position = Vector2(180, 393)
@@ -88,10 +92,14 @@ texture = ExtResource("6_uebfw")
 shape = SubResource("RectangleShape2D_n7t24")
 
 [node name="Label" type="Label" parent="Animais/abelha"]
-offset_left = 157.0
-offset_top = -115.0
-offset_right = 448.0
-offset_bottom = 124.0
+offset_left = 150.0
+offset_top = -78.0
+offset_right = 753.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 25
+text = "Abelha 🐝:
+\"Eu faço mel na minha casa, a colmeia.\"
+\"Preciso voltar para casa com o néctar das flores.\""
 
 [node name="Habitats" type="Node2D" parent="."]
 

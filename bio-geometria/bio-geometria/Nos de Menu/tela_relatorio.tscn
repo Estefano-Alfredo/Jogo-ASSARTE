@@ -45,8 +45,10 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
-offset_right = 44.0
-offset_bottom = 43.0
+offset_left = 86.0
+offset_top = 837.0
+offset_right = 177.0
+offset_bottom = 932.0
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("2_peab0")
 button_mask = 7

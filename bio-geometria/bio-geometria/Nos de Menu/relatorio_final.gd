@@ -1,56 +1,95 @@
 extends Control
 
-# Nós da sua cena (que acabamos de criar)
-@onready var label_nome: Label = $CenterContainer/VBoxContainer/LabelNomeJogador
-@onready var label_estrelas_f1: Label = $CenterContainer/VBoxContainer/EstrelasFase1
-@onready var label_estrelas_f2: Label = $CenterContainer/VBoxContainer/EstrelasFase2
-# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
-@onready var label_estrelas_f3: Label = $CenterContainer/VBoxContainer/EstrelasFase3
-# --- FIM DA MODIFICAÇÃO ---
-@onready var label_estrelas_geral: Label = $CenterContainer/VBoxContainer/EstrelasGeral
-@onready var botao_voltar: Button = $CenterContainer/VBoxContainer/VoltaraoMenu
-
+# Referência ao VBoxContainer que está dentro do ScrollContainer
+@onready var container_lista: VBoxContainer = $MarginContainer/VBoxRelatorio/ScrollContainer/ListaDeRelatorios
+# Carrega a fonte para usar nos labels
+@onready var fonte_arcade = preload("res://Assets/Fontes/ARCADECLASSIC.TTF") 
 
 func _ready():
-	# Garante que o botão esteja conectado, mesmo que falhe pelo editor
-	if not botao_voltar.is_connected("pressed", Callable(self, "_on_voltarao_menu_pressed")): 
-		botao_voltar.pressed.connect(_on_voltarao_menu_pressed) 
-
-	# Pega o relatório que o Global.gd acabou de calcular
-	var relatorio = Global.ultimo_relatorio_calculado
+	# Carrega todos os relatórios salvos do arquivo
+	Global.carregar_relatorios_salvos()
 	
-	if relatorio.is_empty():
-		print("ERRO: O relatorio final estava vazio. Os dados não foram calculados.")
-		label_nome.text = "ERRO AO CARREGAR DADOS"
-		label_estrelas_f1.text = "Erro"
-		label_estrelas_f2.text = "Erro"
-		# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
-		label_estrelas_f3.text = "Erro"
-		# --- FIM DA MODIFICAÇÃO ---
-		label_estrelas_geral.text = "Erro"
+	var relatorios = Global.todos_os_relatorios
+	
+	if relatorios.is_empty():
+		# Mostra uma mensagem se não houver relatórios
+		var label_vazio = Label.new()
+		label_vazio.text = "Nenhum relatorio salvo ainda."
+		label_vazio.set("theme_override_fonts/font", fonte_arcade)
+		label_vazio.set("theme_override_font_sizes/font_size", 20)
+		container_lista.add_child(label_vazio)
 		return
 		
-	# Exibe o nome
-	label_nome.text = "Desempenho de: " + relatorio.nome
-	
-	# Exibe as estrelas
-	label_estrelas_f1.text = _get_texto_estrelas(relatorio.fase1_estrelas)
-	label_estrelas_f2.text = _get_texto_estrelas(relatorio.fase2_estrelas)
 	# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
-	label_estrelas_f3.text = _get_texto_estrelas(relatorio.fase3_estrelas)
+	# Adiciona os cabeçalhos da lista
+	container_lista.add_child(_criar_linha_relatorio("ALUNO", "DATA", "FASE 1", "FASE 2", "FASE 3", "GERAL", true))
+	
+	# Itera sobre os relatórios salvos (do mais novo para o mais antigo)
+	relatorios.reverse()
+	for relatorio in relatorios:
+		
+		# Transforma o número de estrelas em texto (ex: 5 -> "*****")
+		var f1_estrelas = _get_texto_estrelas(relatorio.fase1_estrelas)
+		var f2_estrelas = _get_texto_estrelas(relatorio.fase2_estrelas)
+		var f3_estrelas = _get_texto_estrelas(relatorio.fase3_estrelas) # Nova linha
+		var geral_estrelas = _get_texto_estrelas(relatorio.geral_estrelas)
+		
+		# Cria a linha com os dados
+		container_lista.add_child(_criar_linha_relatorio(relatorio.nome, relatorio.data, f1_estrelas, f2_estrelas, f3_estrelas, geral_estrelas, false))
 	# --- FIM DA MODIFICAÇÃO ---
-	label_estrelas_geral.text = _get_texto_estrelas(relatorio.geral_estrelas)
 
+# Função auxiliar para criar uma linha da tabela dinamicamente
+# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
+func _criar_linha_relatorio(nome, data, f1, f2, f3, geral, is_header=false):
+# --- FIM DA MODIFICAÇÃO ---
+	var hbox = HBoxContainer.new()
+	hbox.set_h_size_flags(Control.SIZE_EXPAND_FILL)
+	hbox.set("theme_override_constants/separation", 20) # Espaçamento entre colunas
+	
+	# Cria os labels para cada coluna
+	var label_nome = _criar_label_coluna(nome, 250, is_header)
+	var label_data = _criar_label_coluna(data, 300, is_header)
+	var label_f1 = _criar_label_coluna(f1, 150, is_header)
+	var label_f2 = _criar_label_coluna(f2, 150, is_header)
+	# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
+	var label_f3 = _criar_label_coluna(f3, 150, is_header)
+	# --- FIM DA MODIFICAÇÃO ---
+	var label_geral = _criar_label_coluna(geral, 150, is_header)
+	
+	# Adiciona os labels na linha
+	hbox.add_child(label_nome)
+	hbox.add_child(label_data)
+	hbox.add_child(label_f1)
+	hbox.add_child(label_f2)
+	# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
+	hbox.add_child(label_f3)
+	# --- FIM DA MODIFICAÇÃO ---
+	hbox.add_child(label_geral)
+	
+	return hbox
 
-# Função helper para transformar o número de estrelas em texto
+# Função auxiliar para configurar os labels de cada coluna
+func _criar_label_coluna(texto, min_width, is_header):
+	var label = Label.new()
+	label.text = texto
+	label.set_custom_minimum_size(Vector2(min_width, 0)) # Define largura mínima
+	label.set("theme_override_fonts/font", fonte_arcade)
+	label.set("theme_override_font_sizes/font_size", 30) # Usei o 30 que você tinha mudado
+	
+	if is_header:
+		label.set("theme_override_colors/font_color", Color(1, 1, 0)) # Amarelo para cabeçalho
+	else:
+		label.set("theme_override_colors/font_color", Color(1, 1, 1)) # Branco para dados
+		
+	return label
+
+# Função auxiliar para transformar o número de estrelas em texto
 func _get_texto_estrelas(num_estrelas):
 	var estrelas_texto = ""
 	for i in num_estrelas:
-		estrelas_texto += "*" # Adiciona uma estrela
+		estrelas_texto += "*" # Adiciona um * para cada estrela
 	return estrelas_texto
 
-
-# Esta função será conectada pelo editor
-func _on_voltarao_menu_pressed():
-	print("Botão 'Voltar ao Menu' pressionado. Indo para o menu.")
+# função para voltar (original)
+func _on_voltar_pressed() -> void:
 	get_tree().change_scene_to_file("res://Nos de Menu/menu.tscn")
