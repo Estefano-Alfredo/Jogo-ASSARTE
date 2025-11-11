@@ -15,27 +15,69 @@ const ICON = preload("uid://c33p2dnbv3brm")
 const SEMICIRCULO = preload("uid://hnak7rafjwog")
 const QUADRADO = preload("uid://153sobfftdgc")
 const TRIANGULO = preload("uid://bqmqw7x1tuo6h")
+
 const POPUP_PAUSA_SCENE = preload("res://Nos de Menu/botao_pausa.tscn")
 const MENU_PATH = "res://Nos de Menu/menu.tscn"
 
 @onready var esc_triangulo: Button = $MarginContainer/VBoxContainer/Triangulo
 @onready var esc_quadrado: Button = $MarginContainer/VBoxContainer/Quadrado
 @onready var esc_semicirculo: Button = $MarginContainer/VBoxContainer/Semicirculo
+
 @onready var anim := $Transicao/AnimationPlayer
+
+const ABELHA_C = preload("uid://cm187nssvpkkb")
+const ABELHA_2 = preload("uid://ddpjo3jm7q3ob")
+const ABELHA_3 = preload("uid://b1qks0t1jlg7k")
+
+const ARARA_AZUL_2 = preload("uid://db4jawaghemuo")
+const ARARA_AZUL_C = preload("uid://c1d8xfmq640eb")
+const ARARA_AZUL_3 = preload("uid://d2ymiehsy6sws")
+
+#const TARTARUGA_C = preload("uid://bv8uyxxhpgjf5")
+#const TARTARUGA_2 = preload("uid://cxehe7nva62wa")
+#const TARTARUGA_3 = preload("uid://cw8utm04duasu")
+
+const ARARA_QUADRADO_SOMBRA = preload("uid://cj00wa21paj3l")
+const ARARA_SEMICIRCULO_SOMBRA = preload("uid://kwyi70tr276k")
+const ARARA_TRIANGULO_SOMBRA = preload("uid://dsa71uhdcdjsa")
+
+var a1 : CompressedTexture2D
+var a2 : CompressedTexture2D
+var a3 : CompressedTexture2D
+func _ready() -> void:
+	match Global.progreso_nivel_1:
+		1:
+			a1 = ABELHA_C
+			a2 = ABELHA_2
+			a3 = ABELHA_3
+		2:
+			a1 = ARARA_AZUL_C
+			a2 = ARARA_AZUL_2
+			a3 = ARARA_AZUL_3
+			button.icon = ARARA_SEMICIRCULO_SOMBRA
+			button_2.icon = ARARA_QUADRADO_SOMBRA
+			button_3.icon = ARARA_TRIANGULO_SOMBRA
+		#3:
+			#a1 = TARTARUGA_C
+			#a2 = TARTARUGA_2
+			#a3 = TARTARUGA_3
+	esc_triangulo.icon = a3
+	esc_quadrado.icon = a2
+	esc_semicirculo.icon = a1
 
 func _on_triangulo_pressed() -> void:
 	if esc_triangulo.x == false:
-		botao_pressionado("Triangulo", TRIANGULO, 25, 50)
+		botao_pressionado("Triangulo", a3, 71, 125)
 
 
 func _on_quadrado_pressed() -> void:
 	if esc_quadrado.x == false:
-		botao_pressionado("Quadrado", QUADRADO, 50, 50)
+		botao_pressionado("Quadrado", a2, 68, 125)
 
 
 func _on_semicirculo_pressed() -> void:
 	if esc_semicirculo.x == false:
-		botao_pressionado("Semicírculo", SEMICIRCULO, 25, 50)
+		botao_pressionado("Semicírculo", a1, 84, 125)
 
 func botao_pressionado(formato, formato2, x , y) -> void:
 	selecao = formato
@@ -48,17 +90,18 @@ func botao_pressionado(formato, formato2, x , y) -> void:
 @onready var button_3: Button = $GridContainer/Button3
 
 
+
 func _on_button_pressed() -> void:
 	selecao2 = "Semicírculo"
-	resposta_selecionada(button ,SEMICIRCULO, esc_semicirculo)
+	resposta_selecionada(button ,a1, esc_semicirculo)
 
 func _on_button_2_pressed() -> void:
 	selecao2 = "Quadrado"
-	resposta_selecionada(button_2, QUADRADO, esc_quadrado)
+	resposta_selecionada(button_2, a2, esc_quadrado)
 
 func _on_button_3_pressed() -> void:
 	selecao2 = "Triangulo"
-	resposta_selecionada(button_3, TRIANGULO, esc_triangulo)
+	resposta_selecionada(button_3, a3, esc_triangulo)
 
 func resposta_selecionada(botao, forma, botao2) -> void:
 	#print("Voce selecionou um " + selecao2)
@@ -81,7 +124,12 @@ func resposta_selecionada(botao, forma, botao2) -> void:
 			
 			anim.play("fade_in")
 			await anim.animation_finished
-			get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 2/nivel_2.tscn")
+			if Global.progreso_nivel_1 == 1:
+				Global.progreso_nivel_1 = 2
+				get_tree().reload_current_scene()
+			else:
+				Global.progreso_nivel_1 = 1
+				get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 2/nivel_2.tscn")
 	else:
 		print("Resposta Incorreta")
 		# --- INÍCIO DA MODIFICAÇÃO de relatorio ---

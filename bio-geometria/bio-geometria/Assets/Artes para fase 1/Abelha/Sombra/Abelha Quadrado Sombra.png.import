@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxehe7nva62wa"
-path="res://.godot/imported/Tartaruga 2 - Quadrado.png-941edc80e6f3782ca1a4404021cd3126.ctex"
+uid="uid://c6f06dhfvvcky"
+path="res://.godot/imported/Abelha Quadrado Sombra.png-aef0a50a96f7e6ab81693ab9adc2deea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Artes para fase 1/Tartaruga 2 - Quadrado.png"
-dest_files=["res://.godot/imported/Tartaruga 2 - Quadrado.png-941edc80e6f3782ca1a4404021cd3126.ctex"]
+source_file="res://Assets/Artes para fase 1/Abelha/Sombra/Abelha Quadrado Sombra.png"
+dest_files=["res://.godot/imported/Abelha Quadrado Sombra.png-aef0a50a96f7e6ab81693ab9adc2deea.ctex"]
 
 [params]
 
@@ -36,5 +36,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=250
 detect_3d/compress_to=1

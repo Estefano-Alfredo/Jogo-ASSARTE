@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddpjo3jm7q3ob"
-path="res://.godot/imported/Abelha 2  -Quadrado.png-788e68a0d50c0fe267e831dbbed5bc37.ctex"
+uid="uid://bv8uyxxhpgjf5"
+path="res://.godot/imported/Tartaruga 1 - Semicirculo.png-c62cb638b9014045f353ae674a291f20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Artes para fase 1/Abelha 2  -Quadrado.png"
-dest_files=["res://.godot/imported/Abelha 2  -Quadrado.png-788e68a0d50c0fe267e831dbbed5bc37.ctex"]
+source_file="res://Assets/Artes para fase 1/Tartarura/Tartaruga 1 - Semicirculo.png"
+dest_files=["res://.godot/imported/Tartaruga 1 - Semicirculo.png-c62cb638b9014045f353ae674a291f20.ctex"]
 
 [params]
 

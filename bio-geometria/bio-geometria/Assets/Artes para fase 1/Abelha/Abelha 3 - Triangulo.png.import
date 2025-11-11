@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cw8utm04duasu"
-path="res://.godot/imported/Tartaruga 3 - Triangulo.png-c4afc9f76e009d142c18020beb474747.ctex"
+uid="uid://b1qks0t1jlg7k"
+path="res://.godot/imported/Abelha 3 - Triangulo.png-1707017a2205987aaee1f4484f09aecd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Artes para fase 1/Tartaruga 3 - Triangulo.png"
-dest_files=["res://.godot/imported/Tartaruga 3 - Triangulo.png-c4afc9f76e009d142c18020beb474747.ctex"]
+source_file="res://Assets/Artes para fase 1/Abelha/Abelha 3 - Triangulo.png"
+dest_files=["res://.godot/imported/Abelha 3 - Triangulo.png-1707017a2205987aaee1f4484f09aecd.ctex"]
 
 [params]
 
@@ -36,5 +36,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=250
 detect_3d/compress_to=1

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1qks0t1jlg7k"
-path="res://.godot/imported/Abelha 3 - Triangulo.png-a89a35a93614d1ca6a319e06ea0368dd.ctex"
+uid="uid://c3fqlyj5ntdh6"
+path="res://.godot/imported/Abelha Semicirculo Sombra.png-ad4c2156c9cca6d1743ef6ec1ed48f51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Artes para fase 1/Abelha 3 - Triangulo.png"
-dest_files=["res://.godot/imported/Abelha 3 - Triangulo.png-a89a35a93614d1ca6a319e06ea0368dd.ctex"]
+source_file="res://Assets/Artes para fase 1/Abelha/Sombra/Abelha Semicirculo Sombra.png"
+dest_files=["res://.godot/imported/Abelha Semicirculo Sombra.png-ad4c2156c9cca6d1743ef6ec1ed48f51.ctex"]
 
 [params]
 
@@ -36,5 +36,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=250
 detect_3d/compress_to=1
