@@ -71,3 +71,6 @@ Interace
 - desenvolvimento botões clicáveis (começar, configurações, relatório, tutorial)
 - popup de nome
 - popup de tutorial
+
+---
+Link formulário de qualidade: https://forms.gle/sCFY8iyRCS78nTPq7
