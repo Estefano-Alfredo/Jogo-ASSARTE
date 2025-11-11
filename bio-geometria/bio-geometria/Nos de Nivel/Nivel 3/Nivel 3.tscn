@@ -1,59 +1,151 @@
-[gd_scene load_steps=4 format=3 uid="uid://17ogntdwrtne"]
+[gd_scene load_steps=16 format=3 uid="uid://17ogntdwrtne"]
 
 [ext_resource type="Script" uid="uid://bjlq4fneskhry" path="res://Nos de Nivel/Nivel 3/nivel_3.gd" id="1_i4ref"]
-[ext_resource type="Script" uid="uid://p7tdoqx2selk" path="res://Nos de Nivel/Nivel 3/resposta.gd" id="2_trea3"]
+[ext_resource type="Texture2D" uid="uid://b18k7mh7icsp3" path="res://Jogo-ASSARTE-main/Artes para jogo/tartaruga - circulo fase 2.png" id="2_trea3"]
+[ext_resource type="Texture2D" uid="uid://0gcbl6c5j8y4" path="res://Jogo-ASSARTE-main/Artes para jogo/habitat tartaruga - fase 2.png" id="3_u5ayr"]
+[ext_resource type="Texture2D" uid="uid://dsf00bsbay5tx" path="res://Jogo-ASSARTE-main/Artes para jogo/panda- trapezio fase 2.png" id="4_5qb24"]
+[ext_resource type="Texture2D" uid="uid://xi22spn5d157" path="res://Jogo-ASSARTE-main/Artes para jogo/habitat panda - fase 2.png" id="5_yxo8q"]
+[ext_resource type="Texture2D" uid="uid://blasb3senb3ub" path="res://Jogo-ASSARTE-main/Artes para jogo/abelha quadrada fase 1.png" id="6_uebfw"]
+[ext_resource type="Texture2D" uid="uid://ck50887cqon6w" path="res://Jogo-ASSARTE-main/Artes para jogo/habitat abelha  - fase 2.png" id="7_acven"]
+[ext_resource type="PackedScene" uid="uid://dayfhtq76hld" path="res://Nos/contador.tscn" id="8_n7t24"]
+[ext_resource type="PackedScene" uid="uid://ceb1yq77ygyfb" path="res://Nos/transicao.tscn" id="9_g5442"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lgjfs"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u5ayr"]
+size = Vector2(307, 219.5)
 
-[node name="Nivel 3" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uebfw"]
+size = Vector2(280.5, 288.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n7t24"]
+size = Vector2(294.25, 245)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_acven"]
+size = Vector2(403.25, 251.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g5442"]
+size = Vector2(393.25, 260)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lgjfs"]
+size = Vector2(417.375, 248.15625)
+
+[node name="Nivel 3" type="Node2D"]
 script = ExtResource("1_i4ref")
 
-[node name="Margem de Fora" type="MarginContainer" parent="."]
-layout_mode = 1
-anchors_preset = 13
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_top = 100
+[node name="Animais" type="Node2D" parent="."]
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Margem de Fora"]
-layout_mode = 2
-theme_override_constants/separation = 50
+[node name="tartaruga" type="Area2D" parent="Animais" groups=["animais"]]
+position = Vector2(180, 979)
+metadata/habitat_id = "tartaruga"
 
-[node name="Pergunta" type="Label" parent="Margem de Fora/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 64
-text = "PERGUNTA"
-horizontal_alignment = 1
+[node name="Sprite2D" type="Sprite2D" parent="Animais/tartaruga"]
+position = Vector2(0, -35)
+scale = Vector2(0.36858973, 0.35817307)
+texture = ExtResource("2_trea3")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Margem de Fora/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 25
-alignment = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animais/tartaruga"]
+position = Vector2(-6.5, -37)
+shape = SubResource("RectangleShape2D_u5ayr")
 
-[node name="Resposta 1" type="Button" parent="Margem de Fora/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxEmpty_lgjfs")
-autowrap_trim_flags = 0
-script = ExtResource("2_trea3")
+[node name="Label" type="Label" parent="Animais/tartaruga"]
+offset_left = 150.0
+offset_top = -111.0
+offset_right = 634.0
+offset_bottom = 105.0
+theme_override_font_sizes/font_size = 25
+text = "Tartaruga 🐢:
+\"Eu amo nadar! Minha casa é o oceano.\"
+\"Eu vivo na água salgada, no mar.\""
 
-[node name="Resposta 2" type="Button" parent="Margem de Fora/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxEmpty_lgjfs")
-autowrap_trim_flags = 0
-script = ExtResource("2_trea3")
+[node name="panda" type="Area2D" parent="Animais" groups=["animais"]]
+position = Vector2(180, 393)
+metadata/habitat_id = "panda"
 
-[connection signal="pressed" from="Margem de Fora/VBoxContainer/HBoxContainer/Resposta 1" to="Margem de Fora/VBoxContainer/HBoxContainer/Resposta 1" method="_on_pressed"]
-[connection signal="resposta_selecionada" from="Margem de Fora/VBoxContainer/HBoxContainer/Resposta 1" to="." method="_on_resposta_1_resposta_selecionada"]
-[connection signal="pressed" from="Margem de Fora/VBoxContainer/HBoxContainer/Resposta 2" to="Margem de Fora/VBoxContainer/HBoxContainer/Resposta 2" method="_on_pressed"]
-[connection signal="resposta_selecionada" from="Margem de Fora/VBoxContainer/HBoxContainer/Resposta 2" to="." method="_on_resposta_1_resposta_selecionada"]
+[node name="Sprite2D" type="Sprite2D" parent="Animais/panda"]
+position = Vector2(0, -34)
+scale = Vector2(0.2832532, 0.3203125)
+texture = ExtResource("4_5qb24")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animais/panda"]
+position = Vector2(0, -35)
+shape = SubResource("RectangleShape2D_uebfw")
+
+[node name="Label" type="Label" parent="Animais/panda"]
+offset_left = 143.0
+offset_top = -109.0
+offset_right = 760.0
+offset_bottom = 72.0
+theme_override_font_sizes/font_size = 25
+text = "Panda 🐼:
+\"Estou com fome! Eu como bambu.\" 
+\"Minha casa é onde minha comida favorita cresce.\""
+
+[node name="abelha" type="Area2D" parent="Animais" groups=["animais"]]
+position = Vector2(180, 652)
+metadata/habitat_id = "abelha"
+
+[node name="Sprite2D" type="Sprite2D" parent="Animais/abelha"]
+position = Vector2(-0.00012207031, -1.5258789e-05)
+scale = Vector2(0.23944256, 0.2552083)
+texture = ExtResource("6_uebfw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animais/abelha"]
+shape = SubResource("RectangleShape2D_n7t24")
+
+[node name="Label" type="Label" parent="Animais/abelha"]
+offset_left = 150.0
+offset_top = -78.0
+offset_right = 753.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 25
+text = "Abelha 🐝:
+\"Eu faço mel na minha casa, a colmeia.\"
+\"Preciso voltar para casa com o néctar das flores.\""
+
+[node name="Habitats" type="Node2D" parent="."]
+
+[node name="HabitatPanda" type="Area2D" parent="Habitats" groups=["habitats"]]
+position = Vector2(1613, 897)
+collision_layer = 2
+metadata/habitat_id = "panda"
+
+[node name="Sprite2D" type="Sprite2D" parent="Habitats/HabitatPanda"]
+position = Vector2(6.1035156e-05, 44.999977)
+scale = Vector2(0.29607376, 0.29777646)
+texture = ExtResource("5_yxo8q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Habitats/HabitatPanda"]
+position = Vector2(0, 45)
+shape = SubResource("RectangleShape2D_acven")
+
+[node name="habitatAbelha" type="Area2D" parent="Habitats" groups=["habitats"]]
+position = Vector2(1610, 652)
+collision_layer = 2
+metadata/habitat_id = "abelha"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Habitats/habitatAbelha"]
+shape = SubResource("RectangleShape2D_g5442")
+
+[node name="Sprite2D" type="Sprite2D" parent="Habitats/habitatAbelha"]
+position = Vector2(5.4838136e-05, -2.670288e-05)
+scale = Vector2(0.3109475, 0.309683)
+texture = ExtResource("7_acven")
+
+[node name="HabitatTartaruga" type="Area2D" parent="Habitats" groups=["habitats"]]
+position = Vector2(1610, 358)
+collision_layer = 2
+metadata/habitat_id = "tartaruga"
+
+[node name="Sprite2D" type="Sprite2D" parent="Habitats/HabitatTartaruga"]
+scale = Vector2(0.31530452, 0.30679083)
+texture = ExtResource("3_u5ayr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Habitats/HabitatTartaruga"]
+position = Vector2(3, 0)
+shape = SubResource("RectangleShape2D_lgjfs")
+
+[node name="Contador" parent="." instance=ExtResource("8_n7t24")]
+tempo = 180
+
+[node name="Transicao" parent="." instance=ExtResource("9_g5442")]
+
+[connection signal="mouse_entered" from="Animais/tartaruga" to="." method="_on_tartaruga_mouse_entered"]

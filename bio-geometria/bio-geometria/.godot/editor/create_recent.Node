@@ -1,14 +1,18 @@
-Button
-RichTextLabel
+<<<<<<< HEAD
+Label
+PanelContainer
+=======
+>>>>>>> eb937451a50d3ebb7035fc88d476babb3a18e1d7
+TextureRect
+PanelContainer
 VBoxContainer
-MarginContainer
+ScrollContainer
+Button
+CenterContainer
+Control
 Panel
 ColorRect
-Control
-PanelContainer
-TextureRect
-ScrollContainer
-Label
-CenterContainer
+RichTextLabel
+MarginContainer
 Sprite2D
 AnimationPlayer

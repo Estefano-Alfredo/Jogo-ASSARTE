@@ -74,19 +74,18 @@ func _on_carta_teste() -> void:
 		if acertos == count:
 			await get_tree().create_timer(1.0).timeout
 			
-			# --- INÍCIO DA MODIFICAÇÃO de relatorio ---
+			# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
 			# Para o contador e salva o tempo restante
 			contador.ligado = false
 			Global.tempo_restante_nivel_2_atual = contador.tempo
 			print("Fase 2 completa. Erros: ", Global.erros_nivel_2_atual, " Tempo Restante: ", Global.tempo_restante_nivel_2_atual)
 			
-			# Processa e salva o relatório final
-			Global.processar_e_salvar_relatorio_final()
+			# NÃO processa mais o relatório final aqui
 			
-			# Muda para a nova tela de Relatório Final do Jogador
+			# Muda para a nova FASE 3
 			anim.play("fade_in")
 			await anim.animation_finished
-			get_tree().change_scene_to_file("res://Nos de Menu/relatorio_final.tscn") # IR PARA A TELA DE RELATÓRIO
+			get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 3/Nivel 3.tscn") # IR PARA A FASE 3
 			# --- FIM DA MODIFICAÇÃO ---
 			
 	Global.selecionado_1 = 0
