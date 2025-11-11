@@ -1,9 +1,9 @@
+Label
 PanelContainer
 TextureRect
 VBoxContainer
 ScrollContainer
 Button
-Label
 CenterContainer
 Control
 Panel
@@ -12,4 +12,3 @@ RichTextLabel
 MarginContainer
 Sprite2D
 AnimationPlayer
-Timer

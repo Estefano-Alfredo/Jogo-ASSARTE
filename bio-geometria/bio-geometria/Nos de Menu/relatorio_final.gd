@@ -4,16 +4,17 @@ extends Control
 @onready var label_nome: Label = $CenterContainer/VBoxContainer/LabelNomeJogador
 @onready var label_estrelas_f1: Label = $CenterContainer/VBoxContainer/EstrelasFase1
 @onready var label_estrelas_f2: Label = $CenterContainer/VBoxContainer/EstrelasFase2
+# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
+@onready var label_estrelas_f3: Label = $CenterContainer/VBoxContainer/EstrelasFase3
+# --- FIM DA MODIFICAÇÃO ---
 @onready var label_estrelas_geral: Label = $CenterContainer/VBoxContainer/EstrelasGeral
 @onready var botao_voltar: Button = $CenterContainer/VBoxContainer/VoltaraoMenu
 
 
 func _ready():
-	# --- INÍCIO DA CORREÇÃO (Botão Voltar) ---
 	# Garante que o botão esteja conectado, mesmo que falhe pelo editor
-	if not botao_voltar.is_connected("pressed", Callable(self, "_on_voltarao_menu_pressed")): # <-- CORRIGIDO AQUI
-		botao_voltar.pressed.connect(_on_voltarao_menu_pressed) # <-- CORRIGIDO AQUI
-	# --- FIM DA CORREÇÃO ---
+	if not botao_voltar.is_connected("pressed", Callable(self, "_on_voltarao_menu_pressed")): 
+		botao_voltar.pressed.connect(_on_voltarao_menu_pressed) 
 
 	# Pega o relatório que o Global.gd acabou de calcular
 	var relatorio = Global.ultimo_relatorio_calculado
@@ -21,12 +22,12 @@ func _ready():
 	if relatorio.is_empty():
 		print("ERRO: O relatorio final estava vazio. Os dados não foram calculados.")
 		label_nome.text = "ERRO AO CARREGAR DADOS"
-		# --- INÍCIO DA CORREÇÃO (Estrelas) ---
-		# Mostra "Erro" em vez de ficar em branco, para sabermos o problema
 		label_estrelas_f1.text = "Erro"
 		label_estrelas_f2.text = "Erro"
+		# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
+		label_estrelas_f3.text = "Erro"
+		# --- FIM DA MODIFICAÇÃO ---
 		label_estrelas_geral.text = "Erro"
-		# --- FIM DA CORREÇÃO ---
 		return
 		
 	# Exibe o nome
@@ -35,6 +36,9 @@ func _ready():
 	# Exibe as estrelas
 	label_estrelas_f1.text = _get_texto_estrelas(relatorio.fase1_estrelas)
 	label_estrelas_f2.text = _get_texto_estrelas(relatorio.fase2_estrelas)
+	# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
+	label_estrelas_f3.text = _get_texto_estrelas(relatorio.fase3_estrelas)
+	# --- FIM DA MODIFICAÇÃO ---
 	label_estrelas_geral.text = _get_texto_estrelas(relatorio.geral_estrelas)
 
 

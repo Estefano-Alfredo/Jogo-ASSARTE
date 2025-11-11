@@ -50,6 +50,15 @@ horizontal_alignment = 1
 layout_mode = 2
 horizontal_alignment = 1
 
+[node name="LabelFase3" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "FASE 3"
+horizontal_alignment = 1
+
+[node name="EstrelasFase3" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+
 [node name="LabelGeral" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 text = "GERAL"
