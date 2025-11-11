@@ -40,11 +40,13 @@ theme_override_constants/separation = 10
 
 [node name="LabelNomeJogador" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-text = "Desempenho de ->"
+theme_override_font_sizes/font_size = 30
+text = "Desempenho de:"
 horizontal_alignment = 1
 
 [node name="LabelFase1" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 25
 text = "FASE 1 "
 horizontal_alignment = 1
 
@@ -54,6 +56,7 @@ horizontal_alignment = 1
 
 [node name="LabelFase2" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 25
 text = "FASE 2"
 horizontal_alignment = 1
 
@@ -63,6 +66,7 @@ horizontal_alignment = 1
 
 [node name="LabelFase3" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 25
 text = "FASE 3"
 horizontal_alignment = 1
 
@@ -72,6 +76,7 @@ horizontal_alignment = 1
 
 [node name="LabelGeral" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 25
 text = "GERAL"
 horizontal_alignment = 1
 
@@ -81,6 +86,7 @@ horizontal_alignment = 1
 
 [node name="VoltaraoMenu" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 20
 text = "Voltar ao Menu"
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/VoltaraoMenu" to="." method="_on_voltarao_menu_pressed"]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://17ogntdwrtne"]
+[gd_scene load_steps=17 format=3 uid="uid://17ogntdwrtne"]
 
 [ext_resource type="Script" uid="uid://bjlq4fneskhry" path="res://Nos de Nivel/Nivel 3/nivel_3.gd" id="1_i4ref"]
+[ext_resource type="Texture2D" uid="uid://dkkwqqr12siqv" path="res://Assets/fase3.png" id="2_g5442"]
 [ext_resource type="Texture2D" uid="uid://b18k7mh7icsp3" path="res://Jogo-ASSARTE-main/Artes para jogo/tartaruga - circulo fase 2.png" id="2_trea3"]
 [ext_resource type="Texture2D" uid="uid://0gcbl6c5j8y4" path="res://Jogo-ASSARTE-main/Artes para jogo/habitat tartaruga - fase 2.png" id="3_u5ayr"]
 [ext_resource type="Texture2D" uid="uid://dsf00bsbay5tx" path="res://Jogo-ASSARTE-main/Artes para jogo/panda- trapezio fase 2.png" id="4_5qb24"]
@@ -30,6 +31,11 @@ size = Vector2(417.375, 248.15625)
 
 [node name="Nivel 3" type="Node2D"]
 script = ExtResource("1_i4ref")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1081.0
+texture = ExtResource("2_g5442")
 
 [node name="Animais" type="Node2D" parent="."]
 
