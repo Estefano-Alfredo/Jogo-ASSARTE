@@ -1,0 +1,181 @@
+[res://control.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 14,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 25,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://Global.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 27,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 17,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://Nos de Menu/menu.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 1,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 39,
+"scroll_position": 9.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://Nos de Nivel/Nivel 1/level_1.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 47,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 21,
+"scroll_position": 15.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://Nos/vetificao_botao.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 22,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 2,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://transicao.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 20,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 4,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://Nos de Menu/tela_relatorio.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 0,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://Nos de Menu/popup_nome.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 0,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://Nos de Nivel/Nivel 2/nivel_2.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 25,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 50,
+"scroll_position": 30.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://Nos/carta.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 16,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 16,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://nova_carta.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 1,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 5,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://Nos/contador.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 53,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 14,
+"scroll_position": 9.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://sobre.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 43,
+"folded_lines": Array[int]([]),
+"h_scroll_position": 0,
+"row": 5,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}

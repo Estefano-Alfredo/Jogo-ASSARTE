@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3r7gpjiepoym"]
+
+[ext_resource type="Script" uid="uid://cgfgslxofxilq" path="res://Nos Esteticos/Audio/control.gd" id="1_0o64d"]
+[ext_resource type="Texture2D" uid="uid://bswucvxg7mfcu" path="res://Assets/Ui/som.png" id="2_0ivm0"]
+[ext_resource type="AudioStream" uid="uid://bh662ho7ii57d" path="res://Assets/Sounds/Modern11.mp3" id="3_jlrq6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0o64d"]
+
+[node name="Sons" type="Control"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+script = ExtResource("1_0o64d")
+
+[node name="Botao" type="Button" parent="."]
+layout_mode = 1
+offset_left = -40.0
+offset_bottom = 40.0
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0o64d")
+toggle_mode = true
+button_pressed = true
+icon = ExtResource("2_0ivm0")
+flat = true
+
+[node name="HSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = -151.0
+offset_top = 12.0
+offset_right = -40.0
+offset_bottom = 28.0
+mouse_default_cursor_shape = 10
+max_value = 10.0
+value = 1.0
+
+[node name="teste" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -188.0
+offset_top = 6.0
+offset_right = -167.0
+offset_bottom = 29.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_jlrq6")
+
+[connection signal="toggled" from="Botao" to="." method="_on_button_toggled"]
+[connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="pressed" from="teste" to="." method="_on_button_pressed"]

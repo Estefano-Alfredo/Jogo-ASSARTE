@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxxddphh1aket"]
+
+[ext_resource type="Script" uid="uid://cpiwld5ldfwm4" path="res://Nos de Menu/tela_relatorio.gd" id="1_13fo7"]
+[ext_resource type="FontFile" uid="uid://dek64knlgemme" path="res://Assets/Fontes/ARCADECLASSIC.TTF" id="2_peab0"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_13fo7")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0001198937, 0.32967466, 0.48441768, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxRelatorio" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxRelatorio"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ListaDeRelatorios" type="VBoxContainer" parent="MarginContainer/VBoxRelatorio/ScrollContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+offset_right = 44.0
+offset_bottom = 43.0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_peab0")
+button_mask = 7
+keep_pressed_outside = true
+text = "SAIR"
+alignment = 0
+
+[connection signal="pressed" from="Button" to="." method="_on_voltar_pressed"]

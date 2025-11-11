@@ -1,0 +1,22 @@
+PARÂMETROS DE AVALIAÇÃO - BIO-GEOMETRIA
+==================================================
+
+Este arquivo explica como o 'relatorio_educador.csv' é calculado.
+
+--- REGRA DE ESTRELAS (GERAL) ---
+5 Estrelas: 90-100% de aproveitamento
+4 Estrelas: 70-89% de aproveitamento
+3 Estrelas: 60-69% de aproveitamento
+2 Estrelas: 35-59% de aproveitamento
+1 Estrela:  0-34% de aproveitamento
+
+--- FASE 1 (Puzzle Formas) ---
+- Tempo Máximo: 200 segundos (3min 20s)
+- Penalidade de Tempo: -10% de aproveitamento a cada 60 segundos gastos.
+- Penalidade de Erro: -1% de aproveitamento por cada clique errado.
+
+--- FASE 2 (Jogo da Memória) ---
+- Tempo Máximo: 180 segundos (3min 00s)
+- Penalidade de Tempo: -11% de aproveitamento a cada 40 segundos gastos.
+- Penalidade de Erro: -1% de aproveitamento por cada par errado (Global.erros_nivel_2_atual).
+

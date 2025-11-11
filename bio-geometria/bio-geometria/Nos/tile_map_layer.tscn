@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://esyapes0vqjv"]
+
+[ext_resource type="Texture2D" uid="uid://dk8hm7crsfulp" path="res://Assets/Ui/button_ui_tile.png" id="1_2kqja"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xon1r"]
+texture = ExtResource("1_2kqja")
+separation = Vector2i(2, 2)
+texture_region_size = Vector2i(14, 14)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+7:2/0 = 0
+7:1/0 = 0
+7:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_65t7g"]
+sources/1 = SubResource("TileSetAtlasSource_xon1r")
+
+[node name="TileMapLayer" type="TileMapLayer"]
+tile_set = SubResource("TileSet_65t7g")
