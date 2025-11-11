@@ -1,87 +1,26 @@
 extends Control
 
-# Referência ao VBoxContainer que está dentro do ScrollContainer
-@onready var container_lista: VBoxContainer = $MarginContainer/VBoxRelatorio/ScrollContainer/ListaDeRelatorios
-# Carrega a fonte para usar nos labels
-@onready var fonte_arcade = preload("res://Assets/Fontes/ARCADECLASSIC.TTF") 
+# Caminhos corretos para os nós da cena relatorio_final.tscn
+@onready var label_nome_jogador: Label = $CenterContainer/VBoxContainer/LabelNomeJogador
+@onready var estrelas_fase_1: Label = $CenterContainer/VBoxContainer/EstrelasFase1
+@onready var estrelas_fase_2: Label = $CenterContainer/VBoxContainer/EstrelasFase2
+@onready var estrelas_fase_3: Label = $CenterContainer/VBoxContainer/EstrelasFase3
+@onready var estrelas_geral: Label = $CenterContainer/VBoxContainer/EstrelasGeral
 
 func _ready():
-	# Carrega todos os relatórios salvos do arquivo
-	Global.carregar_relatorios_salvos()
+	# Pega o dicionário do último relatório que foi salvo no Global
+	var relatorio = Global.ultimo_relatorio_calculado
 	
-	var relatorios = Global.todos_os_relatorios
-	
-	if relatorios.is_empty():
-		# Mostra uma mensagem se não houver relatórios
-		var label_vazio = Label.new()
-		label_vazio.text = "Nenhum relatorio salvo ainda."
-		label_vazio.set("theme_override_fonts/font", fonte_arcade)
-		label_vazio.set("theme_override_font_sizes/font_size", 20)
-		container_lista.add_child(label_vazio)
+	if relatorio.is_empty():
+		label_nome_jogador.text = "Erro: Relatorio nao foi processado."
 		return
-		
-	# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
-	# Adiciona os cabeçalhos da lista
-	container_lista.add_child(_criar_linha_relatorio("ALUNO", "DATA", "FASE 1", "FASE 2", "FASE 3", "GERAL", true))
 	
-	# Itera sobre os relatórios salvos (do mais novo para o mais antigo)
-	relatorios.reverse()
-	for relatorio in relatorios:
-		
-		# Transforma o número de estrelas em texto (ex: 5 -> "*****")
-		var f1_estrelas = _get_texto_estrelas(relatorio.fase1_estrelas)
-		var f2_estrelas = _get_texto_estrelas(relatorio.fase2_estrelas)
-		var f3_estrelas = _get_texto_estrelas(relatorio.fase3_estrelas) # Nova linha
-		var geral_estrelas = _get_texto_estrelas(relatorio.geral_estrelas)
-		
-		# Cria a linha com os dados
-		container_lista.add_child(_criar_linha_relatorio(relatorio.nome, relatorio.data, f1_estrelas, f2_estrelas, f3_estrelas, geral_estrelas, false))
-	# --- FIM DA MODIFICAÇÃO ---
-
-# Função auxiliar para criar uma linha da tabela dinamicamente
-# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
-func _criar_linha_relatorio(nome, data, f1, f2, f3, geral, is_header=false):
-# --- FIM DA MODIFICAÇÃO ---
-	var hbox = HBoxContainer.new()
-	hbox.set_h_size_flags(Control.SIZE_EXPAND_FILL)
-	hbox.set("theme_override_constants/separation", 20) # Espaçamento entre colunas
-	
-	# Cria os labels para cada coluna
-	var label_nome = _criar_label_coluna(nome, 250, is_header)
-	var label_data = _criar_label_coluna(data, 300, is_header)
-	var label_f1 = _criar_label_coluna(f1, 150, is_header)
-	var label_f2 = _criar_label_coluna(f2, 150, is_header)
-	# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
-	var label_f3 = _criar_label_coluna(f3, 150, is_header)
-	# --- FIM DA MODIFICAÇÃO ---
-	var label_geral = _criar_label_coluna(geral, 150, is_header)
-	
-	# Adiciona os labels na linha
-	hbox.add_child(label_nome)
-	hbox.add_child(label_data)
-	hbox.add_child(label_f1)
-	hbox.add_child(label_f2)
-	# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
-	hbox.add_child(label_f3)
-	# --- FIM DA MODIFICAÇÃO ---
-	hbox.add_child(label_geral)
-	
-	return hbox
-
-# Função auxiliar para configurar os labels de cada coluna
-func _criar_label_coluna(texto, min_width, is_header):
-	var label = Label.new()
-	label.text = texto
-	label.set_custom_minimum_size(Vector2(min_width, 0)) # Define largura mínima
-	label.set("theme_override_fonts/font", fonte_arcade)
-	label.set("theme_override_font_sizes/font_size", 30) # Usei o 30 que você tinha mudado
-	
-	if is_header:
-		label.set("theme_override_colors/font_color", Color(1, 1, 0)) # Amarelo para cabeçalho
-	else:
-		label.set("theme_override_colors/font_color", Color(1, 1, 1)) # Branco para dados
-		
-	return label
+	# Popula os labels com os dados do relatório
+	label_nome_jogador.text = "Desempenho de -> %s" % relatorio.nome
+	estrelas_fase_1.text = _get_texto_estrelas(relatorio.fase1_estrelas)
+	estrelas_fase_2.text = _get_texto_estrelas(relatorio.fase2_estrelas)
+	estrelas_fase_3.text = _get_texto_estrelas(relatorio.fase3_estrelas)
+	estrelas_geral.text = _get_texto_estrelas(relatorio.geral_estrelas)
 
 # Função auxiliar para transformar o número de estrelas em texto
 func _get_texto_estrelas(num_estrelas):
@@ -90,6 +29,6 @@ func _get_texto_estrelas(num_estrelas):
 		estrelas_texto += "*" # Adiciona um * para cada estrela
 	return estrelas_texto
 
-# função para voltar (original)
-func _on_voltar_pressed() -> void:
+# Conexão do botão "Voltar ao Menu"
+func _on_voltarao_menu_pressed() -> void:
 	get_tree().change_scene_to_file("res://Nos de Menu/menu.tscn")
