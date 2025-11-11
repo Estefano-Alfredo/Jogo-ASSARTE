@@ -25,6 +25,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_36c26")
+TEXTO_ANIMAL_1 = "[center][font_size=60][b]ABELHA[center]
+[font_size=30] A abelha é a nossa grande produtora de mel, através do pólen das plantas, ela tem um papel muito importante para a vida na terra, pois sustenta a produção de mais de 75% das culturas do mundo, como frutas, legumes, nozes e sementes. Porém, elas estão em perigo. Sua extinção é causada principalmente pelos seguintes fatores: ações humanas, como o consumo exagerado do mel e o manejo inadequado das colmeias. Mudanças climáticas, como o aquecimento global. E doenças e pragas causadas por espécies invasoras que tendem a prejudicar abelhas locais."
+TEXTO_ANIMAL_2 = "[center][font_size=60][b][ARARA][center]
+[font_size=30] Infelizmente, muitas espécies de araras estão ameaçadas de extinção devido à perda de habitat, à caça ilegal e ao comércio de animais silvestres. No entanto, esforços de conservação estão sendo feitos para proteger e preservar essas aves magníficas."
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
