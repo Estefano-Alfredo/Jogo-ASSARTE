@@ -18,6 +18,10 @@ const TRIANGULO = preload("uid://bqmqw7x1tuo6h")
 
 const POPUP_PAUSA_SCENE = preload("res://Nos de Menu/botao_pausa.tscn")
 const MENU_PATH = "res://Nos de Menu/menu.tscn"
+const POPUP_INFO_SCENE = preload("res://Nos/popup_info_animal.tscn")
+
+@export_multiline var TEXTO_ANIMAL_1: String = "" #abelha
+@export_multiline var TEXTO_ANIMAL_2: String = "" #arara
 
 @onready var esc_triangulo: Button = $MarginContainer/VBoxContainer/Triangulo
 @onready var esc_quadrado: Button = $MarginContainer/VBoxContainer/Quadrado
@@ -119,6 +123,18 @@ func resposta_selecionada(botao, forma, botao2) -> void:
 			# Para o contador e salva o tempo restante
 			contador.ligado = false
 			Global.tempo_restante_nivel_1_atual = contador.tempo
+			
+			var popup = POPUP_INFO_SCENE.instantiate() # aqui to mundando pro popup dos textos
+			var texto_para_mostrar = ""
+			match Global.progreso_nivel_1:
+				1:
+					texto_para_mostrar = TEXTO_ANIMAL_1
+				2:
+					texto_para_mostrar =  TEXTO_ANIMAL_2
+			add_child(popup)
+			popup.set_text(texto_para_mostrar)
+			await popup.popup_fechado
+			
 			print("Fase 1 completa. Erros: ", Global.erros_nivel_1_atual, " Tempo Restante: ", Global.tempo_restante_nivel_1_atual)
 			# --- FIM DA MODIFICAÇÃO ---
 			
