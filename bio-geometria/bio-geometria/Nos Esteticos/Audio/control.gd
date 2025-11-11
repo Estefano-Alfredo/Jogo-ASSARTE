@@ -3,9 +3,9 @@ extends Control
 const SEM_SOM = preload("uid://nkhllp14tk8b")
 const SOM = preload("uid://bswucvxg7mfcu")
 
-@onready var button: Button = $Botao
+@onready var button: Button = $MarginContainer/HBoxContainer/Botao
 @onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
-@onready var slider: HSlider = $HSlider
+@onready var slider: HSlider = $MarginContainer/HBoxContainer/HSlider
 
 func _ready() -> void:
 	slider.value = Global.volume

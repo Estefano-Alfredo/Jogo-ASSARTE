@@ -15,26 +15,36 @@ grow_horizontal = 0
 size_flags_horizontal = 4
 script = ExtResource("1_0o64d")
 
-[node name="Botao" type="Button" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-offset_left = -40.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -583.0
+offset_right = -417.0
 offset_bottom = 40.0
+grow_horizontal = 0
+scale = Vector2(3, 3)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_vertical = 4
+mouse_default_cursor_shape = 10
+max_value = 10.0
+value = 1.0
+
+[node name="Botao" type="Button" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
 mouse_default_cursor_shape = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_0o64d")
 toggle_mode = true
 button_pressed = true
 icon = ExtResource("2_0ivm0")
 flat = true
-
-[node name="HSlider" type="HSlider" parent="."]
-layout_mode = 0
-offset_left = -151.0
-offset_top = 12.0
-offset_right = -40.0
-offset_bottom = 28.0
-mouse_default_cursor_shape = 10
-max_value = 10.0
-value = 1.0
 
 [node name="teste" type="Button" parent="."]
 visible = false
@@ -47,6 +57,6 @@ offset_bottom = 29.0
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_jlrq6")
 
-[connection signal="toggled" from="Botao" to="." method="_on_button_toggled"]
-[connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="MarginContainer/HBoxContainer/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="toggled" from="MarginContainer/HBoxContainer/Botao" to="." method="_on_button_toggled"]
 [connection signal="pressed" from="teste" to="." method="_on_button_pressed"]

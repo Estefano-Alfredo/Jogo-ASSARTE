@@ -40,22 +40,16 @@ metadata/_edit_use_anchors_ = true
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.026
-anchor_bottom = 1.0660001
-offset_left = 2.0
-offset_right = -29.952026
-offset_bottom = -37.768066
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(-2, 1)
-theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 10
 
 [node name="VBoxMenu" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_constants/separation = 20
 alignment = 1
 
 [node name="Titulo" type="Label" parent="MarginContainer/VBoxMenu"]
@@ -74,7 +68,6 @@ label_settings = SubResource("LabelSettings_nff13")
 horizontal_alignment = 1
 
 [node name="Start" type="Button" parent="MarginContainer/VBoxMenu"]
-custom_minimum_size = Vector2(450, 100)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
@@ -82,15 +75,15 @@ mouse_default_cursor_shape = 2
 theme_override_fonts/font = ExtResource("2_7qhtd")
 theme_override_font_sizes/font_size = 75
 theme_override_styles/focus = SubResource("StyleBoxEmpty_kr88g")
-text = "Comecar
+text = " Comecar 
 "
 icon = ExtResource("3_kr88g")
 flat = true
+autowrap_trim_flags = 0
 icon_alignment = 1
 expand_icon = true
 
 [node name="Relatorio" type="Button" parent="MarginContainer/VBoxMenu"]
-custom_minimum_size = Vector2(450, 100)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
@@ -98,16 +91,14 @@ mouse_default_cursor_shape = 2
 theme_override_fonts/font = ExtResource("2_7qhtd")
 theme_override_font_sizes/font_size = 75
 theme_override_styles/focus = SubResource("StyleBoxEmpty_kr88g")
-text = "Relatorio"
+text = " Relatorio "
 icon = ExtResource("3_kr88g")
 flat = true
 icon_alignment = 1
 expand_icon = true
 
 [node name="Sair" type="Button" parent="MarginContainer/VBoxMenu"]
-custom_minimum_size = Vector2(450, 100)
 layout_mode = 2
-size_flags_horizontal = 4
 size_flags_vertical = 3
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_w6voe")

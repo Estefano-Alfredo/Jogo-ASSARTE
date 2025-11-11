@@ -9,17 +9,17 @@ signal nome_confirmado(nome: String)
 
 func _ready():
 	# layout
-	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)	# faz a raiz preencher a tela inteira
-	color_rect_fundo.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)	# fundo escuro cobrir a tela inteira
+	#set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)	# faz a raiz preencher a tela inteira
+	#color_rect_fundo.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)	# fundo escuro cobrir a tela inteira
 	
 	# define o tamanho desejado para a caixa cinza do popup
-	var popup_width = 500
-	var popup_height = 250
-	
-	# centraliza o panel na tela
-	var viewport_size = get_viewport_rect().size
-	panel_popup.size = Vector2(popup_width, popup_height)
-	panel_popup.position = (viewport_size / 2) - (panel_popup.size / 2)
+	#var popup_width = 500
+	#var popup_height = 250
+	#
+	## centraliza o panel na tela
+	#var viewport_size = get_viewport_rect().size
+	#panel_popup.size = Vector2(popup_width, popup_height)
+	#panel_popup.position = (viewport_size / 2) - (panel_popup.size / 2)
 	
 	# faz container internos se ajustarem 
 	$Panel/MarginContainer.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)

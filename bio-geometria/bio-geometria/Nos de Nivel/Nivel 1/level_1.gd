@@ -23,9 +23,9 @@ const POPUP_INFO_SCENE = preload("res://Nos/popup_info_animal.tscn")
 @export_multiline var TEXTO_ANIMAL_1: String = "" #abelha
 @export_multiline var TEXTO_ANIMAL_2: String = "" #arara
 
-@onready var esc_triangulo: Button = $MarginContainer/VBoxContainer/Triangulo
-@onready var esc_quadrado: Button = $MarginContainer/VBoxContainer/Quadrado
-@onready var esc_semicirculo: Button = $MarginContainer/VBoxContainer/Semicirculo
+@onready var esc_triangulo: Button = $MarginContainer/HBoxContainer/VBoxContainer/Triangulo
+@onready var esc_quadrado: Button = $MarginContainer/HBoxContainer/VBoxContainer/Quadrado
+@onready var esc_semicirculo: Button = $MarginContainer/HBoxContainer/VBoxContainer/Semicirculo
 
 @onready var anim := $Transicao/AnimationPlayer
 
@@ -89,10 +89,9 @@ func botao_pressionado(formato, formato2, x , y) -> void:
 
 
 # Resposta
-@onready var button: Button = $GridContainer/Button
-@onready var button_2: Button = $GridContainer/Button2
-@onready var button_3: Button = $GridContainer/Button3
-
+@onready var button: Button = $MarginContainer/HBoxContainer/GridContainer/Button
+@onready var button_2: Button = $MarginContainer/HBoxContainer/GridContainer/Button2
+@onready var button_3: Button = $MarginContainer/HBoxContainer/GridContainer/Button3
 
 
 func _on_button_pressed() -> void:
