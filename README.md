@@ -68,6 +68,6 @@ Interace
 - arte do fundo interface
 - arte dos botões interface
 - arte tela de relatório
-- desenvolvimento botões clicáveis (novo jogo, configurações, relatório, tutorial)
+- desenvolvimento botões clicáveis (começar, configurações, relatório, tutorial)
 - popup de nome
 - popup de tutorial
