@@ -100,3 +100,6 @@ Listas de passos necessários para entregar o projeto completo (será revisado p
 - desenvolvimento botões clicáveis (novo jogo, configurações, relatório, tutorial)
 - popup de nome
 - popup de tutorial
+
+---
+- Link formulário de qualidade: https://forms.gle/sCFY8iyRCS78nTPq7
