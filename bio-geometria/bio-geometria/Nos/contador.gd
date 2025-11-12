@@ -1,6 +1,6 @@
 extends Node
 
-@onready var timer_label: Label = $Numeros # Replace $Label with the actual path to your Label node
+@onready var timer_label: Label = $MarginContainer/MarginContainer/Numeros # Replace $Label with the actual path to your Label node
 @onready var count_up_timer: Timer = $Timer # Replace $Timer with the actual path to your Timer node
 
 @export var ligado := true

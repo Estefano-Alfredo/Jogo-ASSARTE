@@ -8,13 +8,27 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_ew00x")
 
-[node name="Numeros" type="Label" parent="."]
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
 offset_right = 40.0
-offset_bottom = 23.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 15
+
+[node name="Numeros" type="Label" parent="MarginContainer/MarginContainer"]
+layout_mode = 2
 theme_override_fonts/font = ExtResource("2_yrnm2")
 theme_override_font_sizes/font_size = 128
 text = "00:00"
-
-[node name="Timer" type="Timer" parent="."]
-autostart = true

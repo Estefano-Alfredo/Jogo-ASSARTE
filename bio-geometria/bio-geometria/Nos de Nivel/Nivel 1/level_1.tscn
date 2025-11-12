@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cbccjhwapi1dd"]
+[gd_scene load_steps=17 format=3 uid="uid://cbccjhwapi1dd"]
 
 [ext_resource type="Script" uid="uid://bx8shvd1bvc0g" path="res://Nos de Nivel/Nivel 1/level_1.gd" id="1_36c26"]
 [ext_resource type="Texture2D" uid="uid://btdlx3q3laelc" path="res://Nos de Nivel/Nivel 1/fas1.png" id="2_v7wtx"]
@@ -13,6 +13,9 @@
 [ext_resource type="Texture2D" uid="uid://c6f06dhfvvcky" path="res://Assets/Artes para fase 1/Abelha/Sombra/Abelha Quadrado Sombra.png" id="8_rbl6n"]
 [ext_resource type="Texture2D" uid="uid://d2ou3p78yod1b" path="res://Assets/Artes para fase 1/Abelha/Sombra/Abelha Triangulo Sombra.png" id="9_dby00"]
 [ext_resource type="PackedScene" uid="uid://b3r7gpjiepoym" path="res://Nos/botao_som.tscn" id="13_dby00"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dby00"]
+bg_color = Color(0.8627451, 0.8156863, 0.6784314, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ctcdo"]
 
@@ -43,31 +46,41 @@ expand_mode = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -300.0
-offset_top = -412.0
-offset_right = 300.0
-offset_bottom = 412.0
+anchor_bottom = 1.0
+offset_left = -323.0
+offset_top = -874.0
+offset_right = 323.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
+grow_vertical = 0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+[node name="Panel" type="Panel" parent="MarginContainer"]
+visible = false
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_dby00")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer"]
 layout_mode = 2
 theme_override_constants/separation = 100
 alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(5, 100)
 layout_mode = 2
 theme_override_constants/separation = 25
 alignment = 1
 
-[node name="Triangulo" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Triangulo" type="Button" parent="MarginContainer/MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ctcdo")
@@ -77,7 +90,7 @@ icon = ExtResource("6_xu25v")
 flat = true
 script = ExtResource("3_f57t2")
 
-[node name="Quadrado" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Quadrado" type="Button" parent="MarginContainer/MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ctcdo")
@@ -85,7 +98,7 @@ icon = ExtResource("5_ewonl")
 flat = true
 script = ExtResource("3_f57t2")
 
-[node name="Semicirculo" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Semicirculo" type="Button" parent="MarginContainer/MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ctcdo")
@@ -94,7 +107,7 @@ flat = true
 icon_alignment = 1
 script = ExtResource("3_f57t2")
 
-[node name="GridContainer" type="GridContainer" parent="MarginContainer/HBoxContainer"]
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -102,7 +115,7 @@ theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
 columns = 3
 
-[node name="Button" type="Button" parent="MarginContainer/HBoxContainer/GridContainer"]
+[node name="Button" type="Button" parent="MarginContainer/MarginContainer/HBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(50, 105)
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_w4k1h")
@@ -110,7 +123,7 @@ icon = ExtResource("7_rbl6n")
 flat = true
 icon_alignment = 1
 
-[node name="Button2" type="Button" parent="MarginContainer/HBoxContainer/GridContainer"]
+[node name="Button2" type="Button" parent="MarginContainer/MarginContainer/HBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(105, 110)
 layout_mode = 2
 theme_override_constants/h_separation = 0
@@ -118,19 +131,12 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_w4k1h")
 icon = ExtResource("8_rbl6n")
 flat = true
 
-[node name="Button3" type="Button" parent="MarginContainer/HBoxContainer/GridContainer"]
+[node name="Button3" type="Button" parent="MarginContainer/MarginContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_w4k1h")
 icon = ExtResource("9_dby00")
 flat = true
-
-[node name="Texto" type="Label" parent="."]
-layout_mode = 0
-offset_left = 207.0
-offset_top = 401.0
-offset_right = 877.0
-offset_bottom = 606.0
 
 [node name="Contador" parent="." instance=ExtResource("7_if47u")]
 layout_mode = 1
@@ -157,17 +163,17 @@ text = "MENU"
 [node name="Sons" parent="." instance=ExtResource("13_dby00")]
 layout_mode = 1
 
-[connection signal="button_down" from="MarginContainer/HBoxContainer/VBoxContainer/Triangulo" to="." method="_on_triangulo_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Triangulo" to="." method="_on_triangulo_pressed"]
-[connection signal="button_down" from="MarginContainer/HBoxContainer/VBoxContainer/Quadrado" to="." method="_on_quadrado_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Quadrado" to="." method="_on_quadrado_pressed"]
-[connection signal="button_down" from="MarginContainer/HBoxContainer/VBoxContainer/Semicirculo" to="." method="_on_semicirculo_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Semicirculo" to="." method="_on_semicirculo_pressed"]
-[connection signal="button_up" from="MarginContainer/HBoxContainer/GridContainer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/GridContainer/Button" to="." method="_on_button_pressed"]
-[connection signal="button_up" from="MarginContainer/HBoxContainer/GridContainer/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/GridContainer/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="button_up" from="MarginContainer/HBoxContainer/GridContainer/Button3" to="." method="_on_button_3_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/GridContainer/Button3" to="." method="_on_button_3_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/GridContainer/Button3" to="MarginContainer/HBoxContainer/GridContainer/Button3" method="_on_pressed"]
+[connection signal="button_down" from="MarginContainer/MarginContainer/HBoxContainer/VBoxContainer/Triangulo" to="." method="_on_triangulo_pressed"]
+[connection signal="pressed" from="MarginContainer/MarginContainer/HBoxContainer/VBoxContainer/Triangulo" to="." method="_on_triangulo_pressed"]
+[connection signal="button_down" from="MarginContainer/MarginContainer/HBoxContainer/VBoxContainer/Quadrado" to="." method="_on_quadrado_pressed"]
+[connection signal="pressed" from="MarginContainer/MarginContainer/HBoxContainer/VBoxContainer/Quadrado" to="." method="_on_quadrado_pressed"]
+[connection signal="button_down" from="MarginContainer/MarginContainer/HBoxContainer/VBoxContainer/Semicirculo" to="." method="_on_semicirculo_pressed"]
+[connection signal="pressed" from="MarginContainer/MarginContainer/HBoxContainer/VBoxContainer/Semicirculo" to="." method="_on_semicirculo_pressed"]
+[connection signal="button_up" from="MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="button_up" from="MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="button_up" from="MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button3" to="MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button3" method="_on_pressed"]
 [connection signal="pressed" from="SAIR" to="." method="_on_sair_pressed"]

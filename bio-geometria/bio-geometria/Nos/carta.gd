@@ -50,3 +50,15 @@ func _on_button_pressed() -> void:
 			else:
 				Global.selecionado_2 = valor_da_carta
 				emit_signal("teste")
+
+
+func _on_mouse_entered() -> void:
+	if amostra == true:
+		return
+
+	
+
+
+func _on_mouse_exited() -> void:
+	if amostra == true:
+		return
