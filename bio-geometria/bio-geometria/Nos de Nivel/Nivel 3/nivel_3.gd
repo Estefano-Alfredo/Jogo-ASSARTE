@@ -91,7 +91,7 @@ func _input(event):
 			Global.erros_nivel_3_atual = erros_f3
 			print("Erros Nível 3: ", Global.erros_nivel_3_atual)
 			# --- FIM DAS MODIFICAÇÕES ---
-
+			
 		current_animal_node = null
 
 func _get_area_under_mouse(position: Vector2) -> Area2D:
