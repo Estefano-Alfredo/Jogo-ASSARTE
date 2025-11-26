@@ -37,7 +37,7 @@ func _on_animal_input_event(_viewport, event, _shape_idx, animal_node: Area2D):
 		line_drawer.points = [animal_node.position, animal_node.position]
 		add_child(line_drawer)
 
-func _process(delta):
+func _process(_delta):
 	# Atualiza a ponta da linha para seguir o mouse
 	if is_dragging and line_drawer:
 		line_drawer.points[1] = get_local_mouse_position()
@@ -45,12 +45,10 @@ func _process(delta):
 func _input(event):
 	
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and not event.is_pressed():
-		
 		if not is_dragging or not current_animal_node:
 			return
 
 		is_dragging = false
-		
 		var line_to_process = line_drawer
 		line_drawer = null
 		

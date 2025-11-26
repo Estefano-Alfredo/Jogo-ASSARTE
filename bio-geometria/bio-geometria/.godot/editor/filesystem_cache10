@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1764161963
+::res://::1764173769
 export_presets.cfg::TextFile::-1::1764161923::0::1::::<><><>0<>0<><>::
 Global.gd::GDScript::3456245115709027498::1764161923::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::6796890715418820322::1761759844::1764161949::1::::<><><>0<>0<>4759a04bd27d5f0ff8ce23ba039d344c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -56,9 +56,9 @@ Minecraft.ttf::FontFile::6202561428845426844::1761759844::1764161924::1::::<><><
 quadrado.png::CompressedTexture2D::1888574224404700066::1761759844::1764161949::1::::<><><>0<>0<>1d84244d6ec06b3cd76d7774b1ee18c2<>res://.godot/imported/quadrado.png-0425fa70988c9b3bda4177256752cc3f.ctex::
 semicirculo.png::CompressedTexture2D::518178381223993746::1761759844::1764161949::1::::<><><>0<>0<>f2ecdd91adf857b90d4f61f3bdb45400<>res://.godot/imported/semicirculo.png-b94688678530d6d499abd969e7d7c354.ctex::
 triangulo.png::CompressedTexture2D::3535227191785728557::1761759844::1764161949::1::::<><><>0<>0<>8882d8ce9aa7cf698662daf82ea0eacd<>res://.godot/imported/triangulo.png-1bbac169b44e8ea08ff4459a04074fc7.ctex::
-::res://Assets/Sounds/::1761759844
+::res://Assets/Sounds/::1764161964
 Modern11.mp3::AudioStreamMP3::2943669133502060667::1761759844::1764161964::1::::<><><>0<>0<>8a623c7f7770c41a704ef8be4c820da1<>res://.godot/imported/Modern11.mp3-6929014e0d2e140854c22a91ca091f6e.mp3str::
-::res://Assets/Ui/::1764161949
+::res://Assets/Ui/::1764161964
 button_2_ui.png::CompressedTexture2D::2560710771514350706::1761759844::1764161964::1::::<><><>0<>0<>8135379a47ad74baaa3bba5b02dacc7f<>res://.godot/imported/button_2_ui.png-2b9ec06c6236f93f949a05bcf4a2cff6.ctex::
 button_ui.png::CompressedTexture2D::3955526087416831045::1761759844::1764161949::1::::<><><>0<>0<>8bbac183f6743d28c0d29bb78a88a830<>res://.godot/imported/button_ui.png-3f20cec20cf2464242746cb382e31af1.ctex::
 button_ui_2.png::CompressedTexture2D::334324405862622129::1761759844::1764161949::1::::<><><>0<>0<>01a2bedb7f06dbd9a0b01634f527d253<>res://.godot/imported/button_ui_2.png-063cc1e264a2b2221187568b47055777.ctex::
@@ -83,7 +83,7 @@ habitat tartaruga - fase 2.png::CompressedTexture2D::1767231203031748217::176416
 lobo guará- triangulo fase 1.png::CompressedTexture2D::419770365268855397::1764161923::1764161927::1::::<><><>0<>0<>a9d7a55671fc46b1c2063de865d397ed<>res://.godot/imported/lobo guará- triangulo fase 1.png-298cdaf2b340584ceeff275192803069.ctex::
 panda- trapezio fase 2.png::CompressedTexture2D::8434545775377212661::1764161923::1764161927::1::::<><><>0<>0<>27e0c7462f23779c6658aad01f1f9595<>res://.godot/imported/panda- trapezio fase 2.png-41ccae954895cb23530e095540f614dd.ctex::
 tartaruga - circulo fase 2.png::CompressedTexture2D::4280120042057093810::1764161923::1764161928::1::::<><><>0<>0<>cec39d6671ae6535b856e3b006116003<>res://.godot/imported/tartaruga - circulo fase 2.png-0fb4f2e1622828a9170812fae9fbfa46.ctex::
-::res://Nos/::1764161924
+::res://Nos/::1764166387
 animal.tscn::PackedScene::1571291269354808798::1761759844::0::1::::<><><>0<>0<><>::
 botao_som.tscn::PackedScene::4388757188031907436::1764161923::0::1::::<><><>0<>0<><>::uid://cgfgslxofxilq::::res://Nos Esteticos/Audio/control.gd<>uid://bswucvxg7mfcu::::res://Assets/Ui/som.png<>uid://bh662ho7ii57d::::res://Assets/Sounds/Modern11.mp3
 carta.gd::GDScript::2785597641134146391::1764161923::0::1::::<>Control<><>0<>0<><>::
@@ -97,7 +97,7 @@ popup_info_animal.gd::GDScript::8575626305442880109::1764161923::0::1::::<>Contr
 popup_info_animal.tscn::PackedScene::915225000795578887::1764161924::0::1::::<><><>0<>0<><>::uid://dugdkvcb12qpx::::res://Nos/popup_info_animal.gd
 tile_map_layer.tscn::PackedScene::319372176833160703::1761759844::0::1::::<><><>0<>0<><>::uid://dk8hm7crsfulp::::res://Assets/Ui/button_ui_tile.png
 transicao.tscn::PackedScene::5057283511851649979::1764161923::0::1::::<><><>0<>0<><>::uid://c35od6kq1l0vd::::res://Nos Esteticos/transicao.gd
-vetificao_botao.gd::GDScript::909244614620923762::1761759844::0::1::::<>Node<><>0<>0<><>::
+vetificao_botao.gd::GDScript::909244614620923762::1764166387::0::1::::<>Node<><>0<>0<><>::
 ::res://Nos de Menu/::1764161924
 botao_pausa.gd::GDScript::7732990149810165389::1764161923::0::1::::<>Control<><>0<>0<><>::
 botao_pausa.tscn::PackedScene::1893849596866144096::1764161924::0::1::::<><><>0<>0<><>::uid://dif6hn73kjgpp::::res://Nos de Menu/botao_pausa.gd
@@ -112,22 +112,23 @@ relatorio_final.tscn::PackedScene::6357710624729719631::1764161924::0::1::::<><>
 tela_relatorio.gd::GDScript::5843544665981186117::1764161923::0::1::::<>Control<><>0<>0<><>::
 tela_relatorio.tscn::PackedScene::4048433083087922307::1764161924::0::1::::<><><>0<>0<><>::uid://cpiwld5ldfwm4::::res://Nos de Menu/tela_relatorio.gd<>uid://dek64knlgemme::::res://Assets/Fontes/ARCADECLASSIC.TTF
 ::res://Nos de Nivel/::1761759844
-::res://Nos de Nivel/Nivel 1/::1764161926
+::res://Nos de Nivel/Nivel 1/::1764167987
 abelha quadrada fase 1.png::CompressedTexture2D::1283828236417212514::1764161923::1764161926::1::::<><><>0<>0<>d54595c6eed94ca5d4568ca4e2c0deeb<>res://.godot/imported/abelha quadrada fase 1.png-ba2286b3304037d23e5be9a56b447908.ctex::
 arara azul.png::CompressedTexture2D::4870966253759049897::1764161923::1764161926::1::::<><><>0<>0<>f7500373ba8551d14fcd3822a237e414<>res://.godot/imported/arara azul.png-45e5ced2fc6a835bb10a36a097ca1e28.ctex::
+button.gd::GDScript::7495088099573522232::1764167968::0::1::::<>Button<><>0<>0<><>::
 fas1.png::CompressedTexture2D::3726912302915710648::1764161923::1764161926::1::::<><><>0<>0<>99882b9bfcb80a8b9a1a00f50a87055e<>res://.godot/imported/fas1.png-9be9872ad183592e1e14b47b11e510be.ctex::
-level_1.gd::GDScript::4069995068487201304::1764161923::0::1::::<>Control<><>0<>0<><>::
-level_1.tscn::PackedScene::4847296874332568833::1764161923::0::1::::<><><>0<>0<><>::uid://bx8shvd1bvc0g::::res://Nos de Nivel/Nivel 1/level_1.gd<>uid://btdlx3q3laelc::::res://Nos de Nivel/Nivel 1/fas1.png<>uid://m7peju0s80re::::res://Nos/vetificao_botao.gd<>uid://cm187nssvpkkb::::res://Assets/Artes para fase 1/Abelha/Abelha 1 - Semicirculo.png<>uid://ddpjo3jm7q3ob::::res://Assets/Artes para fase 1/Abelha/Abelha 2  -Quadrado.png<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://b1qks0t1jlg7k::::res://Assets/Artes para fase 1/Abelha/Abelha 3 - Triangulo.png<>uid://dayfhtq76hld::::res://Nos/contador.tscn<>uid://c3fqlyj5ntdh6::::res://Assets/Artes para fase 1/Abelha/Sombra/Abelha Semicirculo Sombra.png<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf<>uid://c6f06dhfvvcky::::res://Assets/Artes para fase 1/Abelha/Sombra/Abelha Quadrado Sombra.png<>uid://d2ou3p78yod1b::::res://Assets/Artes para fase 1/Abelha/Sombra/Abelha Triangulo Sombra.png<>uid://b3r7gpjiepoym::::res://Nos/botao_som.tscn
+level_1.gd::GDScript::4069995068487201304::1764166540::0::1::::<>Control<><>0<>0<><>::
+level_1.tscn::PackedScene::4847296874332568833::1764167987::0::1::::<><><>0<>0<><>::uid://bx8shvd1bvc0g::::res://Nos de Nivel/Nivel 1/level_1.gd<>uid://btdlx3q3laelc::::res://Nos de Nivel/Nivel 1/fas1.png<>uid://m7peju0s80re::::res://Nos/vetificao_botao.gd<>uid://cm187nssvpkkb::::res://Assets/Artes para fase 1/Abelha/Abelha 1 - Semicirculo.png<>uid://de1xag5an8dn1::::res://Nos de Nivel/Nivel 1/button.gd<>uid://ddpjo3jm7q3ob::::res://Assets/Artes para fase 1/Abelha/Abelha 2  -Quadrado.png<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://b1qks0t1jlg7k::::res://Assets/Artes para fase 1/Abelha/Abelha 3 - Triangulo.png<>uid://dayfhtq76hld::::res://Nos/contador.tscn<>uid://c3fqlyj5ntdh6::::res://Assets/Artes para fase 1/Abelha/Sombra/Abelha Semicirculo Sombra.png<>uid://cumtjsj4a0asq::::res://Assets/Fontes/Minecraft.ttf<>uid://c6f06dhfvvcky::::res://Assets/Artes para fase 1/Abelha/Sombra/Abelha Quadrado Sombra.png<>uid://d2ou3p78yod1b::::res://Assets/Artes para fase 1/Abelha/Sombra/Abelha Triangulo Sombra.png<>uid://b3r7gpjiepoym::::res://Nos/botao_som.tscn
 lobo guará - fase1 contorno.png::CompressedTexture2D::7489456998192998318::1764161923::1764161926::1::::<><><>0<>0<>66539deb68cbcbc5fbd834ffde3dfa9b<>res://.godot/imported/lobo guará - fase1 contorno.png-29cb6691e0752feb55efe8b04f715751.ctex::
 lobo guará- triangulo.png::CompressedTexture2D::6671806511811507039::1764161923::1764161926::1::::<><><>0<>0<>32d4bbb30b5106a36adf0b4581273fef<>res://.godot/imported/lobo guará- triangulo.png-1ff27fd68fdf81469800a4b75a93005e.ctex::
-::res://Nos de Nivel/Nivel 2/::1764161927
+::res://Nos de Nivel/Nivel 2/::1764168007
 fase2 (2).png::CompressedTexture2D::6809327624061393750::1764161923::1764161927::1::::<><><>0<>0<>d137f60b4b8f333a0a714c567c9cd060<>res://.godot/imported/fase2 (2).png-3b57cc5d8a0f88591981ed6f71cb8b8d.ctex::
 nivel_2.gd::GDScript::6186611414582790736::1764161923::0::1::::<>Control<><>0<>0<><>::
-nivel_2.tscn::PackedScene::5558589573947365571::1764161923::0::1::::<><><>0<>0<><>::uid://c4aqvptjeey6y::::res://Nos de Nivel/Nivel 2/fase2 (2).png<>uid://cue3t6s8gik0w::::res://Nos de Nivel/Nivel 2/nivel_2.gd<>uid://d2vemjbylj3tx::::res://Nos/nova_carta.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://dayfhtq76hld::::res://Nos/contador.tscn
-::res://Nos de Nivel/Nivel 3/::1764161927
+nivel_2.tscn::PackedScene::5558589573947365571::1764168007::0::1::::<><><>0<>0<><>::uid://c4aqvptjeey6y::::res://Nos de Nivel/Nivel 2/fase2 (2).png<>uid://cue3t6s8gik0w::::res://Nos de Nivel/Nivel 2/nivel_2.gd<>uid://d2vemjbylj3tx::::res://Nos/nova_carta.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://dayfhtq76hld::::res://Nos/contador.tscn<>uid://b3r7gpjiepoym::::res://Nos/botao_som.tscn
+::res://Nos de Nivel/Nivel 3/::1764168006
 lobo guar+í- triangulo.png::CompressedTexture2D::5976109038804998713::1764161923::1764161927::1::::<><><>0<>0<>f51da66a92caa7b62f8c14597b96e522<>res://.godot/imported/lobo guar+í- triangulo.png-dff723add6553bee4df026eefdd56c2c.ctex::
-Nivel 3.tscn::PackedScene::1891831487702146706::1764161923::0::1::::<><><>0<>0<><>::uid://bjlq4fneskhry::::res://Nos de Nivel/Nivel 3/nivel_3.gd<>uid://dkkwqqr12siqv::::res://Assets/fase3.png<>uid://b18k7mh7icsp3::::res://Jogo-ASSARTE-main/Artes para jogo/tartaruga - circulo fase 2.png<>uid://0gcbl6c5j8y4::::res://Jogo-ASSARTE-main/Artes para jogo/habitat tartaruga - fase 2.png<>uid://dsf00bsbay5tx::::res://Jogo-ASSARTE-main/Artes para jogo/panda- trapezio fase 2.png<>uid://xi22spn5d157::::res://Jogo-ASSARTE-main/Artes para jogo/habitat panda - fase 2.png<>uid://blasb3senb3ub::::res://Jogo-ASSARTE-main/Artes para jogo/abelha quadrada fase 1.png<>uid://ck50887cqon6w::::res://Jogo-ASSARTE-main/Artes para jogo/habitat abelha  - fase 2.png<>uid://dayfhtq76hld::::res://Nos/contador.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn
-nivel_3.gd::GDScript::3041851974542961062::1764161923::0::1::::<>Node2D<><>0<>0<><>::
+Nivel 3.tscn::PackedScene::1891831487702146706::1764168006::0::1::::<><><>0<>0<><>::uid://bjlq4fneskhry::::res://Nos de Nivel/Nivel 3/nivel_3.gd<>uid://dkkwqqr12siqv::::res://Assets/fase3.png<>uid://b18k7mh7icsp3::::res://Jogo-ASSARTE-main/Artes para jogo/tartaruga - circulo fase 2.png<>uid://0gcbl6c5j8y4::::res://Jogo-ASSARTE-main/Artes para jogo/habitat tartaruga - fase 2.png<>uid://dsf00bsbay5tx::::res://Jogo-ASSARTE-main/Artes para jogo/panda- trapezio fase 2.png<>uid://xi22spn5d157::::res://Jogo-ASSARTE-main/Artes para jogo/habitat panda - fase 2.png<>uid://blasb3senb3ub::::res://Jogo-ASSARTE-main/Artes para jogo/abelha quadrada fase 1.png<>uid://ck50887cqon6w::::res://Jogo-ASSARTE-main/Artes para jogo/habitat abelha  - fase 2.png<>uid://dayfhtq76hld::::res://Nos/contador.tscn<>uid://ceb1yq77ygyfb::::res://Nos/transicao.tscn<>uid://b3r7gpjiepoym::::res://Nos/botao_som.tscn
+nivel_3.gd::GDScript::3041851974542961062::1764167968::0::1::::<>Node2D<><>0<>0<><>::
 ::res://Nos Esteticos/::1764161923
 transicao.gd::GDScript::6800917361587419433::1764161923::0::1::::<>Control<><>0<>0<><>::
 ::res://Nos Esteticos/Audio/::1764161923

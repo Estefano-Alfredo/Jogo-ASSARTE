@@ -153,8 +153,6 @@ shape = SubResource("RectangleShape2D_lgjfs")
 [node name="Contador" parent="." instance=ExtResource("8_n7t24")]
 tempo = 180
 
-[node name="Transicao" parent="." instance=ExtResource("9_g5442")]
-
 [node name="Sons" parent="." instance=ExtResource("11_w15ot")]
 anchors_preset = 0
 anchor_left = 0.0
@@ -162,5 +160,7 @@ anchor_right = 0.0
 offset_left = 1920.0
 offset_right = 1920.0
 grow_horizontal = 1
+
+[node name="Transicao" parent="." instance=ExtResource("9_g5442")]
 
 [connection signal="mouse_entered" from="Animais/tartaruga" to="." method="_on_tartaruga_mouse_entered"]

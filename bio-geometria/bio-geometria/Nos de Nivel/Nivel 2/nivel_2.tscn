@@ -77,10 +77,10 @@ layout_mode = 2
 layout_mode = 1
 tempo = 180
 
-[node name="Transicao" parent="." instance=ExtResource("3_i26w3")]
+[node name="Sons" parent="." instance=ExtResource("6_rp2vc")]
 layout_mode = 1
 
-[node name="Sons" parent="." instance=ExtResource("6_rp2vc")]
+[node name="Transicao" parent="." instance=ExtResource("3_i26w3")]
 layout_mode = 1
 
 [connection signal="teste" from="GridContainer/Nova carta" to="GridContainer" method="_on_carta_teste"]

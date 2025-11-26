@@ -23,9 +23,9 @@ const POPUP_INFO_SCENE = preload("res://Nos/popup_info_animal.tscn")
 @export_multiline var TEXTO_ANIMAL_1: String = "" #abelha
 @export_multiline var TEXTO_ANIMAL_2: String = "" #arara
 
-@onready var esc_triangulo: Button = $MarginContainer/MarginContainer/HBoxContainer/VBoxContainer/Triangulo
-@onready var esc_quadrado: Button = $MarginContainer/MarginContainer/HBoxContainer/VBoxContainer/Quadrado
-@onready var esc_semicirculo: Button = $MarginContainer/MarginContainer/HBoxContainer/VBoxContainer/Semicirculo
+@onready var esc_triangulo: Button = $Triangulo
+@onready var esc_quadrado: Button = $Quadrado
+@onready var esc_semicirculo: Button = $Semicirculo
 
 @onready var anim := $Transicao/AnimationPlayer
 
@@ -58,9 +58,9 @@ func _ready() -> void:
 			a1 = ARARA_AZUL_C
 			a2 = ARARA_AZUL_2
 			a3 = ARARA_AZUL_3
-			button.icon = ARARA_SEMICIRCULO_SOMBRA
-			button_2.icon = ARARA_QUADRADO_SOMBRA
-			button_3.icon = ARARA_TRIANGULO_SOMBRA
+			button_semicirculo.icon = ARARA_SEMICIRCULO_SOMBRA
+			button_retangulo.icon = ARARA_QUADRADO_SOMBRA
+			button_triangulo.icon = ARARA_TRIANGULO_SOMBRA
 		#3:
 			#a1 = TARTARUGA_C
 			#a2 = TARTARUGA_2
@@ -69,89 +69,92 @@ func _ready() -> void:
 	esc_quadrado.icon = a2
 	esc_semicirculo.icon = a1
 
-func _on_triangulo_pressed() -> void:
-	if esc_triangulo.x == false:
-		botao_pressionado("Triangulo", a3, 71, 125)
-
-
-func _on_quadrado_pressed() -> void:
-	if esc_quadrado.x == false:
-		botao_pressionado("Quadrado", a2, 68, 125)
-
-
-func _on_semicirculo_pressed() -> void:
-	if esc_semicirculo.x == false:
-		botao_pressionado("Semicírculo", a1, 84, 125)
-
-func botao_pressionado(formato, formato2, x , y) -> void:
-	selecao = formato
-	Input.set_custom_mouse_cursor(formato2, Input.CURSOR_ARROW, Vector2(x,y))
-
+#func _forma_escolhida() -> void:
+	#if esc_triangulo.x == false:
+		#selecao = ""
+#
+#func _on_triangulo_pressed() -> void:
+	#if esc_triangulo.x == false:
+		#botao_pressionado("Triangulo", a3, 71, 125)
+#
+#func _on_quadrado_pressed() -> void:
+	#if esc_quadrado.x == false:
+		#botao_pressionado("Quadrado", a2, 68, 125)
+#
+#func _on_semicirculo_pressed() -> void:
+	#if esc_semicirculo.x == false:
+		#botao_pressionado("Semicírculo", a1, 84, 125)
+#
+#func botao_pressionado(formato, formato2, x , y) -> void:
+	#selecao = formato
+	#Input.set_custom_mouse_cursor(formato2, Input.CURSOR_ARROW, Vector2(x,y))
 
 # Resposta
-@onready var button: Button = $MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button
-@onready var button_2: Button = $MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button2
-@onready var button_3: Button = $MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button3
-
+@onready var button_semicirculo: Button = $MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button
+@onready var button_retangulo: Button = $MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button2
+@onready var button_triangulo: Button = $MarginContainer/MarginContainer/HBoxContainer/GridContainer/Button3
 
 
 func _on_button_pressed() -> void:
-	selecao2 = "Semicírculo"
-	resposta_selecionada(button ,a1, esc_semicirculo)
+	pass
+	#selecao2 = "Semicírculo"
+	#resposta_selecionada(button ,a1, esc_semicirculo)
 
 func _on_button_2_pressed() -> void:
-	selecao2 = "Quadrado"
-	resposta_selecionada(button_2, a2, esc_quadrado)
+	pass
+	#selecao2 = "Quadrado"
+	#resposta_selecionada(button_2, a2, esc_quadrado)
 
 func _on_button_3_pressed() -> void:
-	selecao2 = "Triangulo"
-	resposta_selecionada(button_3, a3, esc_triangulo)
+	pass
+	#selecao2 = "Triangulo"
+	#resposta_selecionada(button_3, a3, esc_triangulo)
 
-func resposta_selecionada(botao, forma, botao2) -> void:
+func resposta_selecionada(botao, botao2, forma) -> void:
 	#print("Voce selecionou um " + selecao2)
-	if selecao == selecao2:
-		progresso += 1
-		botao.text = ""
-		botao.icon = forma
-		print("Resposta Correta")
-		Input.set_custom_mouse_cursor(null)
-		botao2.x = true
-		selecao = ""
-		selecao2 = ""
-		if progresso >= 3:
-			# --- INÍCIO DA MODIFICAÇÃO de relatorio ---
-			# Para o contador e salva o tempo restante
-			contador.ligado = false
-			Global.tempo_restante_nivel_1_atual = contador.tempo
-			
-			var popup = POPUP_INFO_SCENE.instantiate() # aqui to mundando pro popup dos textos
-			var texto_para_mostrar = ""
-			match Global.progreso_nivel_1:
-				1:
-					texto_para_mostrar = TEXTO_ANIMAL_1
-				2:
-					texto_para_mostrar =  TEXTO_ANIMAL_2
-			add_child(popup)
-			popup.set_text(texto_para_mostrar)
-			await popup.popup_fechado
-			
-			print("Fase 1 completa. Erros: ", Global.erros_nivel_1_atual, " Tempo Restante: ", Global.tempo_restante_nivel_1_atual)
-			# --- FIM DA MODIFICAÇÃO ---
-			
-			anim.play("fade_in")
-			await anim.animation_finished
-			if Global.progreso_nivel_1 == 1:
-				Global.progreso_nivel_1 = 2
-				get_tree().reload_current_scene()
-			else:
-				Global.progreso_nivel_1 = 1
-				get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 2/nivel_2.tscn")
-	else:
-		print("Resposta Incorreta")
+	#if selecao == selecao2 and selecao != "":
+	progresso += 1
+	botao.text = ""
+	botao.icon = forma
+	print("Resposta Correta")
+	#Input.set_custom_mouse_cursor(null)
+	botao2.visible = false
+	selecao = ""
+	selecao2 = ""
+	if progresso >= 3:
 		# --- INÍCIO DA MODIFICAÇÃO de relatorio ---
-		# Registra o erro na variável global
-		Global.erros_nivel_1_atual += 1
-		print("Erros Nível 1: ", Global.erros_nivel_1_atual)
+		# Para o contador e salva o tempo restante
+		contador.ligado = false
+		Global.tempo_restante_nivel_1_atual = contador.tempo
+		
+		var popup = POPUP_INFO_SCENE.instantiate() # aqui to mundando pro popup dos textos
+		var texto_para_mostrar = ""
+		match Global.progreso_nivel_1:
+			1:
+				texto_para_mostrar = TEXTO_ANIMAL_1
+			2:
+				texto_para_mostrar =  TEXTO_ANIMAL_2
+		add_child(popup)
+		popup.set_text(texto_para_mostrar)
+		await popup.popup_fechado
+		
+		print("Fase 1 completa. Erros: ", Global.erros_nivel_1_atual, " Tempo Restante: ", Global.tempo_restante_nivel_1_atual)
+		# --- FIM DA MODIFICAÇÃO ---
+		
+		anim.play("fade_in")
+		await anim.animation_finished
+		if Global.progreso_nivel_1 == 1:
+			Global.progreso_nivel_1 = 2
+			get_tree().reload_current_scene()
+		else:
+			Global.progreso_nivel_1 = 1
+			get_tree().change_scene_to_file("res://Nos de Nivel/Nivel 2/nivel_2.tscn")
+	#else:
+		#print("Resposta Incorreta")
+		## --- INÍCIO DA MODIFICAÇÃO de relatorio ---
+		## Registra o erro na variável global
+		#Global.erros_nivel_1_atual += 1
+		#print("Erros Nível 1: ", Global.erros_nivel_1_atual)
 		# --- FIM DA MODIFICAÇÃO ---
 
 
@@ -168,3 +171,38 @@ func _voltar_para_o_menu() -> void:
 	anim.play("fade_in")
 	await anim.animation_finished
 	get_tree().change_scene_to_file(MENU_PATH)
+
+var node1
+func _on_forma_escolhida(formato: String) -> void:
+	selecao = formato
+	#node1 = node
+	#print(selecao)
+	#if escolha == 
+
+var node2
+
+func _on_forma_desescolhida(node: Variant) -> void:
+	print("Res: " + selecao)
+	var mouse_pos : Vector2 = get_viewport().get_mouse_position()
+	@warning_ignore("shadowed_variable")
+	var node2
+	var resposta_pos : Vector2 
+	var resposta_size : Vector2 
+	@warning_ignore("unused_variable")
+	var forma
+	match selecao:
+		"Triangulo":
+			node2 = button_triangulo
+			forma = a3
+		"Quadrado":
+			node2 = button_retangulo
+			forma = a2
+		"Semicírculo":
+			node2 = button_semicirculo
+			forma = a1
+	resposta_pos = node2.global_position
+	resposta_size = node2.size
+	if mouse_pos.x > resposta_pos.x and mouse_pos.x < (resposta_pos.x + resposta_size.x):
+		if mouse_pos.y > resposta_pos.y and mouse_pos.y < (resposta_pos.y + resposta_size.y):
+			resposta_selecionada(node2, node, forma)
+			print("Correto")
