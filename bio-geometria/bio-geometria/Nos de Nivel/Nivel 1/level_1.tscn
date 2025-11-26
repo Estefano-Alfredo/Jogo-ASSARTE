@@ -16,6 +16,10 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dby00"]
 bg_color = Color(0.8627451, 0.8156863, 0.6784314, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ctcdo"]
 

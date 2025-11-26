@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://17ogntdwrtne"]
+[gd_scene load_steps=18 format=3 uid="uid://17ogntdwrtne"]
 
 [ext_resource type="Script" uid="uid://bjlq4fneskhry" path="res://Nos de Nivel/Nivel 3/nivel_3.gd" id="1_i4ref"]
 [ext_resource type="Texture2D" uid="uid://dkkwqqr12siqv" path="res://Assets/fase3.png" id="2_g5442"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://ck50887cqon6w" path="res://Jogo-ASSARTE-main/Artes para jogo/habitat abelha  - fase 2.png" id="7_acven"]
 [ext_resource type="PackedScene" uid="uid://dayfhtq76hld" path="res://Nos/contador.tscn" id="8_n7t24"]
 [ext_resource type="PackedScene" uid="uid://ceb1yq77ygyfb" path="res://Nos/transicao.tscn" id="9_g5442"]
+[ext_resource type="PackedScene" uid="uid://b3r7gpjiepoym" path="res://Nos/botao_som.tscn" id="11_w15ot"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5ayr"]
 size = Vector2(307, 219.5)
@@ -153,5 +154,13 @@ shape = SubResource("RectangleShape2D_lgjfs")
 tempo = 180
 
 [node name="Transicao" parent="." instance=ExtResource("9_g5442")]
+
+[node name="Sons" parent="." instance=ExtResource("11_w15ot")]
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 1920.0
+offset_right = 1920.0
+grow_horizontal = 1
 
 [connection signal="mouse_entered" from="Animais/tartaruga" to="." method="_on_tartaruga_mouse_entered"]
