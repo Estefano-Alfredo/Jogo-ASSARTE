@@ -1,13 +1,27 @@
 extends Control
+
 signal popup_fechado
 
+var info_text: String = ""
+
+var info_audio: AudioStream = null 
 
 @onready var rich_text_label: RichTextLabel = $Panel/MarginContainer/VBoxContainer/RichTextLabel
 
-func set_text(texto_para_mostrar: String):
+@onready var audio_narracao: AudioStreamPlayer = $AudioNarracao 
+
+func _ready():
 	rich_text_label.bbcode_enabled = true
-	rich_text_label.text = texto_para_mostrar
 	
+	if info_text != "":
+		rich_text_label.text = info_text
+	
+	if info_audio != null:
+		audio_narracao.stream = info_audio
+		audio_narracao.play()
+
 func _on_continuar_pressed() -> void:
+	if audio_narracao.playing:
+		audio_narracao.stop()
 	emit_signal("popup_fechado")
 	queue_free()

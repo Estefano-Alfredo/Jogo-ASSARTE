@@ -23,6 +23,9 @@ const POPUP_INFO_SCENE = preload("res://Nos/popup_info_animal.tscn")
 @export_multiline var TEXTO_ANIMAL_1: String = "" #abelha
 @export_multiline var TEXTO_ANIMAL_2: String = "" #arara
 
+@export var AUDIO_ANIMAL_1: AudioStream
+@export var AUDIO_ANIMAL_2: AudioStream 
+
 @onready var esc_triangulo: Button = $Triangulo
 @onready var esc_quadrado: Button = $Quadrado
 @onready var esc_semicirculo: Button = $Semicirculo
@@ -132,10 +135,12 @@ func resposta_selecionada(botao, botao2, forma) -> void:
 		match Global.progreso_nivel_1:
 			1:
 				texto_para_mostrar = TEXTO_ANIMAL_1
+				popup.info_audio = AUDIO_ANIMAL_1
 			2:
 				texto_para_mostrar =  TEXTO_ANIMAL_2
+				popup.info_audio = AUDIO_ANIMAL_2 
+		popup.info_text = texto_para_mostrar
 		add_child(popup)
-		popup.set_text(texto_para_mostrar)
 		await popup.popup_fechado
 		
 		print("Fase 1 completa. Erros: ", Global.erros_nivel_1_atual, " Tempo Restante: ", Global.tempo_restante_nivel_1_atual)

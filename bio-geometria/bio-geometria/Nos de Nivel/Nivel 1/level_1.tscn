@@ -1,8 +1,10 @@
-[gd_scene load_steps=18 format=3 uid="uid://cbccjhwapi1dd"]
+[gd_scene load_steps=20 format=3 uid="uid://cbccjhwapi1dd"]
 
 [ext_resource type="Script" uid="uid://bx8shvd1bvc0g" path="res://Nos de Nivel/Nivel 1/level_1.gd" id="1_36c26"]
+[ext_resource type="AudioStream" uid="uid://detru215knsql" path="res://Assets/Sounds/AUDIO_ANIMAL_1.mp3" id="2_imvuu"]
 [ext_resource type="Texture2D" uid="uid://btdlx3q3laelc" path="res://Nos de Nivel/Nivel 1/fas1.png" id="2_v7wtx"]
 [ext_resource type="Script" uid="uid://m7peju0s80re" path="res://Nos/vetificao_botao.gd" id="3_f57t2"]
+[ext_resource type="AudioStream" uid="uid://dfbyb7mfr8phv" path="res://Assets/Sounds/AUDIO_ANIMAL_2.mp3" id="3_u8nob"]
 [ext_resource type="Texture2D" uid="uid://cm187nssvpkkb" path="res://Assets/Artes para fase 1/Abelha/Abelha 1 - Semicirculo.png" id="3_v7wtx"]
 [ext_resource type="Script" uid="uid://de1xag5an8dn1" path="res://Nos de Nivel/Nivel 1/button.gd" id="4_ka2c8"]
 [ext_resource type="Texture2D" uid="uid://ddpjo3jm7q3ob" path="res://Assets/Artes para fase 1/Abelha/Abelha 2  -Quadrado.png" id="5_ewonl"]
@@ -38,9 +40,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_36c26")
 TEXTO_ANIMAL_1 = "[center][font_size=60][b]ABELHA[center]
-[font_size=30] A abelha é a nossa grande produtora de mel, através do pólen das plantas, ela tem um papel muito importante para a vida na terra, pois sustenta a produção de mais de 75% das culturas do mundo, como frutas, legumes, nozes e sementes. Porém, elas estão em perigo. Sua extinção é causada principalmente pelos seguintes fatores: ações humanas, como o consumo exagerado do mel e o manejo inadequado das colmeias. Mudanças climáticas, como o aquecimento global. E doenças e pragas causadas por espécies invasoras que tendem a prejudicar abelhas locais."
-TEXTO_ANIMAL_2 = "[center][font_size=60][b][ARARA][center]
-[font_size=30] Infelizmente, muitas espécies de araras estão ameaçadas de extinção devido à perda de habitat, à caça ilegal e ao comércio de animais silvestres. No entanto, esforços de conservação estão sendo feitos para proteger e preservar essas aves magníficas."
+[font_size=30] A abelha é famosa por fazer o mel que adoramos, mas o trabalho dela vai muito além disso. Ao visitar as flores, ela ajuda a produzir a maioria das frutas, legumes e sementes que chegam à nossa mesa. Infelizmente, elas estão correndo sério perigo. O cuidado errado com as colmeias estão fazendo as abelhas sumirem. Além disso, o mundo está ficando mais quente, bagunçando o tempo das flores, e novas doenças trazidas por outros insetos estão atacando as colmeias. Elas precisam de proteção urgente."
+TEXTO_ANIMAL_2 = "[center][font_size=60][b]ARARA[center]
+[font_size=30] 
+As araras, com suas cores vibrantes, são a alegria das nossas florestas. Mas, infelizmente, elas estão em perigo e podem desaparecer para sempre. Isso acontece porque muitas árvores, que servem de casa para elas, estão sendo derrubadas. Além disso, caçadores prendem essas aves para vender em gaiolas, o que é muito triste e proibido. Porém, existe esperança. Muitas pessoas já estão lutando para protegê-las. Projetos de conservação cuidam dos ninhos e da mata, garantindo que as araras continuem voando livres no céu.
+"
+AUDIO_ANIMAL_1 = ExtResource("2_imvuu")
+AUDIO_ANIMAL_2 = ExtResource("3_u8nob")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
