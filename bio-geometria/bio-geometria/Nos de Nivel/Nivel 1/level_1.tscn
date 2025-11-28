@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cbccjhwapi1dd"]
+[gd_scene load_steps=19 format=3 uid="uid://cbccjhwapi1dd"]
 
 [ext_resource type="Script" uid="uid://bx8shvd1bvc0g" path="res://Nos de Nivel/Nivel 1/level_1.gd" id="1_36c26"]
 [ext_resource type="Texture2D" uid="uid://btdlx3q3laelc" path="res://Nos de Nivel/Nivel 1/fas1.png" id="2_v7wtx"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://c6f06dhfvvcky" path="res://Assets/Artes para fase 1/Abelha/Sombra/Abelha Quadrado Sombra.png" id="8_rbl6n"]
 [ext_resource type="Texture2D" uid="uid://d2ou3p78yod1b" path="res://Assets/Artes para fase 1/Abelha/Sombra/Abelha Triangulo Sombra.png" id="9_dby00"]
 [ext_resource type="PackedScene" uid="uid://b3r7gpjiepoym" path="res://Nos/botao_som.tscn" id="13_dby00"]
+[ext_resource type="VideoStream" uid="uid://crv72116ake45" path="res://Assets/video_teste.ogv" id="14_ep2yf"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dby00"]
 bg_color = Color(0.8627451, 0.8156863, 0.6784314, 1)
@@ -182,6 +183,17 @@ text = "MENU"
 
 [node name="Sons" parent="." instance=ExtResource("13_dby00")]
 layout_mode = 1
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("14_ep2yf")
+autoplay = true
+expand = true
 
 [node name="Transicao" parent="." instance=ExtResource("6_f57t2")]
 layout_mode = 1

@@ -48,7 +48,16 @@ const ARARA_TRIANGULO_SOMBRA = preload("uid://dsa71uhdcdjsa")
 var a1 : CompressedTexture2D
 var a2 : CompressedTexture2D
 var a3 : CompressedTexture2D
+
+@onready var video_player: VideoStreamPlayer = $VideoStreamPlayer
+const VIDEO_TESTE_2 = preload("res://Assets/video_teste_2.ogv")
+
 func _ready() -> void:
+	if Global.progreso_nivel_1 == 2:
+		video_player.stream = VIDEO_TESTE_2
+	video_player.play()
+	await video_player.finished
+	video_player.visible = false
 	match Global.progreso_nivel_1:
 		1:
 			a1 = ABELHA_C
