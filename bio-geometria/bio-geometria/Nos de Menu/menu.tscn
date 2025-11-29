@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cfkqi3dcum5cm"]
+[gd_scene load_steps=14 format=3 uid="uid://cfkqi3dcum5cm"]
 
 [ext_resource type="Script" uid="uid://eaxv88hxjdo7" path="res://Nos de Menu/menu.gd" id="1_wqqru"]
 [ext_resource type="FontFile" uid="uid://cumtjsj4a0asq" path="res://Assets/Fontes/Minecraft.ttf" id="2_7qhtd"]
@@ -8,6 +8,8 @@
 [ext_resource type="AudioStream" uid="uid://bh662ho7ii57d" path="res://Assets/Sounds/Modern11.mp3" id="4_wn2ll"]
 [ext_resource type="PackedScene" uid="uid://b3r7gpjiepoym" path="res://Nos/botao_som.tscn" id="5_st6f1"]
 [ext_resource type="PackedScene" uid="uid://ceb1yq77ygyfb" path="res://Nos/transicao.tscn" id="6_162ll"]
+[ext_resource type="VideoStream" uid="uid://dmedv74egi7qc" path="res://Assets/video.ogv" id="9_b4c42"]
+[ext_resource type="Script" uid="uid://rhq6exbkc6cr" path="res://Nos de Menu/video_stream_player.gd" id="10_xdyhb"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nff13"]
 font_size = 120
@@ -134,7 +136,28 @@ grow_horizontal = 0
 grow_vertical = 0
 text = "SOBRE"
 
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("9_b4c42")
+script = ExtResource("10_xdyhb")
+
+[node name="Button" type="Button" parent="VideoStreamPlayer"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -118.0
+offset_right = 444.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_7qhtd")
+theme_override_font_sizes/font_size = 32
+text = "PRESSIONE PARA SAIR"
+
 [connection signal="pressed" from="MarginContainer/VBoxMenu/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxMenu/Relatorio" to="." method="_on_relatorio_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxMenu/Sair" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="sobre" to="." method="_on_sobre_pressed"]
+[connection signal="button_up" from="VideoStreamPlayer/Button" to="VideoStreamPlayer" method="_on_button_button_up"]

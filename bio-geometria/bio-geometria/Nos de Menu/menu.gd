@@ -12,9 +12,15 @@ func _on_button_pressed() -> void:
 	get_tree().quit()
 
 @onready var anim = $Transicao/AnimationPlayer
+@onready var video_stream_player: VideoStreamPlayer = $VideoStreamPlayer
 
 func _on_start_pressed() -> void:
 	audio_player.play()
+	
+	video_stream_player.visible = true
+	video_stream_player.play()
+	await video_stream_player.finished
+	video_stream_player.visible = false
 	
 	# Cria a instância da cena Popup
 	
