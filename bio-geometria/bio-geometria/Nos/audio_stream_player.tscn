@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmmtenakd22kp"]
+
+[ext_resource type="AudioStream" uid="uid://blhp05w3bp7pl" path="res://Assets/Sounds/musicafundoo.mp3" id="1_dhl7f"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_dhl7f")
+autoplay = true
