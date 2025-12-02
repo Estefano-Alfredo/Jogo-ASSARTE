@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://cwtythjlb7f1x"]
+[gd_scene load_steps=5 format=3 uid="uid://cwtythjlb7f1x"]
 
 [ext_resource type="Script" uid="uid://c827304y00u8d" path="res://Nos de Menu/relatorio_final.gd" id="1_of0du"]
 [ext_resource type="Texture2D" uid="uid://fnf3lus5vw7o" path="res://Assets/Artes para Fase 2/relatorio.png" id="2_652y1"]
+[ext_resource type="FontFile" uid="uid://cumtjsj4a0asq" path="res://Assets/Fontes/Minecraft.ttf" id="3_b8phf"]
+[ext_resource type="Texture2D" uid="uid://e6oinxp1ajjm" path="res://Assets/Ui/ISTRELA.png" id="4_sra1e"]
 
 [node name="RelatorioFinal" type="Control"]
 layout_mode = 3
@@ -36,53 +38,224 @@ theme_override_constants/separation = 10
 
 [node name="LabelNomeJogador" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_b8phf")
+theme_override_font_sizes/font_size = 50
 text = "Desempenho de:"
 horizontal_alignment = 1
 
 [node name="LabelFase1" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 25
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_b8phf")
+theme_override_font_sizes/font_size = 50
 text = "FASE 1 "
 horizontal_alignment = 1
 
 [node name="EstrelasFase1" type="Label" parent="CenterContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 horizontal_alignment = 1
+
+[node name="EstrelasConteiner" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Estrela" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela2" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela3" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela4" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela5" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
 
 [node name="LabelFase2" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 25
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_b8phf")
+theme_override_font_sizes/font_size = 50
 text = "FASE 2"
 horizontal_alignment = 1
 
+[node name="EstrelasConteiner2" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Estrela" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela2" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela3" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela4" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela5" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
 [node name="EstrelasFase2" type="Label" parent="CenterContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 horizontal_alignment = 1
 
 [node name="LabelFase3" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 25
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_b8phf")
+theme_override_font_sizes/font_size = 50
 text = "FASE 3"
 horizontal_alignment = 1
 
+[node name="EstrelasConteiner3" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Estrela" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner3"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela2" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner3"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela3" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner3"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela4" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner3"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela5" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner3"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
 [node name="EstrelasFase3" type="Label" parent="CenterContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 horizontal_alignment = 1
 
 [node name="LabelGeral" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 25
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_b8phf")
+theme_override_font_sizes/font_size = 50
 text = "GERAL"
 horizontal_alignment = 1
 
+[node name="EstrelasConteiner4" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Estrela" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner4"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela2" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner4"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela3" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner4"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela4" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner4"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Estrela5" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner4"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("4_sra1e")
+expand_mode = 1
+stretch_mode = 4
+
 [node name="EstrelasGeral" type="Label" parent="CenterContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 horizontal_alignment = 1
 
 [node name="VoltaraoMenu" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("3_b8phf")
+theme_override_font_sizes/font_size = 50
 text = "Voltar ao Menu"
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/VoltaraoMenu" to="." method="_on_voltarao_menu_pressed"]

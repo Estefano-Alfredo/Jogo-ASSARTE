@@ -2,10 +2,15 @@ extends Control
 
 # Caminhos corretos para os nós da cena relatorio_final.tscn
 @onready var label_nome_jogador: Label = $CenterContainer/VBoxContainer/LabelNomeJogador
-@onready var estrelas_fase_1: Label = $CenterContainer/VBoxContainer/EstrelasFase1
-@onready var estrelas_fase_2: Label = $CenterContainer/VBoxContainer/EstrelasFase2
-@onready var estrelas_fase_3: Label = $CenterContainer/VBoxContainer/EstrelasFase3
-@onready var estrelas_geral: Label = $CenterContainer/VBoxContainer/EstrelasGeral
+#@onready var estrelas_fase_1: Label = $CenterContainer/VBoxContainer/EstrelasFase1
+#@onready var estrelas_fase_2: Label = $CenterContainer/VBoxContainer/EstrelasFase2
+#@onready var estrelas_fase_3: Label = $CenterContainer/VBoxContainer/EstrelasFase3
+#@onready var estrelas_geral: Label = $CenterContainer/VBoxContainer/EstrelasGeral
+
+@onready var estrelas_fase_1: HBoxContainer = $CenterContainer/VBoxContainer/EstrelasConteiner
+@onready var estrelas_fase_2: HBoxContainer = $CenterContainer/VBoxContainer/EstrelasConteiner2
+@onready var estrelas_fase_3: HBoxContainer = $CenterContainer/VBoxContainer/EstrelasConteiner3
+@onready var estrelas_geral: HBoxContainer = $CenterContainer/VBoxContainer/EstrelasConteiner4
 
 func _ready():
 	# Pega o dicionário do último relatório que foi salvo no Global
@@ -24,9 +29,10 @@ func _ready():
 
 # Função auxiliar para transformar o número de estrelas em texto
 func _get_texto_estrelas(num_estrelas):
-	var estrelas_texto = ""
+	#var estrelas_texto = ""
 	for i in num_estrelas:
-		estrelas_texto += "*" # Adiciona um * para cada estrela
+		print("TESTE")
+		#estrelas_texto += "*" # Adiciona um * para cada estrela
 	return estrelas_texto
 
 # Conexão do botão "Voltar ao Menu"
