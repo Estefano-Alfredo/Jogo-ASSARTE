@@ -52,16 +52,12 @@ theme_override_font_sizes/font_size = 50
 text = "FASE 1 "
 horizontal_alignment = 1
 
-[node name="EstrelasFase1" type="Label" parent="CenterContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-horizontal_alignment = 1
-
 [node name="EstrelasConteiner" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
 [node name="Estrela" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -69,6 +65,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela2" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -76,6 +73,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela3" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -83,6 +81,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela4" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -90,6 +89,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela5" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -109,6 +109,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Estrela" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner2"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -116,6 +117,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela2" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner2"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -123,6 +125,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela3" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner2"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -130,6 +133,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela4" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner2"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -137,16 +141,12 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela5" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner2"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
 expand_mode = 1
 stretch_mode = 4
-
-[node name="EstrelasFase2" type="Label" parent="CenterContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-horizontal_alignment = 1
 
 [node name="LabelFase3" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
@@ -161,6 +161,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Estrela" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner3"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -168,6 +169,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela2" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner3"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -175,6 +177,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela3" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner3"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -182,6 +185,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela4" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner3"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -189,16 +193,12 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela5" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner3"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
 expand_mode = 1
 stretch_mode = 4
-
-[node name="EstrelasFase3" type="Label" parent="CenterContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-horizontal_alignment = 1
 
 [node name="LabelGeral" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
@@ -213,6 +213,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Estrela" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner4"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -220,6 +221,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela2" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner4"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -227,6 +229,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela3" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner4"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -234,6 +237,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela4" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner4"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
@@ -241,16 +245,12 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Estrela5" type="TextureRect" parent="CenterContainer/VBoxContainer/EstrelasConteiner4"]
+visible = false
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("4_sra1e")
 expand_mode = 1
 stretch_mode = 4
-
-[node name="EstrelasGeral" type="Label" parent="CenterContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-horizontal_alignment = 1
 
 [node name="VoltaraoMenu" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2

@@ -46,14 +46,14 @@ layout_mode = 2
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
 offset_left = 86.0
-offset_top = 837.0
-offset_right = 177.0
-offset_bottom = 932.0
+offset_top = 923.0
+offset_right = 234.0
+offset_bottom = 996.0
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("2_peab0")
+theme_override_font_sizes/font_size = 64
 button_mask = 7
 keep_pressed_outside = true
 text = "SAIR"
-alignment = 0
 
 [connection signal="pressed" from="Button" to="." method="_on_voltar_pressed"]

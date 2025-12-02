@@ -22,7 +22,7 @@ func _ready():
 		
 	# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
 	# Adiciona os cabeçalhos da lista
-	container_lista.add_child(_criar_linha_relatorio("ALUNO", "DATA", "FASE 1", "FASE 2", "FASE 3", "GERAL", true))
+	container_lista.add_child(_criar_linha_relatorio("ALUNO", "DATA", " FASE 1", "     FASE 2", "          FASE 3", "             GERAL", true))
 	
 	# Itera sobre os relatórios salvos (do mais novo para o mais antigo)
 	relatorios.reverse()
@@ -51,9 +51,9 @@ func _criar_linha_relatorio(nome, data, f1, f2, f3, geral, is_header=false):
 	var label_data = _criar_label_coluna(data, 300, is_header)
 	var label_f1 = _criar_label_coluna(f1, 150, is_header)
 	var label_f2 = _criar_label_coluna(f2, 150, is_header)
-	# --- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
+	 #--- INÍCIO DA MODIFICAÇÃO (Fase 3) ---
 	var label_f3 = _criar_label_coluna(f3, 150, is_header)
-	# --- FIM DA MODIFICAÇÃO ---
+	 #--- FIM DA MODIFICAÇÃO ---
 	var label_geral = _criar_label_coluna(geral, 150, is_header)
 	
 	# Adiciona os labels na linha
@@ -67,9 +67,12 @@ func _criar_linha_relatorio(nome, data, f1, f2, f3, geral, is_header=false):
 	hbox.add_child(label_geral)
 	
 	return hbox
-
+	
+const ISTRELA = preload("uid://e6oinxp1ajjm")
 # Função auxiliar para configurar os labels de cada coluna
 func _criar_label_coluna(texto, min_width, is_header):
+	if texto is HBoxContainer:
+		return texto
 	var label = Label.new()
 	label.text = texto
 	label.set_custom_minimum_size(Vector2(min_width, 0)) # Define largura mínima
@@ -84,11 +87,16 @@ func _criar_label_coluna(texto, min_width, is_header):
 	return label
 
 # Função auxiliar para transformar o número de estrelas em texto
-func _get_texto_estrelas(num_estrelas):
-	var estrelas_texto = ""
+func _get_texto_estrelas(num_estrelas : int):
+	var estrelas_no = HBoxContainer.new()
 	for i in num_estrelas:
-		estrelas_texto += "*" # Adiciona um * para cada estrela
-	return estrelas_texto
+		var estrela = TextureRect.new()
+		estrela.expand_mode = 1
+		estrela.custom_minimum_size = Vector2(30.0, 30.0)
+		estrela.texture = ISTRELA
+		estrela.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		estrelas_no.add_child(estrela)
+	return estrelas_no
 
 # função para voltar (original)
 func _on_voltar_pressed() -> void:
